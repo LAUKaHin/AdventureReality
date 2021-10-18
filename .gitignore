@@ -31,11 +31,7 @@
 *.out
 *.app
 
-# Long name files
-DrawDirectoryResolutionPanel.cs
-contents.xcworkspacedata
-ElementAdderMenuBuilder.cs
-ElementAdderMenuCommandAttribute.cs
+# use this command in command prompt if you want to upload long name file: git config core.longpaths true
 
 # Unity meta files
 *.meta
