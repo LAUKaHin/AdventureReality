@@ -30,3 +30,18 @@
 *.exe
 *.out
 *.app
+
+# Long name files
+DrawDirectoryResolutionPanel.cs
+contents.xcworkspacedata
+ElementAdderMenuBuilder.cs
+ElementAdderMenuCommandAttribute.cs
+
+# Unity meta files
+*.meta
+
+# Zip files
+*.tar.7z
+
+# Other over 100Mb files
+ArtifactDB
