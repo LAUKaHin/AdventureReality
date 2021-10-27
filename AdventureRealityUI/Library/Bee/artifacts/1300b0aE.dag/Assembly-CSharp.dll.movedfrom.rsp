@@ -1,9 +1,12 @@
 Library\Bee\artifacts\movedfrom\Unity.PlasticSCM.Editor.ref.dll_11914477213132117968.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.Rider.Editor.ref.dll_15747089688779514197.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Sysroot.Linux_x86_64.ref.dll_932260015709388581.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.SysrootPackage.Editor.ref.dll_626400159219067398.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.TextMeshPro.Editor.ref.dll_15040393372921687916.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.TextMeshPro.ref.dll_185380129151195285.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.Timeline.Editor.ref.dll_1726717475373165132.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.Timeline.ref.dll_1655330610069254069.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Toolchain.Win-x86_64-Linux-x86_64.ref.dll_7268154712977272162.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.VSCode.Editor.ref.dll_12575882034941869331.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.VisualScripting.Core.Editor.ref.dll_5857796339208654263.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.VisualScripting.Core.ref.dll_13800806967231271322.movedfrom
@@ -90,4 +93,4 @@ Library\Bee\artifacts\movedfrom\UnityEngine.WindModule.dll_11075771845040235490.
 Library\Bee\artifacts\movedfrom\UnityEngine.XRModule.dll_11176243544852915044.movedfrom
 Library\Bee\artifacts\movedfrom\UnityEditor.iOS.Extensions.Common.dll_6693293112441847699.movedfrom
 Library\Bee\artifacts\movedfrom\UnityEditor.iOS.Extensions.Xcode.dll_4386921112722597737.movedfrom
-Library\Bee\artifacts\movedfrom\Unity.VisualScripting.Antlr3.Runtime.dll_5219356939155552748.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.VisualScripting.Antlr3.Runtime.dll_11952485238995246354.movedfrom
