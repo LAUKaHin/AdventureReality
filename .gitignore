@@ -31,10 +31,7 @@
 *.out
 *.app
 
-# use this command in command prompt if you want to upload long name file: git config core.longpaths true
-
-# Unity meta files
-*.meta
+# use this command in command prompt to avoid gett long name file error: git config core.longpaths true
 
 # Zip files
 *.tar.7z

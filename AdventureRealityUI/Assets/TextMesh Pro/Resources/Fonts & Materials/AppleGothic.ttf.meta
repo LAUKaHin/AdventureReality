@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 28cd25500da0c9d49b9cb38b3ef62494
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - AppleGothic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b1b730fd0e423034e988f87465ac5280, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
