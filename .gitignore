@@ -30,11 +30,19 @@
 *.exe
 *.out
 *.app
+*.apk
 
 # use this command in command prompt to avoid gett long name file error: git config core.longpaths true
 
 # Zip files
+*.zip
+*.7z
+*.tgz
 *.tar.7z
 
 # Other over 100Mb files
-ArtifactDB
+*ArtifactDB
+*AdvertisingReality/Library/PackageCache/com.ptc.vuforia.engine@ad7df7833cc0-1635979566000/Vuforia/Plugins/iOS/VuforiaEngine.framework/VuforiaEngine
+
+# Crashed or undeletable directory or project.
+*UndeletableTrash/

@@ -12,7 +12,7 @@ public class Networking : MonoBehaviour {
     internal Boolean socketReady = false;
     TcpClient mySocket;
     NetworkStream theStream;
-    private readonly String Host = "192.168.1.106";
+    private readonly String Host = "127.0.0.1";
     private readonly Int32 Port = 9884;
     private int rx_len;
     [HideInInspector]

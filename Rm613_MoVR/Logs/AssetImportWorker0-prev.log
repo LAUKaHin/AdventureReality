@@ -1,0 +1,1720 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.13f1 (a03098edbbe0) revision 10498200'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1415; Version 2009; 64bit' Language: 'zh' Physical Memory: 32561 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.1.13f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/LAU Ka Hin/OneDrive - Vocational Training Council - Student/GameAR/AdventureReality/Rm613_MoVR
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53732
+Successfully changed project path to: C:/Users/LAU Ka Hin/OneDrive - Vocational Training Council - Student/GameAR/AdventureReality/Rm613_MoVR
+C:/Users/LAU Ka Hin/OneDrive - Vocational Training Council - Student/GameAR/AdventureReality/Rm613_MoVR
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 76.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.13f1 (a03098edbbe0)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.13f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/LAU Ka Hin/OneDrive - Vocational Training Council - Student/GameAR/AdventureReality/Rm613_MoVR/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
+    Vendor:   NVIDIA
+    VRAM:     5980 MB
+    Driver:   27.21.14.6660
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.13f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.13f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56736
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.13f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.13f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.13f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.002234 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 74.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.742 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1742ms)
+		BeginReloadAssembly (45ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (423ms)
+			LoadAssemblies (44ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (156ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (198ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (74ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (88ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005013 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\LAU Ka Hin\OneDrive - Vocational Training Council - Student\GameAR\AdventureReality\Rm613_MoVR\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\LAU Ka Hin\OneDrive - Vocational Training Council - Student\GameAR\AdventureReality\Rm613_MoVR\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.981 seconds
+Domain Reload Profiling:
+	ReloadAssembly (981ms)
+		BeginReloadAssembly (130ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (799ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (307ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (282ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (194ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3042 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 115.6 MB.
+System memory in use after: 115.7 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 3490.
+Total: 2.166200 ms (FindLiveObjects: 0.261500 ms CreateObjectMapping: 0.141500 ms MarkObjects: 1.643200 ms  DeleteObjects: 0.119000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/LPlane
+  artifactKey: Guid(c221d7bf9f271ca4dace3bf6068537ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane using Guid(c221d7bf9f271ca4dace3bf6068537ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '411d7b43c1448cb7287e9a67ecb16401') in 0.025592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 261.453819 seconds.
+  path: Assets/LPlane/Room 613/Models/Chairs/Chair/Materials/New Material.mat
+  artifactKey: Guid(317ec74392df1054489ab1f8db81b922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Chairs/Chair/Materials/New Material.mat using Guid(317ec74392df1054489ab1f8db81b922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d0a0c3fa4ab61bdffed418c256fc353') in 0.130254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006138 seconds.
+  path: Assets/LPlane/Room 613/Models/Computer Case/Materials/TexturesCom_Electronics0024_1_M.mat
+  artifactKey: Guid(39f793403c3ec2245a61b18187346a1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Computer Case/Materials/TexturesCom_Electronics0024_1_M.mat using Guid(39f793403c3ec2245a61b18187346a1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b622e4674e307e8bc01af40bc8a5bd42') in 0.044092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007075 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Textures/School
+  artifactKey: Guid(adc204135e06f374880f9b1117916c1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Textures/School using Guid(adc204135e06f374880f9b1117916c1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd27abb51e7532c394245ed510209cbf1') in 0.019494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004169 seconds.
+  path: Assets/LPlane/Room 613/Models/Monitor Curved
+  artifactKey: Guid(14f4212fe1183434cb054602346cbe8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Monitor Curved using Guid(14f4212fe1183434cb054602346cbe8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67121b2144b227d1feb02016a5b418ee') in 0.021236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005708 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro04Spec.png
+  artifactKey: Guid(058f7c165f5544644bc237c9a8a892ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro04Spec.png using Guid(058f7c165f5544644bc237c9a8a892ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb5a8be6a44e0bbc425b339a6be0bb36') in 0.048474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004191 seconds.
+  path: Assets/LPlane/Room 613/Models/Windows
+  artifactKey: Guid(d798f8329f1bb7c43948797ad1d5b203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Windows using Guid(d798f8329f1bb7c43948797ad1d5b203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2910039afa645c1a63c742f6fff364c9') in 0.020177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002175 seconds.
+  path: Assets/LPlane/Cannon/Prefabs
+  artifactKey: Guid(fd33f0c2335d83a488a3f95d8adb3ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Cannon/Prefabs using Guid(fd33f0c2335d83a488a3f95d8adb3ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f3847f6099e3de7cc90ec3bd7d8e08f') in 0.019405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003009 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro04.FBX
+  artifactKey: Guid(0ec4af022a864f343ae37ec6a28524e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro04.FBX using Guid(0ec4af022a864f343ae37ec6a28524e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1666726b2b74bb0e17ed0ba22f9ab62') in 0.069440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003805 seconds.
+  path: Assets/LPlane/Room 613/Models/Computer Case/Materials/cdroompng.mat
+  artifactKey: Guid(69a2c83085381834fb7918f490e19a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Computer Case/Materials/cdroompng.mat using Guid(69a2c83085381834fb7918f490e19a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14e36b23957490c43d4c7a0a674e9a7c') in 0.026977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004940 seconds.
+  path: Assets/LPlane/Room 613/Models/Mouse/New Material 1.mat
+  artifactKey: Guid(3a018707b67590c4c95b8ade57365e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Mouse/New Material 1.mat using Guid(3a018707b67590c4c95b8ade57365e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82c13703fc9485cd8bc1f3b5a96cc8cb') in 0.025763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004434 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro05_2.prefab
+  artifactKey: Guid(7483e6358714e114389c0fbaaaf4de01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro05_2.prefab using Guid(7483e6358714e114389c0fbaaaf4de01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9355e7c572f45b9ebd9c3c94697b0394') in 0.034848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003921 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro05_3.FBX
+  artifactKey: Guid(1c2a90a56ec1fe64ea1856f8b7f833c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro05_3.FBX using Guid(1c2a90a56ec1fe64ea1856f8b7f833c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '883cad7519a6b4b0264f0162dd5c8355') in 0.036210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004751 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Materials/Surfaces/Metall/MetallChrome01.mat
+  artifactKey: Guid(31702f1d7893d53418b1e1630d3da2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Materials/Surfaces/Metall/MetallChrome01.mat using Guid(31702f1d7893d53418b1e1630d3da2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '128dd858c710e85746e85c322be40b2e') in 0.025132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004786 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro08_3.prefab
+  artifactKey: Guid(bfd4f6912eeb12846a00f89762cc4009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro08_3.prefab using Guid(bfd4f6912eeb12846a00f89762cc4009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7cb3ce9b2699d8fa263ff365e0351fb') in 0.026742 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007472 seconds.
+  path: Assets/LPlane/Airplane_v1_L3.123caa2f428d-e153-467b-928f-c981d17f80c6/11665_Airplane_v1_l3.obj
+  artifactKey: Guid(a9576d956505fdf44b5bd561d4a00a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Airplane_v1_L3.123caa2f428d-e153-467b-928f-c981d17f80c6/11665_Airplane_v1_l3.obj using Guid(a9576d956505fdf44b5bd561d4a00a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '164460a620af34f7c29c5763dd3a5d16') in 0.086546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006026 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models
+  artifactKey: Guid(1202ea6c7173b1f469e5237dd85fe920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models using Guid(1202ea6c7173b1f469e5237dd85fe920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9cc1dd057f52c80c3aa2f0d58174bb') in 0.019454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002859 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Prefabs/Poster01_2a.prefab
+  artifactKey: Guid(d0f8c288eedac6c43949d1488962f9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Prefabs/Poster01_2a.prefab using Guid(d0f8c288eedac6c43949d1488962f9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87b54384c5eb439722ccb1a961bc0ff6') in 0.028197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003481 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials/Electro01.mat
+  artifactKey: Guid(a68a2b786d5f80d4cac63945ac743226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials/Electro01.mat using Guid(a68a2b786d5f80d4cac63945ac743226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28095e58919ef20a54b90498f050b1c4') in 0.050776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004142 seconds.
+  path: Assets/LPlane/Room 613/Models/Monitor Curved/Monitor 27' Curved.obj
+  artifactKey: Guid(b812a2dd670cc354697d6fe9d5d8190f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Monitor Curved/Monitor 27' Curved.obj using Guid(b812a2dd670cc354697d6fe9d5d8190f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1ec63a79fe325cde913774db5dbcf5e') in 0.045567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007072 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Textures/PosterMockup01.png
+  artifactKey: Guid(b4765636fc18443479800046d2282609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Textures/PosterMockup01.png using Guid(b4765636fc18443479800046d2282609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8ddab2334e81d68f130170e8501f9f1') in 0.026755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003672 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro02.prefab
+  artifactKey: Guid(12e698e321bd13f49b0a100fa0636043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro02.prefab using Guid(12e698e321bd13f49b0a100fa0636043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b7dd2507f5b8396cdc03994db3cdbed') in 0.034609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003925 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro06Spec.png
+  artifactKey: Guid(760b54f98bed17045bd6be4d1a684bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro06Spec.png using Guid(760b54f98bed17045bd6be4d1a684bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ef9e46d6951822c0ca84f1af4e6fedb') in 0.024279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003986 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Poster01_3.FBX
+  artifactKey: Guid(cdbc23846c2456640a6d6832d146839b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Poster01_3.FBX using Guid(cdbc23846c2456640a6d6832d146839b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8cecd54a274b3f5c641510fa0531fe1') in 0.029729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005050 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro01Spec.png
+  artifactKey: Guid(a5c4e2086a5baa242aa05cbaa3e960f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro01Spec.png using Guid(a5c4e2086a5baa242aa05cbaa3e960f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba1f7bf04bbceba0b98fadd1f2bde0df') in 0.035635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003961 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro08_4.prefab
+  artifactKey: Guid(b05996bd42e509049bdcfb6a4cde30a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro08_4.prefab using Guid(b05996bd42e509049bdcfb6a4cde30a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e65657279fdfd845209cc2512656e0b') in 0.027024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004091 seconds.
+  path: Assets/LPlane/Airplane_v1_L3.123caa2f428d-e153-467b-928f-c981d17f80c6/Prefabs/Player_Airplane_ver0.5.prefab
+  artifactKey: Guid(edf2c2d10dd96cb4185d07f48c6d12b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Airplane_v1_L3.123caa2f428d-e153-467b-928f-c981d17f80c6/Prefabs/Player_Airplane_ver0.5.prefab using Guid(edf2c2d10dd96cb4185d07f48c6d12b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '423540dfba41a6eb593276b72de8d768') in 0.035083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003462 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro08_4.FBX
+  artifactKey: Guid(bdb1d72bd7e147a4f867cb822bd440f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro08_4.FBX using Guid(bdb1d72bd7e147a4f867cb822bd440f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2c96157817d53d9460ba26d196eec1f') in 0.029461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004508 seconds.
+  path: Assets/LPlane/Room 613/Models/materials/$RN2D9HV.jpg
+  artifactKey: Guid(0375130345250bc4a9f55bec05428c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/materials/$RN2D9HV.jpg using Guid(0375130345250bc4a9f55bec05428c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b7cd90ea43776812aa820cf3ee6a41c') in 0.027352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003971 seconds.
+  path: Assets/LPlane/Room 613/Models/Desk/Materials/New Material.mat
+  artifactKey: Guid(c3f15cb704aa3014492395ed15ca20d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Desk/Materials/New Material.mat using Guid(c3f15cb704aa3014492395ed15ca20d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70b3559ebd03d2d52fd228b57a000679') in 0.026343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004048 seconds.
+  path: Assets/LPlane/Room 613/Materials
+  artifactKey: Guid(37a0a6ae00f7c9f42ab9b807bfdbd6f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Materials using Guid(37a0a6ae00f7c9f42ab9b807bfdbd6f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34de2955bb73573dcdde45642b00d65a') in 0.019029 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002388 seconds.
+  path: Assets/LPlane/Room 613/Models/Chairs/Chair
+  artifactKey: Guid(03f07958d9fd7a84f8dc24eedb6cf3d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Chairs/Chair using Guid(03f07958d9fd7a84f8dc24eedb6cf3d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf0b0451ad432e08e50dcf1dbcc8796e') in 0.018672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003204 seconds.
+  path: Assets/LPlane/Room 613/Models/Soldering_Iron/Materials/Soldering_Iron_SwitchFace.jpg
+  artifactKey: Guid(5157dcefc029eaf43bac1e88545aca82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Soldering_Iron/Materials/Soldering_Iron_SwitchFace.jpg using Guid(5157dcefc029eaf43bac1e88545aca82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e83e240064851943f5b09fc6e921d3b0') in 0.025708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003083 seconds.
+  path: Assets/LPlane/Cannon/Shell/Prefab
+  artifactKey: Guid(a6b1e0fa248c5ee40b4c6901ef98ddd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Cannon/Shell/Prefab using Guid(a6b1e0fa248c5ee40b4c6901ef98ddd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '472320ab6f71aeafdcf9ccb669a00397') in 0.019385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003287 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro08_5.prefab
+  artifactKey: Guid(149a0e23edab4ae44bd47366190def44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro08_5.prefab using Guid(149a0e23edab4ae44bd47366190def44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22d09f507fda1d4a5c1d22381883a6d2') in 0.026613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003145 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics
+  artifactKey: Guid(76b81b5de5aa7af46927531d0aef7d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics using Guid(76b81b5de5aa7af46927531d0aef7d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '964b9b4c1a73fce83e475f005f336f46') in 0.018481 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002334 seconds.
+  path: Assets/LPlane/Airplane_v1_L3.123caa2f428d-e153-467b-928f-c981d17f80c6/Materials
+  artifactKey: Guid(e73c0afb81f279d4c88368255f82a8b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Airplane_v1_L3.123caa2f428d-e153-467b-928f-c981d17f80c6/Materials using Guid(e73c0afb81f279d4c88368255f82a8b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf8844a0648f6599bddf5bbcde1501fb') in 0.019073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001985 seconds.
+  path: Assets/LPlane/Room 613/Models/Computer Case
+  artifactKey: Guid(470b15478cb59c14b91ec64b4dcfbbf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Computer Case using Guid(470b15478cb59c14b91ec64b4dcfbbf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cb8f2615cc70321790e61a4884393f2') in 0.018577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002945 seconds.
+  path: Assets/LPlane/Room 613/Models/Computer Case/Materials/Untiatled.mat
+  artifactKey: Guid(b6875683b589e6d45aa17afbc76d09a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Computer Case/Materials/Untiatled.mat using Guid(b6875683b589e6d45aa17afbc76d09a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5655d7a63f5779ca86ad31332c4a724c') in 0.026381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005430 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Materials/School/Physics02.mat
+  artifactKey: Guid(106a13a8207389a418e375cafceb31cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Materials/School/Physics02.mat using Guid(106a13a8207389a418e375cafceb31cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '808bf2e4d598c46bfb3163ea3ad89f2e') in 0.025806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003587 seconds.
+  path: Assets/LPlane/Room 613/Models/Soldering_Iron
+  artifactKey: Guid(5734ba25e2632fe44933f277078d9ba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Soldering_Iron using Guid(5734ba25e2632fe44933f277078d9ba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '880f26db9ccafc40f1da6c93bd7d30f0') in 0.019751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003669 seconds.
+  path: Assets/LPlane/Room 613/Models/New Folder/yJYORp4AXo.jpg
+  artifactKey: Guid(0d70530fa98c6204887fc05004326c27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/New Folder/yJYORp4AXo.jpg using Guid(0d70530fa98c6204887fc05004326c27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9973e376e865d548e634a6fd929be680') in 0.030913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004292 seconds.
+  path: Assets/LPlane/Room 613/Materials/yJYORp4AXo.jpg
+  artifactKey: Guid(dffbb2bb4ac3e90458d2bb40d08773cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Materials/yJYORp4AXo.jpg using Guid(dffbb2bb4ac3e90458d2bb40d08773cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b19eff7e39c177b16f45ca8d009a5aa') in 0.029940 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002849 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures
+  artifactKey: Guid(a397967121dc767459b50d51c545903c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures using Guid(a397967121dc767459b50d51c545903c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c6a0d19be17a667f35e84a5a42d7c05') in 0.019429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003186 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro06.FBX
+  artifactKey: Guid(99448e61110646c41a617e914fd13cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro06.FBX using Guid(99448e61110646c41a617e914fd13cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8626fd268747579d41703106d4ac20a7') in 0.032532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003531 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/ElectroWires02_1.prefab
+  artifactKey: Guid(5dc35cabe4a3ea042905ea79998b187b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/ElectroWires02_1.prefab using Guid(5dc35cabe4a3ea042905ea79998b187b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cfb1b0c83a7969b8d6e6fa2de1d830c') in 0.027843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005306 seconds.
+  path: Assets/LPlane/Cannon/cannon.obj
+  artifactKey: Guid(daefad61e26f43d41be7e6d04f74314d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Cannon/cannon.obj using Guid(daefad61e26f43d41be7e6d04f74314d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68099ddf27151cc72c2f810fbfa34ef1') in 0.282499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007623 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro03.png
+  artifactKey: Guid(8ebc9b399980234408864eea3fc1c870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro03.png using Guid(8ebc9b399980234408864eea3fc1c870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2644e92d2fb659f1918f88e2d343e095') in 0.026091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004079 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials/Electro07.mat
+  artifactKey: Guid(fbbf17176181bdf47b82ce6eae9bdb04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials/Electro07.mat using Guid(fbbf17176181bdf47b82ce6eae9bdb04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c00585a6ab8e996cd29ee795c5fe96a') in 0.048609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003169 seconds.
+  path: Assets/LPlane/Cannon/Materials
+  artifactKey: Guid(3fd4c0f6fa4b98d4fbcaf8e6ce099651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Cannon/Materials using Guid(3fd4c0f6fa4b98d4fbcaf8e6ce099651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9855b7213cbf270e68fb858e0cad8adf') in 0.018390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003540 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro05_2.FBX
+  artifactKey: Guid(9d312de70082eea4d98f37b821e58f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro05_2.FBX using Guid(9d312de70082eea4d98f37b821e58f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0585508e895b732ff1e7ab5acdc9a10f') in 0.032084 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004886 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/ElectroWires07_2.prefab
+  artifactKey: Guid(da48c61fbccff9943a2b5dd7a035431d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/ElectroWires07_2.prefab using Guid(da48c61fbccff9943a2b5dd7a035431d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dba72c954a3b5e3b121fcfeb598a0861') in 0.027501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004245 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro06.png
+  artifactKey: Guid(15af7b77b9bf57a46ae3652a1cf11857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro06.png using Guid(15af7b77b9bf57a46ae3652a1cf11857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70bb767f73c116783d0e5b43f254aeff') in 0.024737 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004149 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro06.prefab
+  artifactKey: Guid(714afd3924c4e9642b09fb1761b332f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro06.prefab using Guid(714afd3924c4e9642b09fb1761b332f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b149321aa86dfa718ff0db918ece178') in 0.027228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004350 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/ElectroWires03_3.FBX
+  artifactKey: Guid(1100d4c312eccca49871224984a6d6c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/ElectroWires03_3.FBX using Guid(1100d4c312eccca49871224984a6d6c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e25f6492833063567b0342e5a13aa0e') in 0.028836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002799 seconds.
+  path: Assets/LPlane/Scripts
+  artifactKey: Guid(d6b22faeb9daafc4c9a6624fa1490459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Scripts using Guid(d6b22faeb9daafc4c9a6624fa1490459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87aa56e30a4515c74a251e5a060eb0fd') in 0.020170 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002481 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/ElectroWires03_1.prefab
+  artifactKey: Guid(73ce23275d86933419b6722361ebe13e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/ElectroWires03_1.prefab using Guid(73ce23275d86933419b6722361ebe13e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '922faddfe566f395f467f7603065523e') in 0.025421 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005643 seconds.
+  path: Assets/LPlane/613.prefab
+  artifactKey: Guid(cfc726cdcad203c40a9d15184a5eb6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/613.prefab using Guid(cfc726cdcad203c40a9d15184a5eb6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aff200f10dabffb2010722ad15ec537') in 0.321066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005201 seconds.
+  path: Assets/LPlane/Room 613/Models/Monitor Curved/New Material 1.mat
+  artifactKey: Guid(80c6473ab6fc6e346ae3b9abe28b5f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Monitor Curved/New Material 1.mat using Guid(80c6473ab6fc6e346ae3b9abe28b5f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13cdf80e797bf2d19a741cd9bbaefc71') in 0.025498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006364 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro01.png
+  artifactKey: Guid(860975cda2d1c3c43a6e597772406b05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro01.png using Guid(860975cda2d1c3c43a6e597772406b05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9a003ac13c1551f908b3aaee5978200') in 0.034315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003254 seconds.
+  path: Assets/LPlane/Plugins/Android
+  artifactKey: Guid(d9a882ebca5309e408edb8d22bf9e36a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Plugins/Android using Guid(d9a882ebca5309e408edb8d22bf9e36a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7347aadb063ac20ae9de697b65961708') in 0.019743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003799 seconds.
+  path: Assets/LPlane/Room 613/613 Room.FBX
+  artifactKey: Guid(00bd891cf705d70419a27e261922c7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/613 Room.FBX using Guid(00bd891cf705d70419a27e261922c7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb23b118da6405d5842b9fc7762fc921') in 0.130487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.008000 seconds.
+  path: Assets/LPlane/Room 613/Models/materials/yJYORp4AXo.jpg
+  artifactKey: Guid(82b2163c2714f1b4e824876fa0afdcc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/materials/yJYORp4AXo.jpg using Guid(82b2163c2714f1b4e824876fa0afdcc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4201e61e63bc0894f66f2f09227c6e0') in 0.030691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003319 seconds.
+  path: Assets/LPlane/Room 613/Models/Computer Case/perfabs
+  artifactKey: Guid(076fd90033d7d5c40979337476007217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Computer Case/perfabs using Guid(076fd90033d7d5c40979337476007217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '827faa51c3d6cd0ed8f1f079846e9c0f') in 0.021334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005263 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro07.png
+  artifactKey: Guid(5c0f4f9ce8ff5f64a92c669ab5ee1dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro07.png using Guid(5c0f4f9ce8ff5f64a92c669ab5ee1dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eabcbae132168208a692e260a24f136') in 0.041714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005083 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/ElectroWires01_1.FBX
+  artifactKey: Guid(bda1dafda1a5d784db0ee8516e62c52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/ElectroWires01_1.FBX using Guid(bda1dafda1a5d784db0ee8516e62c52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b041aee3a20acc80b2ee1619a2691bb') in 0.037005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004562 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro05_1.prefab
+  artifactKey: Guid(bfac96017a099f14b952128d9643cd3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro05_1.prefab using Guid(bfac96017a099f14b952128d9643cd3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a062a585220c5f6b795cb031648731ab') in 0.037911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005607 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Materials/PosterMockup01.mat
+  artifactKey: Guid(7f39105b8b1d2444cb938a5e3e6f8460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Materials/PosterMockup01.mat using Guid(7f39105b8b1d2444cb938a5e3e6f8460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e1d12f76cd43b55c4648526f8de0bb8') in 0.033616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004289 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Materials/Surfaces/Metall
+  artifactKey: Guid(f66593fd1158f6d43a464a1c05514b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Materials/Surfaces/Metall using Guid(f66593fd1158f6d43a464a1c05514b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ba4504e44472c7b7604356c26da050d') in 0.021050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003097 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/ElectroWires01_2.FBX
+  artifactKey: Guid(0b64c3842f472bc469b280ef6537e783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/ElectroWires01_2.FBX using Guid(0b64c3842f472bc469b280ef6537e783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ba34302db334214787a0d606ab0e736') in 0.031472 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003317 seconds.
+  path: Assets/LPlane/Check Point
+  artifactKey: Guid(adf3cee9e5e28034e8fae4ac7d3a123e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Check Point using Guid(adf3cee9e5e28034e8fae4ac7d3a123e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f37a7e063541202a06c1c136a969bb99') in 0.019528 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003798 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/ElectroWires05_2.prefab
+  artifactKey: Guid(34da6c33ff0e57b4ea39451f16a2ab3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/ElectroWires05_2.prefab using Guid(34da6c33ff0e57b4ea39451f16a2ab3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15febf441ec2d679c25966949c7188a2') in 0.026620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003450 seconds.
+  path: Assets/LPlane/Room 613/Models/socket/Materials
+  artifactKey: Guid(701dfc77bb843434f9288ce10a3d4f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/socket/Materials using Guid(701dfc77bb843434f9288ce10a3d4f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e52ea7072600dbcc076364dd67cbdf6f') in 0.020724 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003750 seconds.
+  path: Assets/LPlane/Room 613/Models/Computer Case/TexturesCom_Electronics0024_1_M.jpg
+  artifactKey: Guid(1ddb6542a5e31b8478ac63da76a95aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Computer Case/TexturesCom_Electronics0024_1_M.jpg using Guid(1ddb6542a5e31b8478ac63da76a95aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c85aee570904eb869c8de808f82999f4') in 0.029294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004285 seconds.
+  path: Assets/LPlane/Cannon/Shell/Prefab/Cannon shell.prefab
+  artifactKey: Guid(d1b4bd6f66bd3534e8a78b218a74a1e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Cannon/Shell/Prefab/Cannon shell.prefab using Guid(d1b4bd6f66bd3534e8a78b218a74a1e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0e85096e6c1badb28826cd3d6683337') in 0.024082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004136 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials/Electro08.mat
+  artifactKey: Guid(7af4b828677cdd446b0719d738322123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials/Electro08.mat using Guid(7af4b828677cdd446b0719d738322123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0aac9f15d372cdb3f813c9428e47913') in 0.025845 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004497 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/ElectroWires01.png
+  artifactKey: Guid(ae10e04e7430448468ad154d69bce3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/ElectroWires01.png using Guid(ae10e04e7430448468ad154d69bce3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '973a864c2bfb721f083c9c14afa9152a') in 0.025480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003684 seconds.
+  path: Assets/LPlane/Scripts/SimpleStarter.cs
+  artifactKey: Guid(c3308afbd1af4074abeaa576a9367eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Scripts/SimpleStarter.cs using Guid(c3308afbd1af4074abeaa576a9367eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b5782828a644740217a6b7a821a2dd') in 0.020841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002696 seconds.
+  path: Assets/LPlane/XR
+  artifactKey: Guid(e8ae73271d3893e4087109c0deff947a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/XR using Guid(e8ae73271d3893e4087109c0deff947a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21b7f5b48b58257dd7955fc215148959') in 0.018790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003991 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Poster01_1.FBX
+  artifactKey: Guid(49ffe95dc88ff0c449c96fe12217e850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Poster01_1.FBX using Guid(49ffe95dc88ff0c449c96fe12217e850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1bd16f8070501d2e35d658744f1d03e') in 0.027114 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004745 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro02.FBX
+  artifactKey: Guid(e762033829e31b34a98fcc6c221c3411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro02.FBX using Guid(e762033829e31b34a98fcc6c221c3411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18894b2f44a73917a16902d21c04884a') in 0.038419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003566 seconds.
+  path: Assets/LPlane/Marker
+  artifactKey: Guid(a71f9209ff2db664ead969a462309ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Marker using Guid(a71f9209ff2db664ead969a462309ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5e403dca77ab285f26cb15f78a6f551') in 0.020256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002963 seconds.
+  path: Assets/LPlane/Plugins/Android/mainTemplate.gradle
+  artifactKey: Guid(38d1707b509a0ca448473bac45c8de18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Plugins/Android/mainTemplate.gradle using Guid(38d1707b509a0ca448473bac45c8de18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad765413a7d2a080e1cc5ad01369610c') in 0.020758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003090 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/ElectroWires07_2.FBX
+  artifactKey: Guid(e5f7061d21125f748987da4ace17c5bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/ElectroWires07_2.FBX using Guid(e5f7061d21125f748987da4ace17c5bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11cb6042b0551a5b5a1a38216439ab7c') in 0.031352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004021 seconds.
+  path: Assets/LPlane/Cannon/Materials/New Material 1.mat
+  artifactKey: Guid(964c4f2831f6ee24798cba51d166186e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Cannon/Materials/New Material 1.mat using Guid(964c4f2831f6ee24798cba51d166186e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ddf29fb5667c03cf4e8a664a286127e') in 0.046881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005920 seconds.
+  path: Assets/LPlane/Media/Unlit.mat
+  artifactKey: Guid(158a1361401b26f48b9b6094583269d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Media/Unlit.mat using Guid(158a1361401b26f48b9b6094583269d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffa63a5107f595176cfa03abd1ed9b25') in 0.024223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005670 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/ElectroWires07_1.FBX
+  artifactKey: Guid(677d3a1b0d6a3d949a45b3f8aa1e1ab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/ElectroWires07_1.FBX using Guid(677d3a1b0d6a3d949a45b3f8aa1e1ab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '814f8d62bd8f030c3003d752a4307d17') in 0.032251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003446 seconds.
+  path: Assets/LPlane/Cannon
+  artifactKey: Guid(2315c1745a4b26647b64b94a743922e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Cannon using Guid(2315c1745a4b26647b64b94a743922e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dcc863232ad2acca8419933fd7999b3') in 0.020687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002526 seconds.
+  path: Assets/LPlane/Marker/Materials
+  artifactKey: Guid(a96954f5a35054d479387b5207e6961c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Marker/Materials using Guid(a96954f5a35054d479387b5207e6961c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65025412eeda41898737097e047b7031') in 0.018937 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003358 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro08_1.FBX
+  artifactKey: Guid(795a3a0a70f8d5744ac1fb275ac188d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro08_1.FBX using Guid(795a3a0a70f8d5744ac1fb275ac188d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd4f87c44ed17f26340a468efd76635b') in 0.029600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003497 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Materials
+  artifactKey: Guid(afcb114edb857a549b5a00419a9d2db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Materials using Guid(afcb114edb857a549b5a00419a9d2db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfbc95a4efa95fd37c41f25a861a645e') in 0.019581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003665 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro01.FBX
+  artifactKey: Guid(ae5a563f15a183c4ab836c54d419ebc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro01.FBX using Guid(ae5a563f15a183c4ab836c54d419ebc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a753c50be61b800e8ac00e1b1e686b6') in 0.054987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004021 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/ElectroWires01_1.prefab
+  artifactKey: Guid(6b164f534daea2e4eb95bd865b81310c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/ElectroWires01_1.prefab using Guid(6b164f534daea2e4eb95bd865b81310c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ca0e1bdb693de07f138de25ba38a0dd') in 0.028198 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004034 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro04.prefab
+  artifactKey: Guid(ab2aac32efcb0034b90ebdedf9f893c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro04.prefab using Guid(ab2aac32efcb0034b90ebdedf9f893c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b9eca08ae967e9b286ccfab12082f82') in 0.035515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004588 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro08_3.FBX
+  artifactKey: Guid(6a1168874775f864582d56780ed26ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro08_3.FBX using Guid(6a1168874775f864582d56780ed26ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4a77cfa922ccc8563a62109465ce2a1') in 0.032006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004334 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro05Spec.png
+  artifactKey: Guid(f2c4749204de9d84b9810fde78b868cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro05Spec.png using Guid(f2c4749204de9d84b9810fde78b868cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ef42ec5f0021c0e9c10c03dc8e127b4') in 0.025007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004427 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro03.FBX
+  artifactKey: Guid(e2f9a0b16592f884899e42be9e351581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro03.FBX using Guid(e2f9a0b16592f884899e42be9e351581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7555006f08eee6daf19ff4af6cbb4811') in 0.036526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003719 seconds.
+  path: Assets/LPlane/Electro/Poster01_3a.prefab
+  artifactKey: Guid(a4dc5a4c8b4753a4381ccfd6efed6d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Electro/Poster01_3a.prefab using Guid(a4dc5a4c8b4753a4381ccfd6efed6d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57c3f436e29712ef5a769e929f08776a') in 0.026967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003787 seconds.
+  path: Assets/LPlane/Marker/Materials/lambert1.mat
+  artifactKey: Guid(4889db04ef69aa541af94d501b8eb546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Marker/Materials/lambert1.mat using Guid(4889db04ef69aa541af94d501b8eb546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52907f80f9335bc22814eafbeb286204') in 0.024159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004181 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro08_7.FBX
+  artifactKey: Guid(4ae6d2e5bafb7294a82874073870924c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro08_7.FBX using Guid(4ae6d2e5bafb7294a82874073870924c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67e668d345127d0313190e8a3da79f26') in 0.029174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003962 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials/Electro06.mat
+  artifactKey: Guid(2439edd8eeeb1bd4db33ea46b81db0aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials/Electro06.mat using Guid(2439edd8eeeb1bd4db33ea46b81db0aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad6e33d15b6dd570efef61edfa82bdf9') in 0.029929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004744 seconds.
+  path: Assets/LPlane/Scripts/ObjectController.cs
+  artifactKey: Guid(dc1c92384fcda774fb51801c6655523e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Scripts/ObjectController.cs using Guid(dc1c92384fcda774fb51801c6655523e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '098ced6fa81b5929e9c53c6acf864c77') in 0.018850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002420 seconds.
+  path: Assets/LPlane/Cannon/Scripts
+  artifactKey: Guid(5bb79899b1a33b540a531a9767d32010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Cannon/Scripts using Guid(5bb79899b1a33b540a531a9767d32010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315f6a45a38cdd33f85587614bdfa40c') in 0.019382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002340 seconds.
+  path: Assets/LPlane/Room 613/Models
+  artifactKey: Guid(434588dfe7ba53b47a8d74c700e296ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models using Guid(434588dfe7ba53b47a8d74c700e296ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3ab1ed54ad472e661a48780ebeb21c7') in 0.020981 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003904 seconds.
+  path: Assets/LPlane/Room 613/Models/table2.fbx
+  artifactKey: Guid(72ebc5688105fe045a747d9d9657cd3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/table2.fbx using Guid(72ebc5688105fe045a747d9d9657cd3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c243a7297a177dac7369b186547ebe4') in 0.034611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005625 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro08_10.FBX
+  artifactKey: Guid(f4b1c12ac2d57714db35962b463a6979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro08_10.FBX using Guid(f4b1c12ac2d57714db35962b463a6979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c96c79557ed505de67f4eda4e4f30a0d') in 0.030786 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004326 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/ElectroWires05_2.FBX
+  artifactKey: Guid(7379aff68d650554a9a4e75d395fec6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/ElectroWires05_2.FBX using Guid(7379aff68d650554a9a4e75d395fec6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b36a4ff2ed534074acbdb8ab81af3f') in 0.031413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003907 seconds.
+  path: Assets/LPlane/Room 613/Models/materials/New Material.mat
+  artifactKey: Guid(0d6549e59d8a0da44bc543a25396bcb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/materials/New Material.mat using Guid(0d6549e59d8a0da44bc543a25396bcb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6500f464204ac6fb199323056bb0f2eb') in 0.034046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004504 seconds.
+  path: Assets/LPlane/XR/Settings
+  artifactKey: Guid(9e2cc5ab01bd2f44f8bd8c044992174c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/XR/Settings using Guid(9e2cc5ab01bd2f44f8bd8c044992174c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e18787ccb580f46ca6169564fa300845') in 0.020878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003968 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro02Spec.png
+  artifactKey: Guid(596a39d21a046904396326fbe06dfdf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro02Spec.png using Guid(596a39d21a046904396326fbe06dfdf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c045dda2ccf7ccab853c7856edc1d88') in 0.026759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003853 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs
+  artifactKey: Guid(1d8894360ada63a4cb500cf3ecdbd4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs using Guid(1d8894360ada63a4cb500cf3ecdbd4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89ba2aa2a8577e71edd921e28534416d') in 0.018753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003650 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro05_3.prefab
+  artifactKey: Guid(2d857dc29bc617f48b070543a2624ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro05_3.prefab using Guid(2d857dc29bc617f48b070543a2624ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b8cf64ebf543523088210d441382d70') in 0.030026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005647 seconds.
+  path: Assets/LPlane/Room 613/Models/Soldering_Iron/Materials/New Material.mat
+  artifactKey: Guid(708b166cc7bb6504eb310d383d117503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Soldering_Iron/Materials/New Material.mat using Guid(708b166cc7bb6504eb310d383d117503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f1f7078989c531d27c476f46226b532') in 0.027878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007363 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro01NM.png
+  artifactKey: Guid(e2bc2e721e06ba749b2ab6c1cdc97ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro01NM.png using Guid(e2bc2e721e06ba749b2ab6c1cdc97ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6375bfbac1d8f728d61b4a704547a6f') in 0.028418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004546 seconds.
+  path: Assets/LPlane/Room 613/Models/Desk/desk.fbx
+  artifactKey: Guid(e59866a60eb663f4580f9bdaf603d921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Desk/desk.fbx using Guid(e59866a60eb663f4580f9bdaf603d921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d82401bc2ac96d46b21b662370bf24b') in 0.057517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007594 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/ElectroWires04_2.FBX
+  artifactKey: Guid(9e0578b9c242ded42b859d1265de9cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/ElectroWires04_2.FBX using Guid(9e0578b9c242ded42b859d1265de9cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab160635e56603bf0a6e54355741ae50') in 0.032288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004005 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro05.png
+  artifactKey: Guid(a438ce5e36cb52349a0909f152723b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro05.png using Guid(a438ce5e36cb52349a0909f152723b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '521e8f027f2be929a1acb10302c66f3c') in 0.028476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004171 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro07Spec.png
+  artifactKey: Guid(df78f0c2c85488749a104039bca99cbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro07Spec.png using Guid(df78f0c2c85488749a104039bca99cbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '900756548db5bf73c01b1574ade9d204') in 0.036540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004200 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro05_1.FBX
+  artifactKey: Guid(763e1ac138e0d3d4992cb40540fe7bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro05_1.FBX using Guid(763e1ac138e0d3d4992cb40540fe7bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de1c48c6ce08ace9b966e2729732bde9') in 0.036373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004308 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials/ElectroWires01.mat
+  artifactKey: Guid(0630f271c5e9a00418fb9e2cf361eea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials/ElectroWires01.mat using Guid(0630f271c5e9a00418fb9e2cf361eea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a27f99afee7043ea50cfa7dcc61d20c') in 0.027884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004925 seconds.
+  path: Assets/LPlane/Electro/ElectroGroup.prefab
+  artifactKey: Guid(032e1494fa3d15c4b8da898b2ff21001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Electro/ElectroGroup.prefab using Guid(032e1494fa3d15c4b8da898b2ff21001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a3c1ba576f838d8f27f418b7745e558') in 0.132598 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004688 seconds.
+  path: Assets/LPlane/Room 613/Models/Soldering_Iron/Materials
+  artifactKey: Guid(3046a315b5a75ed47983f1bf5fa111ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Soldering_Iron/Materials using Guid(3046a315b5a75ed47983f1bf5fa111ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '209fbe2094b59ca431faf0bde05fa679') in 0.019487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004007 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro08_6.FBX
+  artifactKey: Guid(640c5e270a9978445925a17ca6d7b89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro08_6.FBX using Guid(640c5e270a9978445925a17ca6d7b89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1591b31f3f25ce6bb806ad834841305c') in 0.031050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005104 seconds.
+  path: Assets/LPlane/Check Point/Materials
+  artifactKey: Guid(95c2abe7a65706544a5ecbd0e2bdb1d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Check Point/Materials using Guid(95c2abe7a65706544a5ecbd0e2bdb1d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '718be17ec728d2ad07eadbf802e4debd') in 0.018886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003625 seconds.
+  path: Assets/LPlane/Room 613/Models/door/New Material 1.mat
+  artifactKey: Guid(a189d69a4e963ae4fb4c2ff45cda614e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/door/New Material 1.mat using Guid(a189d69a4e963ae4fb4c2ff45cda614e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b6d284da67ae38b72ba298cafc18906') in 0.027134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005837 seconds.
+  path: Assets/LPlane/Room 613/Models/Desk/Materials/New Material 1.mat
+  artifactKey: Guid(fc83589a7c8335946bfe9912cb7304cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Desk/Materials/New Material 1.mat using Guid(fc83589a7c8335946bfe9912cb7304cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7487a5f74be67637df23112e508fdb8f') in 0.025650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006412 seconds.
+  path: Assets/LPlane/Room 613/Models/Soldering_Iron/Materials/Soldering_Iron_OnOff_Switch.jpg
+  artifactKey: Guid(a01866118e1a60745ba3e70ac57238e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Soldering_Iron/Materials/Soldering_Iron_OnOff_Switch.jpg using Guid(a01866118e1a60745ba3e70ac57238e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c911d1e7095dc5d24444fae794436d3') in 0.025671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003345 seconds.
+  path: Assets/LPlane/Room 613/Models/New Folder
+  artifactKey: Guid(65c733b771f76f14ca7b832e01645a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/New Folder using Guid(65c733b771f76f14ca7b832e01645a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cf24506f916b76fc817fbd05a895860') in 0.019246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004387 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro08_5.FBX
+  artifactKey: Guid(ff59e191002f0b4459cafdf6ccfedd7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro08_5.FBX using Guid(ff59e191002f0b4459cafdf6ccfedd7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffaa7e9283808948a732a113666bf6c9') in 0.030102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004525 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/ElectroWires01Spec.png
+  artifactKey: Guid(ab39f80bcf30dc748a4e7be0f0f2ecb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/ElectroWires01Spec.png using Guid(ab39f80bcf30dc748a4e7be0f0f2ecb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b33eb541b5cf30bf812734954ad5f34') in 0.025670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003985 seconds.
+  path: Assets/LPlane/XR/XRGeneralSettings.asset
+  artifactKey: Guid(af32fea4f281c9149a58b79b2d1ce579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/XR/XRGeneralSettings.asset using Guid(af32fea4f281c9149a58b79b2d1ce579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a736dee4215f862b2b8a4405ae6ba06a') in 0.026923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003633 seconds.
+  path: Assets/LPlane/XR/Settings/XR Settings.asset
+  artifactKey: Guid(8717acbfd7e5b0c49aec71bc6e57cf9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/XR/Settings/XR Settings.asset using Guid(8717acbfd7e5b0c49aec71bc6e57cf9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1e5ea6cf3817d581c0fb9c833724511') in 0.019681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003485 seconds.
+  path: Assets/LPlane/Scripts/CardboardStartup.cs
+  artifactKey: Guid(d0f8fba2f4a440247b292c10b36eda7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Scripts/CardboardStartup.cs using Guid(d0f8fba2f4a440247b292c10b36eda7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0227ff1baedeff2fd505419730e4498') in 0.019669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003437 seconds.
+  path: Assets/LPlane/TeleportPoint.prefab
+  artifactKey: Guid(14b2c47a6320ed347832da39aab0f4fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TeleportPoint.prefab using Guid(14b2c47a6320ed347832da39aab0f4fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ddb83aceef0f0159bf42429bae15745') in 0.024818 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004301 seconds.
+  path: Assets/LPlane/Plugins/Android/AndroidManifest.xml
+  artifactKey: Guid(5cab9e9b22f266b459e920d6074b6a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Plugins/Android/AndroidManifest.xml using Guid(5cab9e9b22f266b459e920d6074b6a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c77e2320748be35867d5dfe1acc6b01') in 0.025544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003652 seconds.
+  path: Assets/LPlane/Room 613/Models/Computer Case/Untiatled.png
+  artifactKey: Guid(ad47686e950b2e446b0f7a261667fe6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Computer Case/Untiatled.png using Guid(ad47686e950b2e446b0f7a261667fe6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27f4d6bb5d1f60669202e4dbe23bec08') in 0.024214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003639 seconds.
+  path: Assets/LPlane/Cannon/Scripts/Cannon_Fire.cs
+  artifactKey: Guid(df14ea2cd2c187442aa71beb48a64d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Cannon/Scripts/Cannon_Fire.cs using Guid(df14ea2cd2c187442aa71beb48a64d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c4b583b2424ee616cd487def1378c50') in 0.020779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002395 seconds.
+  path: Assets/LPlane/Media
+  artifactKey: Guid(a2019cc831acd2d41aefbe627a4a29fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Media using Guid(a2019cc831acd2d41aefbe627a4a29fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56dbd96960184f663aec320ea6dbda85') in 0.019197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005241 seconds.
+  path: Assets/LPlane/Room 613/Models/Chairs/Chair/Chair.obj
+  artifactKey: Guid(6441f96675a504343b2c5574829107ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Chairs/Chair/Chair.obj using Guid(6441f96675a504343b2c5574829107ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74aaee49e0e61e2bb03b11362105ecf7') in 0.036882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006339 seconds.
+  path: Assets/LPlane/Cannon/Shell/Scripts/Shell_speed.cs
+  artifactKey: Guid(8e8d095e83ae0e845a52571f6e69d367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Cannon/Shell/Scripts/Shell_speed.cs using Guid(8e8d095e83ae0e845a52571f6e69d367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f063105f3a40a596b17a9ca655d15fe4') in 0.019000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002900 seconds.
+  path: Assets/LPlane/Scenes/SampleScene.unity
+  artifactKey: Guid(ac247033fecc0774bb908d4f1a2fa15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Scenes/SampleScene.unity using Guid(ac247033fecc0774bb908d4f1a2fa15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b95d28e1d9603079f320db85026d7e65') in 0.019474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003158 seconds.
+  path: Assets/LPlane/Cannon/Materials/2.mat
+  artifactKey: Guid(25eae7d1a22f04a4db25aaa09ee66e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Cannon/Materials/2.mat using Guid(25eae7d1a22f04a4db25aaa09ee66e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '250a6cddb0d0208bb83c41b0eb3ecddc') in 0.027543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004491 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/ElectroWires04_2.prefab
+  artifactKey: Guid(59d5fe07a3a2ed540a8f5d1b45842811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/ElectroWires04_2.prefab using Guid(59d5fe07a3a2ed540a8f5d1b45842811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '655dd8d962cfc12ad134ef8c6cc5e8be') in 0.026586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003915 seconds.
+  path: Assets/LPlane/Room 613
+  artifactKey: Guid(fcacd1b2b4f16404da5ae3a4c7359315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613 using Guid(fcacd1b2b4f16404da5ae3a4c7359315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ab46ef10778fd1fd635a66e8acd99b') in 0.019034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002848 seconds.
+  path: Assets/LPlane/Room 613/Models/socket
+  artifactKey: Guid(0f805ed6d209afe46908f1cef0cc0a73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/socket using Guid(0f805ed6d209afe46908f1cef0cc0a73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc3bc09ff1aab5d0804805bb5c548eb7') in 0.018835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003865 seconds.
+  path: Assets/LPlane/Room 613/Materials/New Material 4.mat
+  artifactKey: Guid(baf80e36c37a5664cad677ff9a9e93bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Materials/New Material 4.mat using Guid(baf80e36c37a5664cad677ff9a9e93bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dafbc2ec61ad1ea7f01be215fd4fc99') in 0.025902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005110 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro05_4.prefab
+  artifactKey: Guid(f466cb47d3d36cd4f9727b2f4c4088b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro05_4.prefab using Guid(f466cb47d3d36cd4f9727b2f4c4088b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cb1940d252f582c16fd185402fb092b') in 0.030979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003602 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/ElectroWires01_2.prefab
+  artifactKey: Guid(b0a2407470598fa40ad4421d04883537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/ElectroWires01_2.prefab using Guid(b0a2407470598fa40ad4421d04883537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fbcc7e928fddabc7f4b825eff2e4617') in 0.027360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004666 seconds.
+  path: Assets/LPlane/Room 613/Materials/New Material.mat
+  artifactKey: Guid(7891d6bb69dc17142b6e184b44aa47ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Materials/New Material.mat using Guid(7891d6bb69dc17142b6e184b44aa47ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34f34f618eb4f4ffdec6df9dbe3b1225') in 0.032288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004451 seconds.
+  path: Assets/LPlane/Room 613/Models/Soldering_Iron/Soldering_Iron.fbx
+  artifactKey: Guid(109de2efee7cfe8458882f7cd278c5c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Soldering_Iron/Soldering_Iron.fbx using Guid(109de2efee7cfe8458882f7cd278c5c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa3e2dae32c8a7dee0abdf96e85efed6') in 0.058854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005853 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene
+  artifactKey: Guid(7ac9215655278b14e95faa36ec79c889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene using Guid(7ac9215655278b14e95faa36ec79c889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cd76aad67cd9cf418616e54fbfda3e7') in 0.019132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002874 seconds.
+  path: Assets/LPlane/Room 613/Models/door
+  artifactKey: Guid(d0822b4db60620b4b8d6797077352d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/door using Guid(d0822b4db60620b4b8d6797077352d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc91a201e0ed1aad128d42c2221ae758') in 0.021547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004017 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro02.png
+  artifactKey: Guid(1de3ab4c2160f6945a2cc22397953c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro02.png using Guid(1de3ab4c2160f6945a2cc22397953c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa8b24a822bb3edce2fb6b552bea2233') in 0.028094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004626 seconds.
+  path: Assets/LPlane/Check Point/Materials/New Material.mat
+  artifactKey: Guid(e260bece658c3694f8e2903d8c2ebdeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Check Point/Materials/New Material.mat using Guid(e260bece658c3694f8e2903d8c2ebdeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ce62c3845ae117259e464435a32c920') in 0.028151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006059 seconds.
+  path: Assets/LPlane/Scripts/VrModeController.cs
+  artifactKey: Guid(85d4a52305fb7454e813105bf5110584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Scripts/VrModeController.cs using Guid(85d4a52305fb7454e813105bf5110584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '702026ff4d7c30d35213a982f47deab9') in 0.018616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003987 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro04NM.png
+  artifactKey: Guid(e5451c561886d564d8e872594fbb8bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro04NM.png using Guid(e5451c561886d564d8e872594fbb8bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8580f323e74843b1a7419c4ce0594c9e') in 0.026840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004104 seconds.
+  path: Assets/LPlane/Room 613/Models/Computer Case/untitled.fbx
+  artifactKey: Guid(6569c5e418521d74cb1e92e913f946b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Computer Case/untitled.fbx using Guid(6569c5e418521d74cb1e92e913f946b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60d00fb04a0b76758fb4d4ecbb2619d9') in 0.087057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007118 seconds.
+  path: Assets/LPlane/Airplane_v1_L3.123caa2f428d-e153-467b-928f-c981d17f80c6/Materials/Airplane Material.mat
+  artifactKey: Guid(bb378091a79fa044cb90c0ac1dea9494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Airplane_v1_L3.123caa2f428d-e153-467b-928f-c981d17f80c6/Materials/Airplane Material.mat using Guid(bb378091a79fa044cb90c0ac1dea9494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f15f3c631eff1fb60efc77ca120c88c') in 0.029038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003478 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/ElectroWires02_1.FBX
+  artifactKey: Guid(a66d46e5b628b5e4692993f79191340c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/ElectroWires02_1.FBX using Guid(a66d46e5b628b5e4692993f79191340c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '534bc8c920b6f3bca8b7acbbd80e00ed') in 0.029479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004518 seconds.
+  path: Assets/LPlane/Room 613/Models/Mouse/New Material.mat
+  artifactKey: Guid(222ceb2b845e29a4180e99cf753e612f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Mouse/New Material.mat using Guid(222ceb2b845e29a4180e99cf753e612f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15b5457a57c5bbd20bf3dd56c98a872f') in 0.025636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004850 seconds.
+  path: Assets/LPlane/Media/checkpoint.mp3
+  artifactKey: Guid(5c9de8cae51dca14586f0d04ae511974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Media/checkpoint.mp3 using Guid(5c9de8cae51dca14586f0d04ae511974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8843f8293741c877a91a63b75cb87f5f') in 0.095057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004557 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro03NM.png
+  artifactKey: Guid(1d228412ab7ab73479e2c2b03db0f7b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro03NM.png using Guid(1d228412ab7ab73479e2c2b03db0f7b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '897ed695e576dd40095f0687c7abd890') in 0.028075 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003355 seconds.
+  path: Assets/LPlane/Room 613/Models/Computer Case/Materials
+  artifactKey: Guid(95997601f3da8044285d1f28694600f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Computer Case/Materials using Guid(95997601f3da8044285d1f28694600f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cb30da2e6df8cd3ac297d7a3616cf3f') in 0.019005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005138 seconds.
+  path: Assets/LPlane/Media/Motor Sound Cut.mp3
+  artifactKey: Guid(ece57c4c24f38c548943bdf6cc428479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Media/Motor Sound Cut.mp3 using Guid(ece57c4c24f38c548943bdf6cc428479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a008261b8957c939d5a70a9f229d9fe') in 0.025693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004863 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Textures/School/Physics02.png
+  artifactKey: Guid(124085916259c3f4aaa979f740aab147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Textures/School/Physics02.png using Guid(124085916259c3f4aaa979f740aab147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddd85dfc629af75496027c71c4bd4bb1') in 0.023627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003895 seconds.
+  path: Assets/LPlane/Scenes
+  artifactKey: Guid(744673a152665584b883b891b9b743d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Scenes using Guid(744673a152665584b883b891b9b743d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7a7197bba376003c9da0da631b982e6') in 0.018764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004085 seconds.
+  path: Assets/LPlane/Electro/Poster01_1a Variant.prefab
+  artifactKey: Guid(0e7f37b0a7321944788b2c5c742e7924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Electro/Poster01_1a Variant.prefab using Guid(0e7f37b0a7321944788b2c5c742e7924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c2a677e4e03934428a5d9dd3a09b509') in 0.026183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003611 seconds.
+  path: Assets/LPlane/Room 613/Models/Desk/Materials
+  artifactKey: Guid(025fcfc85560e554fbc8773ef8eef15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Desk/Materials using Guid(025fcfc85560e554fbc8773ef8eef15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7ca882993f1fc1a8bc1114d14ec99e1') in 0.019478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002258 seconds.
+  path: Assets/LPlane/Cannon/Shell
+  artifactKey: Guid(0eaacc4b8b0da1a41bc3c2a4e8bac72a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Cannon/Shell using Guid(0eaacc4b8b0da1a41bc3c2a4e8bac72a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '796b8cc9be8b4c141bcdb775f652c1e5') in 0.019006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003120 seconds.
+  path: Assets/LPlane/Room 613/Models/Monitor Curved/New Material.mat
+  artifactKey: Guid(760665195e37a8a43bde0b925fa5575e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Monitor Curved/New Material.mat using Guid(760665195e37a8a43bde0b925fa5575e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c882f2fe84a54b411c1cc5819006ed0f') in 0.023872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003982 seconds.
+  path: Assets/LPlane/Room 613/Models/socket/Materials/New Material.mat
+  artifactKey: Guid(50e74b59ea4c64a43b4b73acf2d74abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/socket/Materials/New Material.mat using Guid(50e74b59ea4c64a43b4b73acf2d74abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed6250ceda4d09abcae11050cc34c06a') in 0.025755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005003 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro03.prefab
+  artifactKey: Guid(13fe79ef4537b674096f8b6db3ea4f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro03.prefab using Guid(13fe79ef4537b674096f8b6db3ea4f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1848892fa9b44f47766aac3acef120e0') in 0.031866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004167 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro05_5.prefab
+  artifactKey: Guid(3f1000b8497c6c94cae6d11f8de69c1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro05_5.prefab using Guid(3f1000b8497c6c94cae6d11f8de69c1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba3df709828588f60a971012b74c04c1') in 0.030105 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004372 seconds.
+  path: Assets/LPlane/Room 613/Models/Chairs/New Material.mat
+  artifactKey: Guid(94b954dd5be6be845837e95247cc6af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Chairs/New Material.mat using Guid(94b954dd5be6be845837e95247cc6af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f66404a4e0ab0be883c83cc49b032abd') in 0.025887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005453 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials/Electro03.mat
+  artifactKey: Guid(f8890bf23bfa57e4d9fdd1842619238b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials/Electro03.mat using Guid(f8890bf23bfa57e4d9fdd1842619238b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b502be7ab387a3fb0075f0414e025cf') in 0.032887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004080 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro01.prefab
+  artifactKey: Guid(1e0831188db987340afb7243cb691e08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro01.prefab using Guid(1e0831188db987340afb7243cb691e08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0e54a9f7bded0b86c487327bd8540e3') in 0.052068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003561 seconds.
+  path: Assets/LPlane/Room 613/Models/Chairs/Chair/Materials
+  artifactKey: Guid(f9e7009943b12254db7c8f6e0fa4f2e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Chairs/Chair/Materials using Guid(f9e7009943b12254db7c8f6e0fa4f2e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3f3198837a71534515522d1700ca399') in 0.019133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003333 seconds.
+  path: Assets/LPlane/XR/Loaders/XR Loader.asset
+  artifactKey: Guid(ffbac9ff55766f14aa01df1c8df550c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/XR/Loaders/XR Loader.asset using Guid(ffbac9ff55766f14aa01df1c8df550c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e0c0dff551a299d0e506fdd808cc06d') in 0.019035 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004538 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro05NM.png
+  artifactKey: Guid(bdbba3bd5d3dfe24a865216c333392f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro05NM.png using Guid(bdbba3bd5d3dfe24a865216c333392f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb0f77d0af086ddfb5d3d18b43b962d1') in 0.026768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004804 seconds.
+  path: Assets/LPlane/Room 613/Materials/New Material 3.mat
+  artifactKey: Guid(b033054e9d327cd4db6d4c92887ae851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Materials/New Material 3.mat using Guid(b033054e9d327cd4db6d4c92887ae851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25da2490892dae7894db167e3eb58169') in 0.025099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005348 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials/Electro04.mat
+  artifactKey: Guid(9642c8f2ce36cb24f82c6a74af6d2509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials/Electro04.mat using Guid(9642c8f2ce36cb24f82c6a74af6d2509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31c3ba1156083e5afacf2b32a05e912e') in 0.035525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002743 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Materials
+  artifactKey: Guid(756f404467ccf464e80d7fb9b549ebe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Materials using Guid(756f404467ccf464e80d7fb9b549ebe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edb80a6edd8aa48ad7d666fb3be37f63') in 0.018799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003208 seconds.
+  path: Assets/LPlane/Cannon/Materials/New Material.mat
+  artifactKey: Guid(bf5a725ca828f0c42bb5bafc849a9896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Cannon/Materials/New Material.mat using Guid(bf5a725ca828f0c42bb5bafc849a9896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1e1a77980ee71440d2271f3503fb1d0') in 0.026265 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004785 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro08_10.prefab
+  artifactKey: Guid(d63a4b9b9e847614ba50be1d1ccaf925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro08_10.prefab using Guid(d63a4b9b9e847614ba50be1d1ccaf925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '821c8289e02d3ce80ad8b3136fb19c7c') in 0.026339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004476 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro08_8.prefab
+  artifactKey: Guid(6265ff229649d8046b7da9a8ff4ac549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro08_8.prefab using Guid(6265ff229649d8046b7da9a8ff4ac549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc33fc591f2fbccd5fa1b1d751745c5f') in 0.026630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004173 seconds.
+  path: Assets/LPlane/Room 613/Models/door/doorhandle.fbx
+  artifactKey: Guid(6aab61d63b39d5a4597473be165933be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/door/doorhandle.fbx using Guid(6aab61d63b39d5a4597473be165933be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02be28769df2fde2d48fe2425d67e024') in 0.049320 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006275 seconds.
+  path: Assets/LPlane/Scenes/New Material.mat
+  artifactKey: Guid(1b664e392edfd5b4eb355619e1a3af9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Scenes/New Material.mat using Guid(1b664e392edfd5b4eb355619e1a3af9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f47c14484bbea45945595a3ef2a01d93') in 0.024494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003685 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/ElectroWires03_1.FBX
+  artifactKey: Guid(a589f9aebaa9e5a49801d5541bb95395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/ElectroWires03_1.FBX using Guid(a589f9aebaa9e5a49801d5541bb95395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7cad3ece324bd287a2eefde5ec84c10') in 0.030807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002342 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters
+  artifactKey: Guid(1e1a80968e4a973438e5064042de51d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters using Guid(1e1a80968e4a973438e5064042de51d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a67d958cdce06e3f38ecf13ad78cd02') in 0.018662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002062 seconds.
+  path: Assets/LPlane/Plugins
+  artifactKey: Guid(a558e37012b762840a648bc5affb240d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Plugins using Guid(a558e37012b762840a648bc5affb240d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e642a0e5ba674eeae88596956061cbe') in 0.018759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003584 seconds.
+  path: Assets/LPlane/Room 613/Models/Computer Case/cdroompng.png
+  artifactKey: Guid(75036d0e12842344e8539bc86cf94b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Computer Case/cdroompng.png using Guid(75036d0e12842344e8539bc86cf94b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c77318145be82d012764c0bdd7deb0a5') in 0.023445 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005921 seconds.
+  path: Assets/LPlane/Cannon/Shell/Scripts/Shell_S.cs
+  artifactKey: Guid(228babeefe7e98d46bf3ba626869effc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Cannon/Shell/Scripts/Shell_S.cs using Guid(228babeefe7e98d46bf3ba626869effc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d517ebe88a674b0caf8a29a077674a6') in 0.018874 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003361 seconds.
+  path: Assets/LPlane/Marker/markerShape.fbx
+  artifactKey: Guid(7d2c29d37f04a9d4ba135cbc17834e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Marker/markerShape.fbx using Guid(7d2c29d37f04a9d4ba135cbc17834e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efdb7eb0307cfbacd80df0a7946ddd19') in 0.027692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005374 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro02NM.png
+  artifactKey: Guid(c81aa0b0a82f3d5439667e83c75bebba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro02NM.png using Guid(c81aa0b0a82f3d5439667e83c75bebba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61d8d86e4efece832661deae94eb316c') in 0.027197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004675 seconds.
+  path: Assets/LPlane/TriggerGroup.prefab
+  artifactKey: Guid(48b377ce0de66d34798e175048d2c543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TriggerGroup.prefab using Guid(48b377ce0de66d34798e175048d2c543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c352a562ca9bd7ab92ec3b90d2ec0813') in 0.035419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004150 seconds.
+  path: Assets/LPlane/Scripts/TimeCounter.cs
+  artifactKey: Guid(d7e6ad5848f10184bbd1a4a72188afd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Scripts/TimeCounter.cs using Guid(d7e6ad5848f10184bbd1a4a72188afd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38c27c02f4b955af978fbec485a735e2') in 0.018543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003736 seconds.
+  path: Assets/LPlane/XR/Loaders
+  artifactKey: Guid(ee4e64af1e02bd34792f2dc6bb15ee4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/XR/Loaders using Guid(ee4e64af1e02bd34792f2dc6bb15ee4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d1f88b2146ea594537e35f70b418f8') in 0.019756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005963 seconds.
+  path: Assets/LPlane/Room 613/Models/Chairs/chair.FBX
+  artifactKey: Guid(2e4b208dea2ed20429fac9b71df8f16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Chairs/chair.FBX using Guid(2e4b208dea2ed20429fac9b71df8f16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4be700be28c3cf310ea849bb06a792e') in 0.036133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005476 seconds.
+  path: Assets/LPlane/Room 613/Models/Computer Case/perfabs/untitled.prefab
+  artifactKey: Guid(1e08c668dbb360848a1cb8df97b849a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Computer Case/perfabs/untitled.prefab using Guid(1e08c668dbb360848a1cb8df97b849a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a10cd669e9e45519547f3194874c1ff') in 0.039087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004810 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Poster01_2.FBX
+  artifactKey: Guid(9df41b5e47eadc4418ed9817dd670636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Poster01_2.FBX using Guid(9df41b5e47eadc4418ed9817dd670636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c4f1c4b27424cf4e5cc819c6e7327ae') in 0.028247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003838 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro07.prefab
+  artifactKey: Guid(978929cff9ba76342964d70498b3e2a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro07.prefab using Guid(978929cff9ba76342964d70498b3e2a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '530ecc49c473edbdd35295772113e0ac') in 0.051784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004243 seconds.
+  path: Assets/LPlane/Room 613/Materials/New Material 2.mat
+  artifactKey: Guid(34b9c2ae5d7634d4ea31e853fda18ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Materials/New Material 2.mat using Guid(34b9c2ae5d7634d4ea31e853fda18ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3cb7febf4043d8e69872f66b68f11c4') in 0.025518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.014434 seconds.
+  path: Assets/LPlane/Media/power supply.mp4
+  artifactKey: Guid(644954b5d00b4a449b6dfa4fc7df5170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Media/power supply.mp4 using Guid(644954b5d00b4a449b6dfa4fc7df5170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0c5b3491c84e92de6fa70fc02a9bb9e') in 0.037416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003722 seconds.
+  path: Assets/LPlane/Room 613/Models/Soldering_Iron/Materials/New Material 2.mat
+  artifactKey: Guid(f2e62c0af1284534bae9eb5583ff981c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Soldering_Iron/Materials/New Material 2.mat using Guid(f2e62c0af1284534bae9eb5583ff981c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d2a56fb2aa5f77ea06da1895d4bc01d') in 0.025697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003980 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Materials/School
+  artifactKey: Guid(552bc7a028ef8ac4785043492be45de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Materials/School using Guid(552bc7a028ef8ac4785043492be45de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a7fd7934f49ed7463871603e7f932a8') in 0.018838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002294 seconds.
+  path: Assets/LPlane/Cannon/Shell/Scripts
+  artifactKey: Guid(0654861c0b0128c41a11ce992c9e051a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Cannon/Shell/Scripts using Guid(0654861c0b0128c41a11ce992c9e051a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba05964febdb6be45e6c1234f2b17b63') in 0.018928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003343 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro08.png
+  artifactKey: Guid(e52eee0252df11047ba1ffc5bff21a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro08.png using Guid(e52eee0252df11047ba1ffc5bff21a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '934350fd127013087ec4abc1063b76ac') in 0.025011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003698 seconds.
+  path: Assets/LPlane/Room 613/Materials/New Material 1.mat
+  artifactKey: Guid(bb67c1681a57efd4aa0214d7db1942f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Materials/New Material 1.mat using Guid(bb67c1681a57efd4aa0214d7db1942f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dd66bcf7f3d41d04f40f3e875804e16') in 0.024328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003784 seconds.
+  path: Assets/LPlane/Scripts/CameraPointer.cs
+  artifactKey: Guid(d5bf8e5c6b0ce3d4e8c9dc43d1bfacb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Scripts/CameraPointer.cs using Guid(d5bf8e5c6b0ce3d4e8c9dc43d1bfacb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bd8f374a64899d4e46bbe99c18f0cc4') in 0.018901 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003584 seconds.
+  path: Assets/LPlane/Room 613/Models/socket.fbx
+  artifactKey: Guid(55276bb65d9291e42b14066adb96f320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/socket.fbx using Guid(55276bb65d9291e42b14066adb96f320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e9d992579e9f5004b8ca06a8a2d386c') in 0.039734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006755 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro07NM.png
+  artifactKey: Guid(1ea85f90539cab946aa347119f614ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro07NM.png using Guid(1ea85f90539cab946aa347119f614ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c286f8d1c2304ccc1c81211e586a397') in 0.027296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003871 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro08_8.FBX
+  artifactKey: Guid(e4beee5938b88ea4c9d4e285bf0874a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro08_8.FBX using Guid(e4beee5938b88ea4c9d4e285bf0874a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd04f44328c027315e15bfad2b3f6f7d') in 0.030572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003311 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Prefabs
+  artifactKey: Guid(fe52297f4396775458ceaab575ef90c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Prefabs using Guid(fe52297f4396775458ceaab575ef90c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccf5279f61c29591e0627e38f5c2e3bf') in 0.019446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003551 seconds.
+  path: Assets/LPlane/Player_Airplane_ver0.5.prefab
+  artifactKey: Guid(25ed33c0bd743af4aab79ac9776896a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Player_Airplane_ver0.5.prefab using Guid(25ed33c0bd743af4aab79ac9776896a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd30588466766b7f869d37759bbc15950') in 0.034132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004511 seconds.
+  path: Assets/LPlane/Cannon/Prefabs/Cannon.prefab
+  artifactKey: Guid(e03859d084d6d7b4582fc85113fed394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Cannon/Prefabs/Cannon.prefab using Guid(e03859d084d6d7b4582fc85113fed394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61c8d04452384818eec5e616003730b3') in 0.030652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004758 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro08_7.prefab
+  artifactKey: Guid(c151df0498dc6b643a73e1e7cb095601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro08_7.prefab using Guid(c151df0498dc6b643a73e1e7cb095601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc351769b708043c2aebe3ae7d1c7def') in 0.025897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004323 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro06NM.png
+  artifactKey: Guid(c70d29b85ace0ef4f95d105105b78bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro06NM.png using Guid(c70d29b85ace0ef4f95d105105b78bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c8728a0c90806c77fb983de8da02dd9') in 0.024671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003058 seconds.
+  path: Assets/LPlane/Electro
+  artifactKey: Guid(02d9e38b14771074cbe0080bd44477c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Electro using Guid(02d9e38b14771074cbe0080bd44477c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd505abb1ed24b74a6eadbff232284bc1') in 0.019785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003275 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/ElectroWires03_3.prefab
+  artifactKey: Guid(735e24d006f9d9d4fa67d7eecf5aec2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/ElectroWires03_3.prefab using Guid(735e24d006f9d9d4fa67d7eecf5aec2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e04520537c084d03770a3baf6afc8d0') in 0.026751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004172 seconds.
+  path: Assets/LPlane/Marker/marker.mat
+  artifactKey: Guid(97da88a7f2b16ea42b9bd99575f592e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Marker/marker.mat using Guid(97da88a7f2b16ea42b9bd99575f592e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea61f7a947e4aedc425499ce0d8e6aed') in 0.024099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004444 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/ElectroWires07_1.prefab
+  artifactKey: Guid(bdf86b5cbeb835c4c997d7acc59e1542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/ElectroWires07_1.prefab using Guid(bdf86b5cbeb835c4c997d7acc59e1542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48f8f1a2e1b379e1ba14e0fab846ffd9') in 0.026947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003707 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior
+  artifactKey: Guid(519986cbbe16b1f4c8d21fc4b2ce19fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior using Guid(519986cbbe16b1f4c8d21fc4b2ce19fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71f035dc41ae6d22ee83b1c0edb0c993') in 0.018204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003830 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro05_4.FBX
+  artifactKey: Guid(c0b5c77ddee40b7468bdfb3b2e8cbe51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro05_4.FBX using Guid(c0b5c77ddee40b7468bdfb3b2e8cbe51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '145362470adddedf78fcf34a53212353') in 0.033140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004309 seconds.
+  path: Assets/LPlane/Room 613/Models/Soldering_Iron/Materials/New Material 1.mat
+  artifactKey: Guid(0d2b1e0755a1d8d4fa1883e612d1fd94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Soldering_Iron/Materials/New Material 1.mat using Guid(0d2b1e0755a1d8d4fa1883e612d1fd94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '492d0aeeb9602a9e47f21f110abc2bfc') in 0.025811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005459 seconds.
+  path: Assets/LPlane/Cannon/Shell/New Material.mat
+  artifactKey: Guid(c46ca8823c60ac04081844001d6a94e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Cannon/Shell/New Material.mat using Guid(c46ca8823c60ac04081844001d6a94e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1339e88138744c2a1479d600a2019291') in 0.024206 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003841 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Textures
+  artifactKey: Guid(4485091c5cac29441ab5aad56a0db9cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Textures using Guid(4485091c5cac29441ab5aad56a0db9cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a20fad537b33ff0b7cd3a1f4d3d7b86') in 0.019006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004786 seconds.
+  path: Assets/LPlane/Room 613/Models/light case.fbx
+  artifactKey: Guid(3a8e77cf6b07af3468d22268289cef2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/light case.fbx using Guid(3a8e77cf6b07af3468d22268289cef2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90753c2aa98c75f08c8c96fb5876baf8') in 0.033280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006767 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro03Spec.png
+  artifactKey: Guid(005666409efcf0749862994ae8439237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro03Spec.png using Guid(005666409efcf0749862994ae8439237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1393f0d0104dfc4e886757ba3e6d928b') in 0.024766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003225 seconds.
+  path: Assets/LPlane/Room 613/Models/Chairs
+  artifactKey: Guid(01a06e0abaeae54408be1e54517873b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Chairs using Guid(01a06e0abaeae54408be1e54517873b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbb525df45f649f6e1d9cbd70e29344f') in 0.018611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003383 seconds.
+  path: Assets/LPlane/Room 613/Models/table1.fbx
+  artifactKey: Guid(87779ded8414db9458462d3da1ab5803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/table1.fbx using Guid(87779ded8414db9458462d3da1ab5803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35876e1c73e3fb96daa96f369b56cfac') in 0.044104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005559 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro04.png
+  artifactKey: Guid(e530feb4bae35bf4f8c79c0aa3ac86c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Textures/Electro04.png using Guid(e530feb4bae35bf4f8c79c0aa3ac86c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e0d1cbc2b337d2e5fa602742f6af9bd') in 0.027060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004270 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro08_6.prefab
+  artifactKey: Guid(c19859ea7ea5e7546976e8a9440d440d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro08_6.prefab using Guid(c19859ea7ea5e7546976e8a9440d440d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57b4513cce13a9d3c87bffe62f5eeb1a') in 0.025489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004123 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro08_9.FBX
+  artifactKey: Guid(ee41d0808d7ce3f4b875a8e3b1b4b592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro08_9.FBX using Guid(ee41d0808d7ce3f4b875a8e3b1b4b592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b653fec4497de2f77aec38592a187eb1') in 0.053624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005204 seconds.
+  path: Assets/LPlane/Room 613/Models/materials/table top.mat
+  artifactKey: Guid(a7017b4a2f431df458f0c03a9e321d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/materials/table top.mat using Guid(a7017b4a2f431df458f0c03a9e321d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bae02687a4c3fa573dfb1806d5229d49') in 0.031396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005928 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials/Electro05.mat
+  artifactKey: Guid(2888978d59980084f9a0197cafaa3a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials/Electro05.mat using Guid(2888978d59980084f9a0197cafaa3a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd23b557a0ab539557f77039028366be2') in 0.030245 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.010214 seconds.
+  path: Assets/LPlane/Room 613/Models/Windows/window.FBX
+  artifactKey: Guid(c3719dc7f630a724191a54838e2d8b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Windows/window.FBX using Guid(c3719dc7f630a724191a54838e2d8b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd58bf93d30aeebe3bf9586e4cf38a2ed') in 0.118986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005975 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials
+  artifactKey: Guid(797ef61407ed1ad44877605ddc515d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials using Guid(797ef61407ed1ad44877605ddc515d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d2aa7d425fca257c3b2759e923e34b7') in 0.019106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.066872 seconds.
+  path: Assets/LPlane/Room 613/Models/Soldering_Iron/Soldering_Iron2.fbx
+  artifactKey: Guid(a3e1d534922145c45a88ed25e0b2442f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Soldering_Iron/Soldering_Iron2.fbx using Guid(a3e1d534922145c45a88ed25e0b2442f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df79e9f2a6bc4acfc236e35488e54c3b') in 0.091219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007990 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro07.FBX
+  artifactKey: Guid(6e90bd47c820a2f47a85df75306b157b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro07.FBX using Guid(6e90bd47c820a2f47a85df75306b157b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9030ce149b338f7dd4a4b58a035e19ce') in 0.056045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005331 seconds.
+  path: Assets/LPlane/Room 613/Models/Computer Case/Untaitled.png
+  artifactKey: Guid(81d5be53acf455d4a9e786f538f038cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Computer Case/Untaitled.png using Guid(81d5be53acf455d4a9e786f538f038cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5faba8bd6f7993e846d2121d5f88dff1') in 0.026062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003244 seconds.
+  path: Assets/LPlane/Airplane_v1_L3.123caa2f428d-e153-467b-928f-c981d17f80c6
+  artifactKey: Guid(035c8001b6fdedc4ab001c3daa5c2c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Airplane_v1_L3.123caa2f428d-e153-467b-928f-c981d17f80c6 using Guid(035c8001b6fdedc4ab001c3daa5c2c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66e988ed144a3fc12e7bf4524d8a3fd3') in 0.019064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002409 seconds.
+  path: Assets/LPlane/Room 613/Models/materials
+  artifactKey: Guid(7ea614fb464ccb747af871cd2f2e2903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/materials using Guid(7ea614fb464ccb747af871cd2f2e2903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a38e0b211e20da2f3071a8002eb009c') in 0.019831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002945 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials/Electro02.mat
+  artifactKey: Guid(6289f5e0f36f7f44ca84415102eecd7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Materials/Electro02.mat using Guid(6289f5e0f36f7f44ca84415102eecd7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '279b7bb18acade9592e015fbff66462b') in 0.037030 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003965 seconds.
+  path: Assets/LPlane/Scripts/MovController.cs
+  artifactKey: Guid(e3cb95bdf509d234d922ca297fec7609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Scripts/MovController.cs using Guid(e3cb95bdf509d234d922ca297fec7609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8696acb9f984f92cc0d26f00c9a3254d') in 0.019343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002744 seconds.
+  path: Assets/LPlane/Airplane_v1_L3.123caa2f428d-e153-467b-928f-c981d17f80c6/Prefabs
+  artifactKey: Guid(a83d74b23c81b9d468beb37acafc14ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Airplane_v1_L3.123caa2f428d-e153-467b-928f-c981d17f80c6/Prefabs using Guid(a83d74b23c81b9d468beb37acafc14ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd778f6a4c49fadb61c54772b802befce') in 0.019347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004653 seconds.
+  path: Assets/LPlane/Room 613/Models/Mouse/uploads_files_2782522_mouse.fbx
+  artifactKey: Guid(1eff79a515f1b3b4f9ee490d0952a342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Mouse/uploads_files_2782522_mouse.fbx using Guid(1eff79a515f1b3b4f9ee490d0952a342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b62b91ce6ea82a1bd23672f78a285b46') in 0.065116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007767 seconds.
+  path: Assets/LPlane/Room 613/Materials/wpmpgfqkky.jpeg
+  artifactKey: Guid(10ba0bf89a5be584abadcc3c11211127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Materials/wpmpgfqkky.jpeg using Guid(10ba0bf89a5be584abadcc3c11211127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00c7c1de9e9d5dd7e659a3c4aabe2233') in 0.027338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004078 seconds.
+  path: Assets/LPlane/Room 613/Models/door/New Material.mat
+  artifactKey: Guid(1b7b499333836944ebd42ba14651a712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/door/New Material.mat using Guid(1b7b499333836944ebd42ba14651a712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '106cb6fccc62ec32e451e3dec509d520') in 0.027296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005961 seconds.
+  path: Assets/LPlane/Room 613/Models/Computer Case/Materials/Untaitled.mat
+  artifactKey: Guid(512ff1da24fce8645a37fa17b708d381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Computer Case/Materials/Untaitled.mat using Guid(512ff1da24fce8645a37fa17b708d381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec7181db5cd0ae0c32b8cc1eebc9ef0d') in 0.029268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006574 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Materials/Surfaces
+  artifactKey: Guid(a8b56f1cc9f543f4089c06f04ad629e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Materials/Surfaces using Guid(a8b56f1cc9f543f4089c06f04ad629e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '466fa7ab93e19748ef4f402b87151e0c') in 0.019379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003807 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro05_5.FBX
+  artifactKey: Guid(e0e6bcf7da38361479535e0f76c66e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Electro05_5.FBX using Guid(e0e6bcf7da38361479535e0f76c66e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '788aba86349ead630c8bd32775e3a97b') in 0.037961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005404 seconds.
+  path: Assets/LPlane/Scripts/OnCanvas.cs
+  artifactKey: Guid(6ee0ab4ef6c7ea643a1f24f6f153993c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Scripts/OnCanvas.cs using Guid(6ee0ab4ef6c7ea643a1f24f6f153993c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e5135fbf160f9a83a229323ffcbd828') in 0.019941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003682 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro08_1.prefab
+  artifactKey: Guid(cbe366d6277ebde46aacb2f3755bc6f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro08_1.prefab using Guid(cbe366d6277ebde46aacb2f3755bc6f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00a1453802ac3f06714492c29990cc5a') in 0.026653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004052 seconds.
+  path: Assets/LPlane/Media/how to solder.png
+  artifactKey: Guid(75e823053cd3a60488020251e9f521d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Media/how to solder.png using Guid(75e823053cd3a60488020251e9f521d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a35ba1bb49a0da39d32f0cccd402900') in 0.038173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004637 seconds.
+  path: Assets/LPlane/FinishCanvas.prefab
+  artifactKey: Guid(1929770493082f944a6e423c022dbdc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/FinishCanvas.prefab using Guid(1929770493082f944a6e423c022dbdc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2734ab0b11d3269a8cbc129e588eb49') in 0.022634 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002451 seconds.
+  path: Assets/LPlane/Room 613/Models/Mouse
+  artifactKey: Guid(fef37b35a9b55d1458b84490e39f3748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Mouse using Guid(fef37b35a9b55d1458b84490e39f3748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e09365e86d98fcac3b522c5ae1ec79c4') in 0.019702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003658 seconds.
+  path: Assets/LPlane/Electro/Poster01_2a Variant.prefab
+  artifactKey: Guid(7fb748a2f0b6265499d3f3acdc7d765d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Electro/Poster01_2a Variant.prefab using Guid(7fb748a2f0b6265499d3f3acdc7d765d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ef6e50ff09363d684a1fe215af2a9da') in 0.027965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005256 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Prefabs/Poster01_1a.prefab
+  artifactKey: Guid(13db2c5220868044ca85a92faeb64cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Posters/Prefabs/Poster01_1a.prefab using Guid(13db2c5220868044ca85a92faeb64cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '736aff7533bd6a618ae6ea6cff90b4f3') in 0.029903 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003611 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science
+  artifactKey: Guid(0969083b53be67b43bcace32bedd732f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science using Guid(0969083b53be67b43bcace32bedd732f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '137a2b90cb852e018cfe4e8573c01050') in 0.020565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002812 seconds.
+  path: Assets/LPlane/TirgamesAssets
+  artifactKey: Guid(5ea52f2a54b1ab14aaaeb9dc9e511d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets using Guid(5ea52f2a54b1ab14aaaeb9dc9e511d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68b7911e5c3d7c18c1a72c24ea4226c9') in 0.019706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003118 seconds.
+  path: Assets/LPlane/Room 613/Models/Desk
+  artifactKey: Guid(7cae32e5d3fa8834a9e8dd36fc648c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Room 613/Models/Desk using Guid(7cae32e5d3fa8834a9e8dd36fc648c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee80c6e1b35d4c643c36a203bf178cde') in 0.019817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003229 seconds.
+  path: Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro08_9.prefab
+  artifactKey: Guid(6d499fb8597263e479b5f1291df055ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/TirgamesAssets/SchoolScene/Models/Interior/Science/Physics/Prefabs/Electro08_9.prefab using Guid(6d499fb8597263e479b5f1291df055ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70f7c47d8c4948e704c0c316c6f0d305') in 0.026622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004988 seconds.
+  path: Assets/LPlane/Airplane_v1_L3.123caa2f428d-e153-467b-928f-c981d17f80c6/11665_Airplane_diff.jpg
+  artifactKey: Guid(494bb017e56226542b3c521bc4e5933c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LPlane/Airplane_v1_L3.123caa2f428d-e153-467b-928f-c981d17f80c6/11665_Airplane_diff.jpg using Guid(494bb017e56226542b3c521bc4e5933c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d748f0f3238832f54fec9cbb4265caf') in 0.029618 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
