@@ -6,14 +6,18 @@ using UnityEngine.UI;
 public class ListPointer : MonoBehaviour
 {
     public UIOperation uio;
+    public GameObject otherUio;
     public GridPopulator lists;
     public int p_categoryNum;
     public int p_loopnumber;
     public bool backpackMode;
 
-    private void Start()
+    public void Start()
     {
-        uio = GameObject.Find("Canvas").GetComponent<UIOperation>();
+        uio = GameObject.Find("CentrolCanvas").GetComponent<UIOperation>();
+        //otherUio = GameObject.Find("Canvas");
+        //uio = otherUio.GetComponent<UIOperation>();
+        //uio = GameObject.Find("CouponList").GetComponent<GridPopulator>().openDialog;
         if (backpackMode)
         {
             lists = GameObject.Find("CouponList").GetComponent<GridPopulator>();

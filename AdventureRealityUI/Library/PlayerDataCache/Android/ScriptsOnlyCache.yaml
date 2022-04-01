@@ -1,13 +1,17 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AnswerBox
+    - Client
     - CoinText
     - DataInterface
     - GridPopulator
     - ListPointer
+    - Networking
     - OpenBox
     - UIOperation
     - UIZoomImage
+    - swipe
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -19,10 +23,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -36,9 +38,11 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.GridLayoutGroup
+    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.InputField
     - UnityEngine.UI.Mask
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
@@ -50,7 +54,6 @@ ScriptsOnlyBuild:
     - Vuforia.VuforiaBehaviour
     - Vuforia.VuforiaConfiguration
     VuforiaScripts.dll:
-    - DefaultInitializationErrorHandler
     - DefaultTrackableEventHandler
   sceneClasses:
     Assets/Scenes/AllInOne.unity:
@@ -84,6 +87,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
@@ -97,71 +102,85 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1578}
+      Script: {instanceID: 1598}
     - Class: 114
-      Script: {instanceID: 1580}
+      Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 1584}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 1586}
+      Script: {instanceID: 1606}
     - Class: 114
-      Script: {instanceID: 1778}
+      Script: {instanceID: 2194}
     - Class: 114
-      Script: {instanceID: 2174}
+      Script: {instanceID: 2326}
     - Class: 114
-      Script: {instanceID: 2574}
+      Script: {instanceID: 2596}
     - Class: 114
-      Script: {instanceID: 2680}
+      Script: {instanceID: 2702}
     - Class: 114
-      Script: {instanceID: 2714}
+      Script: {instanceID: 2736}
     - Class: 114
-      Script: {instanceID: 2720}
+      Script: {instanceID: 2742}
     - Class: 114
-      Script: {instanceID: 2722}
+      Script: {instanceID: 2744}
     - Class: 114
-      Script: {instanceID: 2904}
+      Script: {instanceID: 2926}
     - Class: 114
-      Script: {instanceID: 3216}
+      Script: {instanceID: 3238}
     - Class: 114
-      Script: {instanceID: 3380}
+      Script: {instanceID: 3402}
     - Class: 114
-      Script: {instanceID: 3956}
+      Script: {instanceID: 3412}
     - Class: 114
-      Script: {instanceID: 4006}
+      Script: {instanceID: 3980}
     - Class: 114
-      Script: {instanceID: 4076}
+      Script: {instanceID: 4030}
     - Class: 114
-      Script: {instanceID: 4166}
+      Script: {instanceID: 4100}
     - Class: 114
-      Script: {instanceID: 4180}
+      Script: {instanceID: 4188}
     - Class: 114
-      Script: {instanceID: 4510}
+      Script: {instanceID: 4202}
     - Class: 114
-      Script: {instanceID: 4538}
+      Script: {instanceID: 4532}
     - Class: 114
-      Script: {instanceID: 4722}
+      Script: {instanceID: 4560}
     - Class: 114
-      Script: {instanceID: 4880}
+      Script: {instanceID: 4744}
     - Class: 114
-      Script: {instanceID: 4896}
+      Script: {instanceID: 4902}
     - Class: 114
-      Script: {instanceID: 5076}
+      Script: {instanceID: 4918}
     - Class: 114
-      Script: {instanceID: 5112}
+      Script: {instanceID: 5132}
     - Class: 114
-      Script: {instanceID: 5192}
+      Script: {instanceID: 5142}
     - Class: 114
-      Script: {instanceID: 5212}
+      Script: {instanceID: 5148}
     - Class: 114
-      Script: {instanceID: 5426}
+      Script: {instanceID: 5202}
     - Class: 114
-      Script: {instanceID: 5736}
+      Script: {instanceID: 5216}
     - Class: 114
-      Script: {instanceID: 6242}
+      Script: {instanceID: 5236}
     - Class: 114
-      Script: {instanceID: 6250}
+      Script: {instanceID: 5450}
     - Class: 114
-      Script: {instanceID: 7762}
+      Script: {instanceID: 5632}
+    - Class: 114
+      Script: {instanceID: 5762}
+    - Class: 114
+      Script: {instanceID: 6268}
+    - Class: 114
+      Script: {instanceID: 6276}
+    - Class: 114
+      Script: {instanceID: 7174}
+    - Class: 114
+      Script: {instanceID: 7794}
+    - Class: 114
+      Script: {instanceID: 28082}
+    - Class: 114
+      Script: {instanceID: 28214}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -184,6 +203,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    - Class: 328
+      Script: {instanceID: 0}
+    - Class: 329
+      Script: {instanceID: 0}
   scriptHashData:
   - hash:
       serializedVersion: 2
@@ -199,16 +222,16 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
-      Hash: ed9f9ba4f86811683bd63e5cc6dae905
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AnchorBehaviour
-  - hash:
-      serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: ed9f9ba4f86811683bd63e5cc6dae905
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AnchorBehaviour
   - hash:
       serializedVersion: 2
       Hash: 040dd48e3a027d5424519a5fa2009df4
@@ -247,12 +270,6 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 2fba61c4298409162f811e183315a9c9
-    assemblyName: VuforiaScripts.dll
-    namespaceName: 
-    className: DefaultTrackableEventHandler
-  - hash:
-      serializedVersion: 2
       Hash: 8a874a8207a7664bdf44e61f28717254
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -281,6 +298,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: SimpleScript
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NewBehaviourScript
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -323,6 +346,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: VuforiaScripts.dll
+    namespaceName: 
+    className: BoundingBoxRenderer
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -985,6 +1014,12 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
+      Hash: cf064d0ced9a03dc57b74a8a3c9948a7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AnswerBox
+  - hash:
+      serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1556,12 +1591,6 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: VuforiaScripts.dll
-    namespaceName: 
-    className: DefaultInitializationErrorHandler
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: GlobalMessageListener
@@ -1579,6 +1608,12 @@ ScriptsOnlyBuild:
     className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 13f5cbe09f89eab37957fecc0601b249
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: swipe
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1591,13 +1626,19 @@ ScriptsOnlyBuild:
     className: WarpTextExample
   - hash:
       serializedVersion: 2
+      Hash: a7a6a497788ac5e8bf863144e2d8ca21
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Networking
+  - hash:
+      serializedVersion: 2
       Hash: 300fd99066f8c288e85f5e81ce65fe34
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 6517564fb9c3913c410a586bd3cff2d3
+      Hash: f8a47f27c0e4ec8644debfe55c1d2065
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ListPointer
@@ -1643,6 +1684,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.State.dll
     namespaceName: Unity.VisualScripting
     className: StateGraphAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 2fba61c4298409162f811e183315a9c9
+    assemblyName: VuforiaScripts.dll
+    namespaceName: 
+    className: DefaultTrackableEventHandler
   - hash:
       serializedVersion: 2
       Hash: 4f60ff347d4efee4ef8cc7f627735018
@@ -1733,6 +1780,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: eeada4f3f879474a79ee0417aab9f61c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VideoPauser
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -2119,10 +2172,16 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: a50aaba17648f907f92a0c51e83fa0d8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Client
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: VuforiaScripts.dll
     namespaceName: 
-    className: BoundingBoxRenderer
+    className: DefaultInitializationErrorHandler
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -2510,4 +2569,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/AllInOne.unity
-  playerPath: C:/Users/LAU Ka Hin/OneDrive - Vocational Training Council - Student/GameAR/AdventureReality/ARUI/AdventureRealityDemo.apk
+  playerPath: C:/Users/LAU Ka Hin/OneDrive - Vocational Training Council - Student/GameAR/AdventureReality/AdventureRealityUI/AdventureRealityDemo.apk

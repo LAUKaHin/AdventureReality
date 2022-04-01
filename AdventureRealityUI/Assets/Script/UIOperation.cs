@@ -70,7 +70,7 @@ public class UIOperation : MonoBehaviour
         {
             title = coupon.shopName;
             content = coupon.content;
-            lText = "門市位置：" + coupon.location;
+            lText = "位置：" + coupon.location;
             cText = "聯絡方法：" + coupon.contect;
             cNumber = category;
             targetShopCoupon = coupon;
@@ -120,7 +120,7 @@ public class UIOperation : MonoBehaviour
         {
             title = coupon.shopName;
             content = coupon.content;
-            lText = "門市位置：" + coupon.location;
+            lText = "位置：" + coupon.location;
             cText = "聯絡方法：" + coupon.contect;
             cNumber = category;
             targetBackpackCoupon = coupon;

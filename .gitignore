@@ -41,7 +41,12 @@
 *.tar.7z
 
 # Other over 100Mb files
+*.mp4
 *ArtifactDB
+*data.unity3d
+*sharedassets0.resource
+
+
 *AdvertisingReality/Library/PackageCache/com.ptc.vuforia.engine@ad7df7833cc0-1635979566000/Vuforia/Plugins/iOS/VuforiaEngine.framework/VuforiaEngine
 
 # Crashed or undeletable directory or project.

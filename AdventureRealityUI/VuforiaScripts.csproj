@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{10E18ED6-66A5-8A60-4CEE-3920E3F3D361}</ProjectGuid>
+    <ProjectGuid>{11F0CEC6-F116-19A2-66BB-4F658627F3FF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>VuforiaScripts</AssemblyName>
@@ -59,11 +59,11 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="C:\Users\LAU Ka Hin\VTC\YCKB\FinalYearProject\vuforia933-plugin\Vuforia\Scripts\DefaultTrackableEventHandler.cs" />
     <Compile Include="C:\Users\LAU Ka Hin\VTC\YCKB\FinalYearProject\vuforia933-plugin\Vuforia\Scripts\Internal\ARFoundationIntegration\ARFoundationInitializer.cs" />
-    <Compile Include="C:\Users\LAU Ka Hin\VTC\YCKB\FinalYearProject\vuforia933-plugin\Vuforia\Scripts\Internal\RuntimeOpenSourceInitializer.cs" />
-    <Compile Include="C:\Users\LAU Ka Hin\VTC\YCKB\FinalYearProject\vuforia933-plugin\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
     <Compile Include="C:\Users\LAU Ka Hin\VTC\YCKB\FinalYearProject\vuforia933-plugin\Vuforia\Scripts\BoundingBoxRenderer.cs" />
+    <Compile Include="C:\Users\LAU Ka Hin\VTC\YCKB\FinalYearProject\vuforia933-plugin\Vuforia\Scripts\Internal\RuntimeOpenSourceInitializer.cs" />
+    <Compile Include="C:\Users\LAU Ka Hin\VTC\YCKB\FinalYearProject\vuforia933-plugin\Vuforia\Scripts\DefaultTrackableEventHandler.cs" />
+    <Compile Include="C:\Users\LAU Ka Hin\VTC\YCKB\FinalYearProject\vuforia933-plugin\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="C:\Users\LAU Ka Hin\VTC\YCKB\FinalYearProject\vuforia933-plugin\Vuforia\Scripts\VuforiaScripts.asmdef" />

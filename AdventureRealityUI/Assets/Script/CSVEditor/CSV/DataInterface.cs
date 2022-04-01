@@ -71,14 +71,8 @@ public class DataInterface : MonoBehaviour
     {
         AppendUserLog();
     }
-    public void writeQponButton()
+    void TcpWriteData()
     {
-        WriteUserCouponCSV(userCouponList.userCoupon[0].couponID, TakeRowLength(null), false);
-    }
-    public void TestPathButton()
-    {
-        TextReader tw;
-        tw = new StreamReader(filename, false);
 
     }
     public void OpenButton()
@@ -212,7 +206,7 @@ public class DataInterface : MonoBehaviour
             checkUser.score = int.Parse(data[5 * (tableSize + 1) + 4]);
             if (useMode == -1 && tokID == checkUser.tokenOrID && email == checkUser.email)//writeMode
             {
-                myPlayerList.player[i].time = DateTime.Now.ToString("yyyy/MM/dd/HH/mm/ss");
+                myPlayerList.player[i].time = DateTime.Now.ToString("yyyy/MM/dd/HH/mm");
                 tw = new StreamWriter(filename, false);
                 tw.WriteLine(myPlayerList.player[i].time + "," + myPlayerList.player[i].email + "," + myPlayerList.player[i].password + "," + myPlayerList.player[i].tokenOrID + "," + myPlayerList.player[i].score);
                 return null;
@@ -375,5 +369,6 @@ public class Datainitialization
                 return null;
             }
         }
+        
     }
 }
