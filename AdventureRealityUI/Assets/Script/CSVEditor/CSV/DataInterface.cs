@@ -28,8 +28,7 @@ public class DataInterface : MonoBehaviour
     public class UserCoupon
     {
         public string couponID;
-        public string getDate;
-        public string usedDate;
+        public int amount;
     }
     [Serializable]
     public class UserCouponList { public UserCoupon[] userCoupon; }
@@ -238,74 +237,7 @@ public class DataInterface : MonoBehaviour
         }
         return null;//unkownError
     }
-    public string WriteUserCouponCSV(string idThatReqrusted, int csvLength, bool useMode)
-    {
-        string getDate = "";
-        filename = Application.persistentDataPath + "//" + Datainitialization.directoryName[1] + "//" + myPlayerList.player[0].tokenOrID + "//Coupon.csv";
-        TextWriter tw;
-        if (!File.Exists(filename))
-        {
-            Datainitialization createDir = new Datainitialization();
-            List<string> dirName = Datainitialization.directoryName;
-            dirName.Add(myPlayerList.player[0].tokenOrID);
-            createDir.CreateDirectory(dirName, Datainitialization.loop);
-            tw = new StreamWriter(filename, false);
-            tw.WriteLine("couponID, getDate, usedDate");
-            tw.Close();
-            print(filename.Remove(filename.Length - 4, 4));//Delete last 4 character
-        }
-        if (useMode)
-        {
-            UserCouponList checkCoupon = new UserCouponList();
-            TextReader reader = new StreamReader(filename, true);
-            string[] data = reader.ReadToEnd().Split(new string[] { ",", "\n" }, StringSplitOptions.None);
-            for (int i = 0; i < csvLength; i++)
-            {
-                checkCoupon.userCoupon[i] = new UserCoupon();
-                checkCoupon.userCoupon[i].couponID = data[3 * (i + 1)];
-                checkCoupon.userCoupon[i].getDate = data[3 * (i + 1) + 1];
-                checkCoupon.userCoupon[i].usedDate = data[3 * (i + 1) + 2];
-                if (idThatReqrusted == checkCoupon.userCoupon[i].couponID)
-                {
-                    int rowNum = i;
-                    userCouponList.userCoupon[i].usedDate = DateTime.Now.ToString("yyyy/MM/dd/HH/mm/ss");
-                    tw = new StreamWriter(filename, true);
-                    tw.WriteLine(userCouponList.userCoupon[i].usedDate);
-                }
-            }
-        }
-        else
-        {
-            TextReader reader = new StreamReader(filename, true);
-            string[] data = reader.ReadToEnd().Split(new string[] { ",", "\n" }, StringSplitOptions.None);
-            int tableSize = data.Length / 3 - 1;//As you can see, Line 47 for i must be less than table size to execute not ==. So here is -2
-            UserCouponList checkCoupon = new UserCouponList();
-            checkCoupon.userCoupon = new UserCoupon[tableSize];
-            print(tableSize);
-            for (int i = 0; i < tableSize; i++)
-            {
-                checkCoupon.userCoupon[i] = new UserCoupon();
-                checkCoupon.userCoupon[i].couponID = data[3 * (i + 1)];
-                checkCoupon.userCoupon[i].getDate = data[3 * (i + 1) + 1];
-                checkCoupon.userCoupon[i].usedDate = data[3 * (i + 1) + 2];
-                if (idThatReqrusted == checkCoupon.userCoupon[i].couponID)
-                {
-                    return "YouGetShit";
-                }
-                print(checkCoupon.userCoupon[i].couponID);
-            }
-            reader.Close();
-            tw = new StreamWriter(filename, true);
-            for (int i = csvLength; i < userCouponList.userCoupon.Length; i++)
-            {
-                userCouponList.userCoupon[i].getDate = DateTime.Now.ToString("yyyy/MM/dd/HH/mm/ss");
-                tw.WriteLine(userCouponList.userCoupon[i].couponID + "," + userCouponList.userCoupon[i].getDate + "," + userCouponList.userCoupon[i].usedDate);
-                getDate = userCouponList.userCoupon[i].getDate;
-            }
-            tw.Close();
-        }
-        return getDate;
-    }
+    
     public string CouponIDNamer(ShopInfo shop, string promotionShortName, ulong quantity)
     {
         string couponID = shop.ShopType + '_' + shop.shortName + '_' + promotionShortName + '_' + quantity.ToString();

@@ -11,8 +11,9 @@ Database::Database(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Database)
 {
-    /*
+
     DataInterface csvEditor;
+    /*
     DataInitialization initialization;
     QDateTime timer;
     initialization.DatabaseInitialization();
@@ -28,6 +29,8 @@ Database::Database(QWidget *parent) :
     qDebug() << nextPlayer.time << " " << nextPlayer.email << " " << nextPlayer.password << " " << nextPlayer.tokenOrID << " " << nextPlayer.couponCoin;
     //cout << debugTool;
     */
+    qDebug() << csvEditor.NumberFilter("KHLAU20010730");
+
     ui->setupUi(this);
 }
 
@@ -89,7 +92,7 @@ const char* DataInitialization::QStringCharConvertor(QString qsInput)
     return c_str2;
 }
 
-QString DataInterface::QtCSV_Reader(QString category, QString client, QString filename)
+QStringList DataInterface::QtCSV_Reader(QString category, QString client, QString filename)
 {
     if(client != "")
     {
@@ -108,10 +111,15 @@ QString DataInterface::QtCSV_Reader(QString category, QString client, QString fi
         {
             QString line = lines.at(j);
             QStringList split = line.split(",");/*列數據*/
+            for (int col = 0; col < split.size(); col++)
+            {
+                qDebug() << split.at(col);
+            }
         }
         inFile.close();
+
     }
-    return "";
+    return lines;
 }
 
 void DataInterface::QtCSV_Writer(QString category, QString client, QString filename)
@@ -161,6 +169,7 @@ DataInterface::UserData DataInterface::UserDataReader(QString client)
     }
     return userData;
 }
+/*
 QList<DataInterface::UserCoupon> DataInterface::UserCouponReader(QString client)
 {
     if(client != "")
@@ -168,7 +177,43 @@ QList<DataInterface::UserCoupon> DataInterface::UserCouponReader(QString client)
         client += "//";
     }
     QFile inFile(rp +"//" + "ARS" + "//" + "Users" + "//" + client + fileName.at(1) + ".csv");
+    QStringList lines;
+     QList<DataInterface::UserCoupon> userCoupon;
+     DataInitialization dirPicker;
+    if (inFile.open(QIODevice::ReadOnly))
+    {
+        QTextStream stream_text(&inFile);
+        while (!stream_text.atEnd())
+        {
+            lines.push_back(stream_text.readLine());
+        }
+        for (int j = 0; j < lines.size(); j++)
+        {
+            QString line = lines.at(j);
+            QStringList split = line.split(",");
+            userCoupon[j].couponID = split.at(0);
+            userCoupon[j].getDate = QDateTime::fromString(split.at(1), dtFormat);
+            userCoupon[j].usedDate = QDateTime::fromString(split.at(2), dtFormat);
+            userCoupon[j].qrImageLocation = split.at(3);
+            userCoupon[j].qrCode = QImage::fromData(PickImage(dirPicker.directoryName[1], client, userCoupon[j].qrImageLocation));
+        }
+        inFile.close();
+    }
+    return userCoupon;
+}
+*/
+QList<QList<QList<DataInterface::CouponAmount>>> DataInterface::CouponAmountaReader(QString client)
+{
+    if(client != "")
+    {
+        client += "//";
+    }
+    QFile inFile(rp +"//" + "ARS" + "//" + "Users" + "//" + client + fileName.at(1) + ".csv");
     QStringList lines;/*行數據*/
+
+    QList<ShopCoupon> couponList;
+    QList<QList<QList<DataInterface::CouponAmount>>> couponAmountList;
+
     if (inFile.open(QIODevice::ReadOnly))
     {
         QTextStream stream_text(&inFile);
@@ -180,9 +225,27 @@ QList<DataInterface::UserCoupon> DataInterface::UserCouponReader(QString client)
         {
             QString line = lines.at(j);
             QStringList split = line.split(",");/*列數據*/
+            for (int col = 0; col < split.size(); col++)
+            {
+                QString line = lines.at(j);
+                QStringList split = line.split(",");
+                couponList[j].couponID = split.at(0);
+                couponList[j].shopType = split.at(1).toUInt();
+                couponList[j].title = split.at(2);
+                couponList[j].content = split.at(3);
+                couponList[j].cost = split.at(4).toUInt();
+                couponList[j].imageLocation = split.at(5);
+                couponList[j].holder = split.at(6);
+                couponList[j].enabledDate = QDateTime::fromString(split.at(7), dtFormat);
+                couponList[j].disabledDate = QDateTime::fromString(split.at(8), dtFormat);
+                couponList[j].qrImageLocation = split.at(9);
+                qDebug() << split.at(col);
+            }
         }
         inFile.close();
+
     }
+    return couponAmountList;
 }
 DataInterface::ShopData DataInterface::ShopDataReader(QString client)
 {
@@ -209,12 +272,10 @@ DataInterface::ShopData DataInterface::ShopDataReader(QString client)
         shopData.location = split.at(3);
         shopData.shortName = split.at(4);
         shopData.discription = split.at(5);
-
-
         inFile.close();
     }
 }
-QList<DataInterface::ShopCoupon> DataInterface::ShopCouponReader(QString client)
+QList<QList<QList<DataInterface::ShopCoupon>>> DataInterface::ShopCouponReader(QString client)
 {
     if(client != "")
     {
@@ -222,6 +283,8 @@ QList<DataInterface::ShopCoupon> DataInterface::ShopCouponReader(QString client)
     }
     QFile inFile(rp +"//" + "ARS" + "//" + "Shops" + "//" + client + fileName.at(3) + ".csv");
     QStringList lines;/*行數據*/
+    QList<ShopCoupon> couponList;
+    QList<QList<QList<ShopCoupon>>> couponAmountList;
     if (inFile.open(QIODevice::ReadOnly))
     {
         QTextStream stream_text(&inFile);
@@ -233,9 +296,28 @@ QList<DataInterface::ShopCoupon> DataInterface::ShopCouponReader(QString client)
         {
             QString line = lines.at(j);
             QStringList split = line.split(",");/*列數據*/
+            for (int col = 0; col < split.size(); col++)
+            {
+                QString line = lines.at(j);
+                QStringList split = line.split(",");
+                couponList[j].couponID = split.at(0);
+                couponList[j].shopType = split.at(1).toUInt();
+                couponList[j].title = split.at(2);
+                couponList[j].content = split.at(3);
+                couponList[j].cost = split.at(4).toUInt();
+                couponList[j].imageLocation = split.at(5);
+                couponList[j].holder = split.at(6);
+                couponList[j].enabledDate = QDateTime::fromString(split.at(7), dtFormat);
+                couponList[j].disabledDate = QDateTime::fromString(split.at(8), dtFormat);
+                couponList[j].qrImageLocation = split.at(9);
+                qDebug() << split.at(col);
+                couponAmountList[0][1][j] = couponList[j];
+            }
         }
+
         inFile.close();
     }
+    return couponAmountList;
 }
 QList<DataInterface::UserInfo> DataInterface::UserInfoReader()
 {
@@ -303,6 +385,7 @@ void DataInterface::DataWriter(UserData userData)
         outFile.close();
     }
 }
+/*
 void DataInterface::DataWriter(UserCoupon userCoupon, QString client)
 {
     if(client != "")
@@ -315,22 +398,23 @@ void DataInterface::DataWriter(UserCoupon userCoupon, QString client)
         DataInitialization headLinePermission;
         QString headLine = headLinePermission.csvHeadline.at(1);
         QFile outFile(location);
-        outFile.write(headLine.toStdString().c_str());/*寫入每一行數據到文件*/
+        outFile.write(headLine.toStdString().c_str());
         outFile.close();
     }
     QFile outFile(location);
     QStringList lines;
     lines << "00,01,02\n" << "10,11,12\n" << "20,21,22";
-    /*如果以ReadWrite方式打開，不會把所有數據清除，如果文件原來的長度爲100字節，寫操作寫入了30字節，那麼還剩餘70字節，並且這70字節和文件打開之前保持一直*/
+
     if (outFile.open(QIODevice::WriteOnly | QIODevice::Append))
     {
         for (int i = 0; i < lines.size(); i++)
         {
-            outFile.write(lines[i].toStdString().c_str());/*寫入每一行數據到文件*/
+            outFile.write(lines[i].toStdString().c_str());
         }
         outFile.close();
     }
 }
+*/
 void DataInterface::DataWriter(ShopData shopData)
 {
     if(shopData.shopName != "")
@@ -461,9 +545,9 @@ int DataInterface::ImageSpliter(QString inputImg)
     return counter;
 }
 
-QByteArray DataInterface::PickImage(QString inputImg)
+QByteArray DataInterface::PickImage(QString category, QString client, QString inputImg)
 {
-    QFile file(rp +"//" + "ARS" + "//" + "Photo" + "//" + inputImg + ".png");
+    QFile file(rp +"//" + "ARS" + "//" + category + "//" + client + "//" + inputImg + ".png");
     file.open(QFile::ReadOnly);
     QByteArray buf = file.readAll();
     file.close();
@@ -477,7 +561,6 @@ QList<QImage> DataInterface::ImageDecoder(QByteArray imageArray)
     for (int i = 0; i < imageArray.length(); i++)
     {
         QString spliteContainer = "";
-
         for (int j = 0; j < splitFormat.length(); j++)
         {
             spliteContainer.append(imageArray.at(i+j));
@@ -504,13 +587,13 @@ QList<QImage> DataInterface::ImageDecoder(QByteArray imageArray)
                     photoByte.append(imageArray.at(k));
                 }
             }
-            qDebug() << photoByte.length();
+            qDebug() << "Photo byte end location: " + QString::number(photoByte.length());
             i += splitFormat.length();
             photostart = i;
             collector.append(QImage::fromData(photoByte));
             spliteContainer = "";
-            qDebug() << "photos collected " + QString::number(collector.length());
-
+            qDebug() << "photos collected: " + QString::number(collector.length());
+            qDebug() << collector[collector.length() -1];
         }
     }
     /*
@@ -564,8 +647,20 @@ DataInterface::UserData DataInterface::WriteUserDataBAD(QByteArray ba, int split
     requestAccount.time = timer.currentDateTime();
     return requestAccount;
 }
+/*
 DataInterface::UserCoupon DataInterface::WriteUserCouponBAD(QByteArray ba, int splitCounter)
 {
     UserCoupon coupon;
     return coupon;
+}
+*/
+QString DataInterface::NumberFilter(QString stringInput)
+{
+    QString stringOutput = "";
+    for (const QChar c : qAsConst(stringInput)) {
+      if (!c.isDigit()) {
+        stringOutput.append(c);
+      }
+    }
+    return stringOutput;
 }

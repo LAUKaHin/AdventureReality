@@ -26,6 +26,7 @@ public class UIOperation : MonoBehaviour
     public VuforiaBehaviour vb;
     public GameObject offCamButton;
     public GameObject ErrorTText;
+    public Client client;
     public void Start()
     {
         userCouponBag.SetActive(true);
@@ -97,7 +98,7 @@ public class UIOperation : MonoBehaviour
         quantityText.text = quantity.ToString();
         total.GetComponent<Text>().text = totalValue.ToString();
     }
-    public void BackpackDialog(GridPopulator.UserCouponList.CouponItem coupon, int category, string title, string content, UnityEngine.Events.UnityAction youstuff)
+    public void BackpackDialog(GridPopulator.UserCouponList.CouponItem coupon, int category, string title, string content, UnityEngine.Events.UnityAction function)
     {
         string lText = "";
         string cText = "";
@@ -109,11 +110,9 @@ public class UIOperation : MonoBehaviour
         dialog.SetActive(true);
         var useButton = dialog.transform.GetChild(0).GetChild(6);//Access use button
         useButton.GetComponent<Button>().onClick.RemoveAllListeners();
-        useButton.GetComponent<Button>().onClick.AddListener(youstuff);
+        useButton.GetComponent<Button>().onClick.AddListener(function);
         useButton.gameObject.SetActive(false);
-        print("Runing Backpack Dialog");
         var buyBox = dialog.transform.GetChild(0).GetChild(5);//Access buy box.
-        print("Runing Backpack Dialog");
         buyBox.gameObject.SetActive(false);
 
         if (coupon != null)
@@ -128,7 +127,7 @@ public class UIOperation : MonoBehaviour
             yesButton.gameObject.SetActive(false);
             noButton.gameObject.SetActive(false);
         }
-        else if (coupon != null && title != null & content != null)
+        else if (coupon != null && title != null && content != null)
         {
             print("You can't insert coupon, title and content at the same time when calling this method.");
         }
@@ -185,6 +184,7 @@ public class UIOperation : MonoBehaviour
             List<GridPopulator.UserCouponList.CouponList> dalist = userCouponBag.GetComponent<GridPopulator>().uCategoryList;
             userCouponBag.GetComponent<GridPopulator>().Populate(dalist);
             userCouponBag.SetActive(false);
+            client.RequestWriteUserData();
         }
         else
         {

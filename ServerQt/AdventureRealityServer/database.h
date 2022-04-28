@@ -42,15 +42,25 @@ public:
             int couponCoin;
     };
     UserData testPlayer = UserData();
-
+    /*
     struct UserCoupon
     {
         public:
             QString couponID;
+            uint shopType;
             QDateTime getDate;
             QDateTime usedDate;
-            QImage qrCode;
-            QString imageLocation;
+            QImage couponImage;
+    };
+    */
+    struct CouponAmount//Amount of UserCoupon
+    {
+        public:
+            QString couponID;//Just include EngLetter
+            QString shopname;
+            uint shopType;
+            uint amount;
+            QImage couponImage;
     };
     struct ShopData
     {
@@ -69,17 +79,18 @@ public:
     struct ShopCoupon
     {
         public:
-            QString PromotionType;
             QString couponID;
+            uint shopType;
             QString title;
             QString content;
             uint cost;
             QImage image;
-            QString holder;
+            QString imageLocation;
+            QString holder;//The user who have this coupon
             QDateTime enabledDate;
             QDateTime disabledDate;
             QImage qrCode;
-            QString imageLocation;
+            QString qrImageLocation;
     };
     struct UserInfo
     {
@@ -109,37 +120,49 @@ private:
     QString splitFormat = "<AdventureReality>";
 
 public:
-    QString QtCSV_Reader(QString category, QString client, QString filename);
-    void QtCSV_Writer(QString category, QString client, QString filename);
-
     //CSV Reader
     UserData UserDataReader(QString client);
-    QList<UserCoupon> UserCouponReader(QString client);
+    //QList<UserCoupon> UserCouponReader(QString client);
+    QList<QList<QList<CouponAmount>>> CouponAmountaReader(QString client);
     ShopData ShopDataReader(QString client);
-    QList<ShopCoupon> ShopCouponReader(QString client);
+    QList<QList<QList<ShopCoupon>>> ShopCouponReader(QString client);
     QList<UserInfo> UserInfoReader();
     QList<ShopInfo> ShopInfoReader();
 
     //CSV Writer
     void DataWriter(UserData userData);
-    void DataWriter(UserCoupon userCoupon, QString client);
+    //void DataWriter(UserCoupon userCoupon, QString client);
+    void DataWriter(ShopCoupon shopCoupon, uint amount, QString client);//For edit CouponAmount.csv
     void DataWriter(ShopData shopData);
-    void DataWriter(ShopCoupon shopCoupon, QString client);
+    void DataWriter(ShopCoupon shopCoupon, QString client);//For edit ShopCoupon.csv
     void DataWriter(UserInfo userInfo);
     void DataWriter(ShopInfo shopInfo);
-
-    int ImageSpliter(QString inputImg);
-    QByteArray PickImage(QString inputImg);
-    QList<QImage> ImageDecoder(QByteArray imageArray);
 
     //ByteArray decoder
     QString ReadUserDataBAD(QByteArray ba, int splitCounter);
     UserData WriteUserDataBAD(QByteArray ba, int splitCounter);
     QString ReadUserCouponBAD(QByteArray ba, int count);//No need this function.
-    UserCoupon WriteUserCouponBAD(QByteArray ba, int splitCounter);
+    //UserCoupon WriteUserCouponBAD(QByteArray ba, int splitCounter);
     ShopData ReadShopDataBAD(QByteArray ba, int count);//No need this function.
     ShopCoupon ReadShopCouponBAD(QByteArray ba, int count);//No need this function.
+
     //ByteArray encoder
+
+    //Big Data Sampling
+    int GetCouponLength(QList<ShopCoupon> couponList);
+
+    //Auxiliary/ Test Functions
+    QString NumberFilter(QString stringInput);
+    QStringList QtCSV_Reader(QString category, QString client, QString filename);
+    void QtCSV_Writer(QString category, QString client, QString filename);
+
+private:
+    //Auxiliary/ Test Functions
+    int ImageSpliter(QString inputImg);
+    QByteArray PickImage(QString category, QString client, QString inputImg);
+    QList<QImage> ImageDecoder(QByteArray imageArray);
+
+
 };
 
 class DataInitialization

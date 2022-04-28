@@ -10,22 +10,29 @@
 
 Intf::Intf() {
     DataInterface imageModifier;
+    qDebug() << imageModifier.NumberFilter("KHLAU20010730");
+    imageModifier.QtCSV_Reader("Users", "KHLAU", "power");
     //QImage cpp = QImage::fromData(imageModifier.PickImage("cpp"));
     //QImage cs = QImage::fromData(imageModifier.PickImage("cSharp"));
-    QByteArray mixer = imageModifier.PickImage("cpp") + "<AdventureReality>" + imageModifier.PickImage("cSharp") + "<AdventureReality>" + imageModifier.PickImage("qt") + "<AdventureReality>" + imageModifier.PickImage("unity");
+    //QByteArray mixer = imageModifier.PickImage("cpp") + "<AdventureReality>" + imageModifier.PickImage("cSharp") + "<AdventureReality>" + imageModifier.PickImage("qt") + "<AdventureReality>" + imageModifier.PickImage("unity");
     //qDebug() << mixer.length();
-    QList<QImage> imager = imageModifier.ImageDecoder(mixer);
-
+    //QList<QImage> imager = imageModifier.ImageDecoder(mixer);
+    /*Test Function
     QLabel *p_k = new QLabel;
     QLabel *p_l = new QLabel;
-    //p_k->setPixmap(QPixmap::fromImage(cpp));
+    QLabel *p_m = new QLabel;
+    QLabel *p_n = new QLabel;
+    QHBoxLayout *p_top = new QHBoxLayout;
     p_k->setPixmap(QPixmap::fromImage(imager.at(0)));
-	QVBoxLayout *p_top = new QVBoxLayout;
     p_top->addWidget(p_k);
     p_l->setPixmap(QPixmap::fromImage(imager.at(1)));
     p_top->addWidget(p_l);
+    p_m->setPixmap(QPixmap::fromImage(imager.at(2)));
+    p_top->addWidget(p_m);
+    p_n->setPixmap(QPixmap::fromImage(imager.at(3)));
+    p_top->addWidget(p_n);
     this->setLayout(p_top);
-
+    */
     p_server = new Server(9884);
     connect(p_server, SIGNAL(rxReady(User *)),\
                 this, SLOT(serviceProcess(User *)));
@@ -37,7 +44,6 @@ void Intf::serviceProcess(User *p_usr) {
 		return;
 	}
 	
-	//CMD='J' (Send JPEG)
     QString command;
     int splitCounter = 0;
     for(int i = splitCounter; p_usr->ba_load.at(i) != ','; i++)

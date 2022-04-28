@@ -14,7 +14,8 @@ public class Client : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         net = GetComponent<Networking>();
-        net.WriteSocket("C", "");
+        //net.WriteSocket("C", "");
+        RequestReadUserData();
         net.b_rx = true;
 	}
 	
