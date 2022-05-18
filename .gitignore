@@ -46,6 +46,12 @@
 *data.unity3d
 *sharedassets0.resource
 
+# iOS build directory
+*BuildForIOS/
+
+# iOS Assests
+*sharedassets0.assets
+*sharedassets0.assets.resS
 
 *AdvertisingReality/Library/PackageCache/com.ptc.vuforia.engine@ad7df7833cc0-1635979566000/Vuforia/Plugins/iOS/VuforiaEngine.framework/VuforiaEngine
 

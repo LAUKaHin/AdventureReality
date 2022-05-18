@@ -10,8 +10,9 @@
 
 Intf::Intf() {
     DataInterface imageModifier;
-    qDebug() << imageModifier.NumberFilter("KHLAU20010730");
-    imageModifier.QtCSV_Reader("Users", "KHLAU", "power");
+    imageModifier.ShopCouponReader("");
+    //qDebug() << imageModifier.NumberFilter("KHLAU20010730");
+    //imageModifier.QtCSV_Reader("Users", "KHLAU", "power");
     //QImage cpp = QImage::fromData(imageModifier.PickImage("cpp"));
     //QImage cs = QImage::fromData(imageModifier.PickImage("cSharp"));
     //QByteArray mixer = imageModifier.PickImage("cpp") + "<AdventureReality>" + imageModifier.PickImage("cSharp") + "<AdventureReality>" + imageModifier.PickImage("qt") + "<AdventureReality>" + imageModifier.PickImage("unity");
@@ -146,11 +147,11 @@ void Intf::serviceProcess(User *p_usr) {
         QString serverTime = QDateTime::currentDateTime().toString("yyyyMMddHHmm");
         QString couponCoinString = QString::number(requestAccount.couponCoin);
         QString command = "ReadUserData";
+        qDebug() <<serverTime.toUtf8() + command + ',' +  requestAccount.email + ',' + requestAccount.password + ',' + requestAccount.tokenOrID + ',' + couponCoinString;
         QByteArray data = serverTime.toUtf8() + command.toUtf8() + ',' +  requestAccount.email.toUtf8() + ',' + requestAccount.password.toUtf8() + ',' + requestAccount.tokenOrID.toUtf8() + ',' + couponCoinString.toUtf8();
         QString DataAsString = QTextCodec::codecForMib(106)->toUnicode(data);
         p_server->sendRawByte(data, p_usr);
         p_server->disconnect();
-
     }
     else if(command == "WriteUserData")//WriteUserData
     {

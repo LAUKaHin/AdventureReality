@@ -62,7 +62,7 @@ public class swipe : MonoBehaviour
         {
             if (scroll_pos < pos[i] + (distance / 2) && scroll_pos > pos[i] - (distance / 2))
             {
-                Debug.LogWarning("Current Selected Level" + i);
+                //Debug.LogWarning("Current Selected Level" + i);
                 for (int k = 0; k < transform.GetChild(i).childCount; k++)
                 {
                     if (transform.GetChild(i).GetChild(k).GetComponent<UnityEngine.Video.VideoPlayer>() != null)

@@ -7,6 +7,9 @@
 #include <qdatetime.h>
 #include <iostream>
 #include <QtDebug>
+#include <algorithm>
+#include <QDir>
+#include <QDirIterator>
 
 using namespace std;
 namespace Ui {
@@ -43,7 +46,7 @@ public:
     };
     UserData testPlayer = UserData();
     /*
-    struct UserCoupon
+    struct UserCoupon//Obsolete
     {
         public:
             QString couponID;
@@ -53,14 +56,12 @@ public:
             QImage couponImage;
     };
     */
-    struct CouponAmount//Amount of UserCoupon
+    struct CouponAmount//New struct for UserCoupon, just count amount of coupons.
     {
         public:
             QString couponID;//Just include EngLetter
-            QString shopname;
-            uint shopType;
             uint amount;
-            QImage couponImage;
+            //QImage couponImage;
     };
     struct ShopData
     {
@@ -81,7 +82,7 @@ public:
         public:
             QString couponID;
             uint shopType;
-            QString title;
+            QString title;//ShopName
             QString content;
             uint cost;
             QImage image;
@@ -101,8 +102,8 @@ public:
             int couponCoin;
     };
     QList<UserInfo> userList;
-
-    struct ShopInfo
+    /*
+    struct ShopInfo//Obsolete
     {
         public:
             QString shopName;
@@ -112,7 +113,28 @@ public:
             QString District;
             QString contact;
     };
-    QList<ShopInfo> shopList; 
+    QList<ShopInfo> shopList;
+    */
+
+    //Sorterators(Operators for Sorting)
+    struct
+    {
+        bool operator()(CouponAmount a, CouponAmount b) const { return a.couponID < b.couponID; }
+    }CouponAmountCouponId;
+
+    struct
+    {
+        bool operator()(ShopCoupon a, ShopCoupon b) const { return a.couponID < b.couponID; }
+    }ShopCouponCouponId;
+    struct
+    {
+        bool operator()(ShopCoupon a, ShopCoupon b) const { return a.shopType < b.shopType; }
+    }ShopCouponShopType;
+    struct
+    {
+        bool operator()(ShopCoupon a, ShopCoupon b) const { return a.title < b.title; }
+    }ShopCouponShopName;
+
 
 private:
     QString rp = QCoreApplication::applicationDirPath();
@@ -122,21 +144,22 @@ private:
 public:
     //CSV Reader
     UserData UserDataReader(QString client);
-    //QList<UserCoupon> UserCouponReader(QString client);
-    QList<QList<QList<CouponAmount>>> CouponAmountaReader(QString client);
+    //QList<UserCoupon> UserCouponReader(QString client);//Obsolete
+    QList<CouponAmount> CouponAmountReader(QString client);
     ShopData ShopDataReader(QString client);
     QList<QList<QList<ShopCoupon>>> ShopCouponReader(QString client);
     QList<UserInfo> UserInfoReader();
-    QList<ShopInfo> ShopInfoReader();
+    //QList<ShopInfo> ShopInfoReader();//Obsolete
 
     //CSV Writer
     void DataWriter(UserData userData);
     //void DataWriter(UserCoupon userCoupon, QString client);
+    void DataWriter(CouponAmount coupon, QString client);
     void DataWriter(ShopCoupon shopCoupon, uint amount, QString client);//For edit CouponAmount.csv
     void DataWriter(ShopData shopData);
     void DataWriter(ShopCoupon shopCoupon, QString client);//For edit ShopCoupon.csv
     void DataWriter(UserInfo userInfo);
-    void DataWriter(ShopInfo shopInfo);
+    //void DataWriter(ShopInfo shopInfo);//Obsolete
 
     //ByteArray decoder
     QString ReadUserDataBAD(QByteArray ba, int splitCounter);

@@ -6,23 +6,26 @@ using System;
 using System.Text;
 using UnityEngine.UI;
 
-public class Client : MonoBehaviour {
+public class Client : MonoBehaviour
+{
     public RawImage Image;
     Networking net;
-    public DataInterface userData;
+    DataInterface userData;
     bool b_tx = false;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
+        userData = GetComponent<DataInterface>();
         net = GetComponent<Networking>();
-        //net.WriteSocket("C", "");
         RequestReadUserData();
         net.b_rx = true;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-       if(!net.b_rx)
-       {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (!net.b_rx)
+        {
             Texture2D tex = new Texture2D(600, 600);
             byte[] bytes = new byte[net.rx_load.Length - 1];
             Buffer.BlockCopy(net.rx_load, 12, bytes, 0, net.rx_load.Length - 12);
@@ -35,8 +38,7 @@ public class Client : MonoBehaviour {
                 command += Encoding.UTF8.GetString(new[] { bytes[i] });
                 byteCounter = i;
             }
-            byteCounter+=2;
-            print(command);
+            byteCounter += 2;
             if (command == "Register")
             {
                 for (int i = byteCounter; Encoding.UTF8.GetString(new[] { bytes[i] }) != ","; i++)
@@ -126,11 +128,12 @@ public class Client : MonoBehaviour {
             {
                 print("These byte have no command");
             }
+            net.b_rx = true;
             //Buffer.BlockCopy(net.rx_load, 1, image, 0, net.rx_load.Length - 1);
             //tex.LoadImage(image);
             tex.Apply();
             //Image.texture = tex;
-       }
+        }
     }
 
     public void RequestReadUserData()
@@ -139,7 +142,9 @@ public class Client : MonoBehaviour {
     }
     public void RequestWriteUserData()
     {
+        print("Write it");
         string content = userData.myPlayerList.player[0].email + "," + userData.myPlayerList.player[0].password + "," + userData.myPlayerList.player[0].tokenOrID + "," + userData.myPlayerList.player[0].score.ToString();
+        print(content);
         net.WriteSocket("WriteUserData", content);
     }
     public void RequestReadUserCoupon()

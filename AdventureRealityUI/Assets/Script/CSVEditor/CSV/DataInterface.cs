@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.IO;
 using System.Text;
 
@@ -60,6 +61,17 @@ public class DataInterface : MonoBehaviour
     [Serializable]
     public class ShopCouponList { public ShopCoupon[] shopCoupon; }
     public ShopCouponList shopCouponList = new ShopCouponList();
+
+    [Serializable]
+    public class ShopData
+    {
+        public string shopName;
+        public string content;
+        public string location;
+        public string contact;
+        public GameObject button;
+    }
+
     public void Start()
     {
         Datainitialization access = new Datainitialization();

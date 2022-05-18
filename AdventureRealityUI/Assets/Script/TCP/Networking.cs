@@ -7,23 +7,26 @@ using System.IO;
 using System.Text;
 using System.Net.Sockets;
 
-public class Networking : MonoBehaviour {
-    
+public class Networking : MonoBehaviour
+{
+
     internal Boolean socketReady = false;
     TcpClient mySocket;
     NetworkStream theStream;
-    private readonly String Host = "127.0.0.1";
+    private readonly String Host = "192.168.1.108";
     private readonly Int32 Port = 9884;
     private int rx_len;
     [HideInInspector]
     public byte[] rx_load;
     public String dt;
-    
+
     public bool b_rx = false;
     bool b_r_first = true;
-    
-    void Start () {
+
+    void Start()
+    {
         SetupSocket();
+        print("socket ready");
     }
 
     void Update()
@@ -35,11 +38,11 @@ public class Networking : MonoBehaviour {
             {
                 if (b_r_first)
                 {
-                    uint u_len = (uint)raw.content[0]*0x1000000 + (uint)raw.content[1] * 0x10000 + (uint)raw.content[2] * 0x100 + (uint)raw.content[3];
+                    uint u_len = (uint)raw.content[0] * 0x1000000 + (uint)raw.content[1] * 0x10000 + (uint)raw.content[2] * 0x100 + (uint)raw.content[3];
                     //print("u_len:" + u_len);
-                    rx_load = new byte[u_len-(4+12)];
+                    rx_load = new byte[u_len - (4 + 12)];
                     rx_len = 0;
-                    Buffer.BlockCopy(raw.content, 4+12, rx_load, 0, raw.len-(4+12));
+                    Buffer.BlockCopy(raw.content, 4 + 12, rx_load, 0, raw.len - (4 + 12));
                     rx_len = raw.len;
                     byte[] b_dt = new byte[12];
                     Buffer.BlockCopy(raw.content, 4, b_dt, 0, 12);
@@ -74,9 +77,13 @@ public class Networking : MonoBehaviour {
     {
         try
         {
+            print("Susses 0");
             mySocket = new TcpClient(Host, Port);
+            print("Susses 1");
             theStream = mySocket.GetStream();
+            print("Susses 2");
             socketReady = true;
+            print("Susses 4");
         }
         catch (Exception e)
         {
@@ -87,10 +94,12 @@ public class Networking : MonoBehaviour {
     public void WriteSocket(string command, string data)
     {
         if (!socketReady)
+        {
+            print("Error: Socket not ready!");
             return;
-        
+        } 
         String content = DateTime.Now.ToString("yyyyMMddHHmm") + command + "," + data;
-        byte[] sent = new byte[content.Length+4+12];
+        byte[] sent = new byte[content.Length + 4 + 12];
         uint l = (uint)content.Length + 4 + 12;
         sent[3] = (byte)(l & 0xFF);
         sent[2] = (byte)((l & 0xFF00) / ((uint)Math.Pow(2, (float)8)));
@@ -110,13 +119,14 @@ public class Networking : MonoBehaviour {
         raw.len = 0;
         if (!socketReady)
             return raw;
-        if (theStream.DataAvailable) {
+        if (theStream.DataAvailable)
+        {
             raw.len = theStream.Read(raw.content, 0, mySocket.ReceiveBufferSize);
             theStream.Flush();
         }
         return raw;
     }
-    private void CloseSocket()
+    public void CloseSocket()
     {
         if (!socketReady)
             return;

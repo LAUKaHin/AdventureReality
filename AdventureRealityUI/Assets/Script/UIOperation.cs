@@ -148,6 +148,54 @@ public class UIOperation : MonoBehaviour
         quantityText.text = quantity.ToString();
         total.GetComponent<Text>().text = cost.ToString();
     }
+    public void ShopDataDialog(LoopPointer.ShopData info, string title, string content)
+    {
+        string lText = "";
+        string cText = "";
+        print("Runing ShopData Dialog");
+
+        var yesButton = dialog.transform.GetChild(0).GetChild(2);//Access yes button
+        var noButton = dialog.transform.GetChild(0).GetChild(3);//Access no button
+
+        dialog.SetActive(true);
+        var useButton = dialog.transform.GetChild(0).GetChild(6);//Access use button
+        useButton.GetComponent<Button>().onClick.RemoveAllListeners();
+        //useButton.GetComponent<Button>().onClick.AddListener(function);
+        useButton.gameObject.SetActive(false);
+        var buyBox = dialog.transform.GetChild(0).GetChild(5);//Access buy box.
+        buyBox.gameObject.SetActive(false);
+
+        if (info != null)
+        {
+            title = info.shopName;
+            content = info.content;
+            lText = "位置：" + info.location;
+            cText = "聯絡方法：" + info.contact;
+            useButton.gameObject.SetActive(false);
+            yesButton.gameObject.SetActive(false);
+            noButton.gameObject.SetActive(true);
+        }
+        else if (info != null && title != null && content != null)
+        {
+            print("You can't insert coupon, title and content at the same time when calling this method.");
+        }
+        else
+        {
+            yesButton.gameObject.SetActive(true);
+            noButton.gameObject.SetActive(true);
+            useButton.gameObject.SetActive(false);
+        }
+        var titleText = dialog.transform.GetChild(0).GetChild(0);//Access title
+        titleText.GetComponent<Text>().text = title;
+
+        var contentText = dialog.transform.GetChild(0).GetChild(4).GetChild(0);//Access content
+        contentText.GetComponent<Text>().text = content + "\n" + "\n" + lText + "\n" + cText;
+
+        var total = dialog.transform.GetChild(0).GetChild(5).GetChild(5);
+        quantity = 1;
+        quantityText.text = quantity.ToString();
+        total.GetComponent<Text>().text = cost.ToString();
+    }
     public void SliderChangeValue()
     {
         myText.text = mySlide.value.ToString()+ "F";
