@@ -9,8 +9,10 @@ using Vuforia;
 public class UIOperation : MonoBehaviour
 {
     public DataInterface playerSystem;
-    public GameObject userCouponBag;
+    public GameObject userCouponBag, shopCouponBag, activityList;
     public GameObject dialog;
+    public GameObject CamelPaintFloorPlan, ShingYipFloorPlan, HewlettCentreFloorPlan, map;
+    public GameObject mapTitle;
     public uint cost;
     public uint quantity = 1;
     public uint totalValue;
@@ -24,6 +26,7 @@ public class UIOperation : MonoBehaviour
     public GameObject buyBox;
     public GameObject prefab;
     public VuforiaBehaviour vb;
+    public GameObject openCamButton;
     public GameObject offCamButton;
     public GameObject ErrorTText;
     public Client client;
@@ -233,6 +236,7 @@ public class UIOperation : MonoBehaviour
             userCouponBag.GetComponent<GridPopulator>().Populate(dalist);
             userCouponBag.SetActive(false);
             client.RequestWriteUserData();
+            client.RequestWriteCouponAmount(cNumber, targetShopCoupon.couponID, quantity);
         }
         else
         {
@@ -245,6 +249,58 @@ public class UIOperation : MonoBehaviour
         if (vb.enabled)
         {
             offCamButton.SetActive(true);
+        }
+    }
+    public void escapeButton()
+    {
+        if (CamelPaintFloorPlan.activeSelf ||
+            ShingYipFloorPlan.activeSelf ||
+            HewlettCentreFloorPlan.activeSelf)
+        {
+            CamelPaintFloorPlan.SetActive(false);
+            ShingYipFloorPlan.SetActive(false);
+            HewlettCentreFloorPlan.SetActive(false);
+            mapTitle.SetActive(true);
+            print("case 1");
+        }
+        else if (!vb.enabled && (userCouponBag.activeSelf || shopCouponBag.activeSelf || activityList.activeSelf))
+        {
+            userCouponBag.SetActive(false);
+            shopCouponBag.SetActive(false);
+            activityList.SetActive(false);
+            map.SetActive(true);
+            mapTitle.SetActive(true);
+            openCamButton.SetActive(true);
+
+            print("case 2");
+        }
+        else if (vb.enabled && (userCouponBag.activeSelf || shopCouponBag.activeSelf || activityList.activeSelf))
+        {
+            userCouponBag.SetActive(false);
+            shopCouponBag.SetActive(false);
+            activityList.SetActive(false);
+            print("case 3");
+        }
+        else if (vb.enabled && !map.activeSelf)
+        {
+            map.SetActive(true);
+            mapTitle.SetActive(true);
+            openCamButton.SetActive(true);
+            vb.enabled = false;
+            print("case 4");
+        }
+        else if (vb.enabled && map.activeSelf)
+        {
+            map.SetActive(true);
+            mapTitle.SetActive(true);
+            openCamButton.SetActive(true);
+            vb.enabled = false;
+            print("case 5");
+        }
+        else
+        {
+            CallDialog();
+            print("case 6");
         }
     }
     IEnumerator Animationor()

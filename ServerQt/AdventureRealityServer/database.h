@@ -59,6 +59,7 @@ public:
     struct CouponAmount//New struct for UserCoupon, just count amount of coupons.
     {
         public:
+            uint shopType;
             QString couponID;//Just include EngLetter
             uint amount;
             //QImage couponImage;
@@ -121,7 +122,10 @@ public:
     {
         bool operator()(CouponAmount a, CouponAmount b) const { return a.couponID < b.couponID; }
     }CouponAmountCouponId;
-
+    struct
+    {
+        bool operator()(CouponAmount a, CouponAmount b) const { return a.shopType < b.shopType; }
+    }CouponAmountShopType;
     struct
     {
         bool operator()(ShopCoupon a, ShopCoupon b) const { return a.couponID < b.couponID; }
@@ -145,7 +149,7 @@ public:
     //CSV Reader
     UserData UserDataReader(QString client);
     //QList<UserCoupon> UserCouponReader(QString client);//Obsolete
-    QList<CouponAmount> CouponAmountReader(QString client);
+    QList<QList<CouponAmount>> CouponAmountReader(QString client);//For demo version
     ShopData ShopDataReader(QString client);
     QList<QList<QList<ShopCoupon>>> ShopCouponReader(QString client);
     QList<UserInfo> UserInfoReader();
@@ -154,7 +158,7 @@ public:
     //CSV Writer
     void DataWriter(UserData userData);
     //void DataWriter(UserCoupon userCoupon, QString client);
-    void DataWriter(CouponAmount coupon, QString client);
+    void DataWriter(CouponAmount coupon, QString client);//For demo version
     void DataWriter(ShopCoupon shopCoupon, uint amount, QString client);//For edit CouponAmount.csv
     void DataWriter(ShopData shopData);
     void DataWriter(ShopCoupon shopCoupon, QString client);//For edit ShopCoupon.csv

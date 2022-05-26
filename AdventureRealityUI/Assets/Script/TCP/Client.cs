@@ -8,7 +8,6 @@ using UnityEngine.UI;
 
 public class Client : MonoBehaviour
 {
-    public RawImage Image;
     Networking net;
     DataInterface userData;
     bool b_tx = false;
@@ -124,6 +123,30 @@ public class Client : MonoBehaviour
                     byteCounter = i;
                 }
             }
+            else if (command == "ReadCouponAmount")
+            {
+                List<GridPopulator.UserCouponList.CouponItem> coupons;
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    for (int j = byteCounter; Encoding.UTF8.GetString(new[] { bytes[j] }) != ","; j++)
+                    {
+                        byteCounter = j;
+                    }
+                    byteCounter += 2;
+                    for (int j = byteCounter; Encoding.UTF8.GetString(new[] { bytes[j] }) != ","; j++)
+                    {
+                        command += Encoding.UTF8.GetString(new[] { bytes[i] });
+                        byteCounter = j;
+                    }
+                    byteCounter += 2;
+                    for (int j = byteCounter; Encoding.UTF8.GetString(new[] { bytes[j] }) != ","; j++)
+                    {
+                        command += Encoding.UTF8.GetString(new[] { bytes[i] });
+                        byteCounter = j;
+                    }
+                    byteCounter += 2;
+                }   
+            }
             else
             {
                 print("These byte have no command");
@@ -154,6 +177,15 @@ public class Client : MonoBehaviour
     public void RequestWriteUserCoupon()
     {
         net.WriteSocket("WriteUserCoupon", "");
+    }
+    public void RequestReadCouponAmount()//For demo version
+    {
+        net.WriteSocket("ReadCouponAmount", userData.myPlayerList.player[0].tokenOrID);
+    }
+    public void RequestWriteCouponAmount(int category, string couponID, uint quantity)//For demo version
+    {
+        string content = userData.myPlayerList.player[0].tokenOrID + "," + category.ToString() + "," + couponID + "," + quantity.ToString();
+        net.WriteSocket("WriteCouponAmount", content);
     }
     public void RequestReadShopData()
     {

@@ -32,7 +32,7 @@ Database::Database(QWidget *parent) :
     */
     qDebug() << csvEditor.NumberFilter("KHLAU20010730");
 
-    ui->setupUi(this);
+    //ui->setupUi(this);
 }
 
 Database::~Database()
@@ -203,12 +203,13 @@ QList<DataInterface::UserCoupon> DataInterface::UserCouponReader(QString client)
     return userCoupon;
 }
 */
-QList<DataInterface::CouponAmount> DataInterface::CouponAmountReader(QString client)
+QList<QList<DataInterface::CouponAmount>> DataInterface::CouponAmountReader(QString client)
 {
     if(client != ""){client += "//";}
-    QFile inFile(rp +"//" + "ARS" + "//" + "Users" + "//" + client + fileName.at(1) + ".csv");
+    QFile inFile(rp +"//" + "ARS" + "//" + "Users" + "//" + client + "CouponAmount" + ".csv");
     QStringList lines;/*行數據*/
     QList<CouponAmount> couponList;
+    QList<QList<CouponAmount>> sixTypesOfCouponList;
     if (inFile.open(QIODevice::ReadOnly))
     {
         QTextStream stream_text(&inFile);
@@ -222,14 +223,35 @@ QList<DataInterface::CouponAmount> DataInterface::CouponAmountReader(QString cli
             QString line = lines.at(j);
             QStringList split = line.split(",");/*列數據*/
             CouponAmount coupon;
-            coupon.couponID = split.at(0);
-            coupon.amount = split.at(1).toUInt();
+            coupon.shopType = split.at(0).toUInt();
+            coupon.couponID = split.at(1);
+            coupon.amount = split.at(2).toUInt();
             couponList.append(coupon);
         }
         inFile.close();
         sort(begin(couponList), end(couponList), CouponAmountCouponId);
+        sort(begin(couponList), end(couponList), CouponAmountShopType);
+
+        uint loopflag = 0;
+        for (int i = 0; i < 6; i++)
+        {
+            QList<CouponAmount> typeStorge;
+            for(uint j = loopflag; couponList[uint(j)].shopType == uint(i); j++)
+            {
+
+                typeStorge.append(couponList[j]);
+                loopflag = j+1;
+                if(j == couponList.length() -1)
+                {
+                    break;
+                }
+            }
+            sixTypesOfCouponList.append(typeStorge);
+            qDebug() << QString::number(sixTypesOfCouponList.length());
+        }
+        qDebug() << "Loop Done";
     }
-    return couponList;
+    return sixTypesOfCouponList;
 }
 DataInterface::ShopData DataInterface::ShopDataReader(QString client)
 {
@@ -276,7 +298,6 @@ QList<QList<QList<DataInterface::ShopCoupon>>> DataInterface::ShopCouponReader(Q
 
     QList<ShopCoupon> couponList;
     QList<QList<ShopCoupon>> sixTypeOfCouponList;
-    QList<QList<QList<CouponAmount>>> couponAmountList;
     QList<QList<QList<ShopCoupon>>> ShopCouponList;
 
     if (inFile.open(QIODevice::ReadOnly))
@@ -447,22 +468,75 @@ void DataInterface::DataWriter(UserCoupon userCoupon, QString client)//Obsolete
 */
 void DataInterface::DataWriter(CouponAmount coupon, QString client)
 {
-    QList<CouponAmount> coupons = CouponAmountReader(client);
+    QList<QList<CouponAmount>> coupons = CouponAmountReader(client);
     bool newCoupon = true;
-    for (int i = 0; i < coupons.length(); i++)
+    qDebug() << "Begin to loop";
+    if(coupons.length() > 0)
     {
-        if(coupon.couponID == coupons[i].couponID)
+        for (int i = 0; i < coupons[coupon.shopType].length(); i++)
         {
-            coupons[i].amount = coupon.amount;
-            newCoupon = false;
-            break;
+            qDebug() << i;
+            if(coupon.couponID == coupons[coupon.shopType][i].couponID)
+            {
+                qDebug() << "Added coupon";
+                coupons[coupon.shopType][i].amount = coupon.amount;
+                newCoupon = false;
+                break;
+            }
         }
     }
     if(newCoupon)
     {
-        coupons.append(coupon);
+        qDebug() << "New coupon detected.";
+        if(coupons.length() < 6)
+        {
+            qDebug() << "Begin to append";
+            QList<CouponAmount> tempoAmount;
+            tempoAmount.append(coupon);
+            coupons.append(tempoAmount);
+            qDebug() << "append";
+        }
+        else
+        {
+            qDebug() << "Begin to append";
+            coupons[coupon.shopType].append(coupon);
+            qDebug() << "append";
+        }
     }
+
     //write csv
+    QString location = rp + "//" + "ARS" + "//" + "Users" + "//" + client + "//" + "CouponAmount" + ".csv";
+    if(QFile::exists(location) != true)
+    {
+        qDebug() << "create new file";
+        QFile outFile(location);
+        DataInitialization headLinePermission;
+        QString headLine = "ShopType,CouponID,Amount\n";//headLinePermission.csvHeadline[0];
+        if (outFile.open(QIODevice::WriteOnly))
+        {
+            qDebug() << "create headline";
+            outFile.write(headLine.toStdString().c_str());/*寫入每一行數據到文件*/
+            outFile.close();
+        }
+        qDebug() << "New file created.";
+    }
+    qDebug() << "Begin to insert data.";
+    QFile outFile(location);
+    QString newLine = "";
+    for (int i = 0; i < coupons.length(); i++)
+    {
+        for(int j = 0; j < coupons[i].length(); j++)
+        {
+            qDebug() << QString::number(coupons[i][j].shopType) + "," + coupons[i][j].couponID + "," + QString::number(coupons[i][j].amount);
+            newLine += QString::number(coupons[i][j].shopType) + "," + coupons[i][j].couponID + "," + QString::number(coupons[i][j].amount) + "\n";
+        }
+    }
+    /*如果以ReadWrite方式打開，不會把所有數據清除，如果文件原來的長度爲100字節，寫操作寫入了30字節，那麼還剩餘70字節，並且這70字節和文件打開之前保持一直*/
+    if (outFile.open(QIODevice::WriteOnly | QIODevice::Append))
+    {
+        outFile.write(newLine.toStdString().c_str());/*寫入每一行數據到文件*/
+        outFile.close();
+    }
 }
 void DataInterface::DataWriter(ShopData shopData)
 {

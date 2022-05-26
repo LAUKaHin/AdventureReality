@@ -15,6 +15,6 @@ public class CoinText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        coinText.text = ": " + userData.myPlayerList.player[0].score.ToString();
+        coinText.text =userData.myPlayerList.player[0].score.ToString();
     }
 }

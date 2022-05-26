@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class ListPointer : MonoBehaviour
 {
     public UIOperation uio;
-    public GameObject otherUio;
     public GridPopulator lists;
     public int p_categoryNum;
     public int p_loopnumber;

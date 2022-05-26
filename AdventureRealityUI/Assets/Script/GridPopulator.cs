@@ -25,7 +25,7 @@ public class GridPopulator : MonoBehaviour
 			public string content;
 			public string location;
 			public string contect;
-			public string promotionShortName;
+			public string couponID;//Without english name.
 			public uint cost;
 			public Sprite image;
 		}
@@ -35,7 +35,7 @@ public class GridPopulator : MonoBehaviour
 			public GameObject content;
 			public List<CouponItem> CouponItems;
 		}
-		public CouponList food, furniture, clothing, accessory, electronics, recreation;
+		public CouponList food, furniture, clothing, electronics, recreation;
 	}
 	public ShopList shopList;
 
@@ -49,7 +49,7 @@ public class GridPopulator : MonoBehaviour
 			public string content;
 			public string location;
 			public string contect;
-			public string promotionShortName;
+			public string couponID;
 			public Sprite image;
 			public uint quantity;
 		}
@@ -59,7 +59,7 @@ public class GridPopulator : MonoBehaviour
 			public GameObject content;
 			public List<CouponItem> CouponItems;
 		}
-		public CouponList food, furniture, clothing, accessory, electronics, recreation;
+		public CouponList food, furniture, clothing, electronics, recreation;
 	}
 	public UserCouponList userCouponList;
 
@@ -77,7 +77,6 @@ public class GridPopulator : MonoBehaviour
 			sCategoryList.Add(shopList.food);
 			sCategoryList.Add(shopList.furniture);
 			sCategoryList.Add(shopList.clothing);
-			sCategoryList.Add(shopList.accessory);
 			sCategoryList.Add(shopList.electronics);
 			sCategoryList.Add(shopList.recreation);
 			for (int i = 0; i < sCategoryList.Count; i++)
@@ -93,9 +92,9 @@ public class GridPopulator : MonoBehaviour
 			uCategoryList.Add(userCouponList.food);
 			uCategoryList.Add(userCouponList.furniture);
 			uCategoryList.Add(userCouponList.clothing);
-			uCategoryList.Add(userCouponList.accessory);
 			uCategoryList.Add(userCouponList.electronics);
 			uCategoryList.Add(userCouponList.recreation);
+
 			this.gameObject.SetActive(false);
 		}
 	}
@@ -181,7 +180,7 @@ public class GridPopulator : MonoBehaviour
 		transformer.location = coupon.location;
 		transformer.contect = coupon.contect;
 		transformer.image = coupon.image;
-		transformer.promotionShortName = coupon.promotionShortName;
+		transformer.couponID = coupon.couponID;//Without english name.
 		transformer.quantity = quantity;
 
 		bool check = false;
@@ -190,7 +189,7 @@ public class GridPopulator : MonoBehaviour
 		{
 			for (int i = 0; i < userCouponList.food.CouponItems.Count; i++)
 			{
-				if (userCouponList.food.CouponItems[i].promotionShortName == coupon.promotionShortName)
+				if (userCouponList.food.CouponItems[i].couponID == coupon.couponID)
 				{
 					userCouponList.food.CouponItems[i].quantity += quantity;
 					check = true;
@@ -206,7 +205,7 @@ public class GridPopulator : MonoBehaviour
 		{
 			for (int i = 0; i < userCouponList.furniture.CouponItems.Count; i++)
 			{
-				if (userCouponList.furniture.CouponItems[i].promotionShortName == coupon.promotionShortName)
+				if (userCouponList.furniture.CouponItems[i].couponID == coupon.couponID)
 				{
 					userCouponList.furniture.CouponItems[i].quantity += quantity;
 					check = true;
@@ -222,7 +221,7 @@ public class GridPopulator : MonoBehaviour
 		{
 			for (int i = 0; i < userCouponList.clothing.CouponItems.Count; i++)
 			{
-				if (userCouponList.clothing.CouponItems[i].promotionShortName == coupon.promotionShortName)
+				if (userCouponList.clothing.CouponItems[i].couponID == coupon.couponID)
 				{
 					userCouponList.clothing.CouponItems[i].quantity += quantity;
 					check = true;
@@ -236,25 +235,9 @@ public class GridPopulator : MonoBehaviour
 		}
 		else if (category == 3)
 		{
-			for (int i = 0; i < userCouponList.accessory.CouponItems.Count; i++)
-			{
-				if (userCouponList.accessory.CouponItems[i].promotionShortName == coupon.promotionShortName)
-				{
-					userCouponList.accessory.CouponItems[i].quantity += quantity;
-					check = true;
-					break;
-				}
-			}
-			if (!check)
-			{
-				userCouponList.accessory.CouponItems.Add(transformer);
-			}
-		}
-		else if (category == 4)
-		{
 			for (int i = 0; i < userCouponList.electronics.CouponItems.Count; i++)
 			{
-				if (userCouponList.electronics.CouponItems[i].promotionShortName == coupon.promotionShortName)
+				if (userCouponList.electronics.CouponItems[i].couponID == coupon.couponID)
 				{
 					userCouponList.electronics.CouponItems[i].quantity += quantity;
 					check = true;
@@ -266,11 +249,11 @@ public class GridPopulator : MonoBehaviour
 				userCouponList.electronics.CouponItems.Add(transformer);
 			}
 		}
-		else if (category == 5)
+		else if (category == 4)
 		{
 			for (int i = 0; i < userCouponList.recreation.CouponItems.Count; i++)
 			{
-				if (userCouponList.recreation.CouponItems[i].promotionShortName == coupon.promotionShortName)
+				if (userCouponList.recreation.CouponItems[i].couponID == coupon.couponID)
 				{
 					userCouponList.recreation.CouponItems[i].quantity += quantity;
 					check = true;

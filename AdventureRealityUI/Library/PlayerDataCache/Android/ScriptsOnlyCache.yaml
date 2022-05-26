@@ -1,7 +1,6 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - AnswerBox
     - Client
     - CoinText
     - DataInterface
@@ -79,17 +78,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
-      Script: {instanceID: 0}
-    - Class: 84
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -131,8 +122,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3234}
     - Class: 114
       Script: {instanceID: 3398}
-    - Class: 114
-      Script: {instanceID: 3408}
     - Class: 114
       Script: {instanceID: 3976}
     - Class: 114
@@ -183,8 +172,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7174}
     - Class: 114
       Script: {instanceID: 7794}
-    - Class: 114
-      Script: {instanceID: 27656}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -208,8 +195,6 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 328
-      Script: {instanceID: 0}
-    - Class: 329
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1540,7 +1525,7 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 52f1cc7597108a48d1ef131df934b7e2
+      Hash: 963c6a25837a50eacd25062facb0cff9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GridPopulator
@@ -1636,7 +1621,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: f8a47f27c0e4ec8644debfe55c1d2065
+      Hash: 6517564fb9c3913c410a586bd3cff2d3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ListPointer
@@ -1666,7 +1651,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: d108b63009885158e56aed9bb5ee2ace
+      Hash: 24e00f0935bfba43b070abc680626024
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIOperation
@@ -2182,7 +2167,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: b30c2a21a7ed029c24d6d8cce1d277fe
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Client

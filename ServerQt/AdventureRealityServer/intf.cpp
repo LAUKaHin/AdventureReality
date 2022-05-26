@@ -9,8 +9,8 @@
 #include <QtDebug>
 
 Intf::Intf() {
-    DataInterface imageModifier;
-    imageModifier.ShopCouponReader("");
+    //DataInterface imageModifier;
+    //imageModifier.ShopCouponReader("");
     //qDebug() << imageModifier.NumberFilter("KHLAU20010730");
     //imageModifier.QtCSV_Reader("Users", "KHLAU", "power");
     //QImage cpp = QImage::fromData(imageModifier.PickImage("cpp"));
@@ -205,6 +205,67 @@ void Intf::serviceProcess(User *p_usr) {
     {
 
     }
+    else if(command == "ReadCouponAmount")//For demo version
+    {
+        QString user = "";
+        for(int i = splitCounter; i < p_usr->ba_load.at(i); i++)
+        {
+            user.append(p_usr->ba_load.at(i));
+            splitCounter = i;
+        }
+        QList<QList<DataInterface::CouponAmount>> couponAmount = interface.CouponAmountReader(user);
+        QString command = "ReadCouponAmount";
+        QString serverTime = QDateTime::currentDateTime().toString("yyyyMMddHHmm");
+        QByteArray data = serverTime.toUtf8() + command.toUtf8() + ',';
+        for(int i = 0; i < couponAmount.length(); i++)
+        {
+            for(int j = 0; j < couponAmount[i].length(); j++)
+            {
+                data = QString::number(couponAmount[i][j].shopType).toUtf8() + ',' + couponAmount[i][j].couponID.toUtf8() + ',' + QString::number(couponAmount[i][j].amount).toUtf8()+ ',';
+            }
+        }
+        QString DataAsString = QTextCodec::codecForMib(106)->toUnicode(data.mid(0, 1));
+        p_server->sendRawByte(data, p_usr);
+        p_server->disconnect();
+    }
+    else if(command == "WriteCouponAmount")//For demo version
+    {
+        QString username = "";
+        DataInterface::CouponAmount coupon;
+        for (int i = splitCounter; p_usr->ba_load.at(i) != ','; i++)
+        {
+            username.append(p_usr->ba_load.at(i));
+            splitCounter = i;
+        }
+        qDebug() << username;
+        splitCounter+= 2;
+        QString tempoString;
+        for (int i = splitCounter; p_usr->ba_load.at(i) != ','; i++)
+        {
+            tempoString.append(p_usr->ba_load.at(i));
+            splitCounter = i;
+        }
+        coupon.shopType = tempoString.toUInt();
+        qDebug() << coupon.shopType;
+        tempoString = "";
+        splitCounter+= 2;
+        for(int i = splitCounter; p_usr->ba_load.at(i) != ','; i++)
+        {
+            coupon.couponID.append(p_usr->ba_load.at(i));
+            splitCounter = i;
+        }
+        qDebug() << coupon.couponID;
+        splitCounter+= 2;
+        for(int i = splitCounter; p_usr->ba_load.at(i) != '\0' || i < p_usr->ba_load.at(i); i++)
+        {
+            tempoString.append(p_usr->ba_load.at(i));
+            splitCounter = i;
+        }
+        coupon.amount = tempoString.toUInt();
+        qDebug() << coupon.amount;
+        qDebug() << QString::number(coupon.shopType) + " "  + coupon.couponID + " " + QString::number(coupon.amount);
+        interface.DataWriter(coupon, username);
+    }
     else if(command == "ReadShopData")
     {
 
@@ -241,58 +302,4 @@ void Intf::serviceProcess(User *p_usr) {
     {
         qDebug() << "wrong command:" << command;
     }
-	char cmd = p_usr->ba_load.at(0);
-	if(cmd == 'B') {
-		QByteArray ba_rtn;
-		ba_rtn.append('J');
-		
-        QFile file("C:\\Users\\LAU Ka Hin\\OneDrive - Vocational Training Council - Student\\GameAR\\AdventureReality\\TutorialExample\\QtXUnity\\tcp_srv_tlv\\image_resource\\image_test.png");
-		file.open(QFile::ReadOnly);
-		QByteArray buf = file.readAll();
-		file.close();
-
-		ba_rtn.append(buf);
-		
-		printf("ba_rtn len:%d\n", ba_rtn.length());
-		p_server->sendRawByte(ba_rtn, p_usr);
-	}
-	else if(cmd == 'C') {
-		QByteArray ba_rtn;
-		ba_rtn.append('J');
-		
-        QFile file("C:\\Users\\LAU Ka Hin\\OneDrive - Vocational Training Council - Student\\GameAR\\AdventureReality\\TutorialExample\\QtXUnity\\tcp_srv_tlv\\image_resource\\1000x-1.jpg");
-		file.open(QFile::ReadOnly);
-		QByteArray buf = file.readAll();
-		file.close();
-
-		ba_rtn.append(buf);
-		
-		printf("ba_rtn len:%d\n", ba_rtn.length());
-		p_server->sendRawByte(ba_rtn, p_usr);
-	}
-	else if(cmd == 'D') {
-		QByteArray ba_data = p_usr->ba_load;
-		ba_data = ba_data.mid(1);
-		QString str_data = QString(ba_data);
-		printf("%s\n", qPrintable(str_data));
-		QStringList str_data_split = str_data.split(",");
-		for(int i=0; i<str_data_split.size(); i++) {
-			printf("%d, %s\n", i, qPrintable(str_data_split.at(i)));
-			printf("%d, %f\n", str_data_split.at(i).toInt(), str_data_split.at(i).toFloat());
-		}
-		
-		QByteArray ba_rtn;
-		ba_rtn.append('A');
-				
-		printf("ba_rtn len:%d\n", ba_rtn.length());
-		p_server->sendRawByte(ba_rtn, p_usr);
-	}
-	else if(cmd == 'T') {
-		QByteArray ba_rtn;
-		ba_rtn.append('A');
-		ba_rtn.append('B');
-		ba_rtn.append('C');
-		p_server->sendRawByte(ba_rtn, p_usr);
-	}
-	else {}
 }
