@@ -82,6 +82,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
@@ -95,83 +97,85 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1596}
+      Script: {instanceID: 1670}
     - Class: 114
-      Script: {instanceID: 1598}
+      Script: {instanceID: 1672}
     - Class: 114
-      Script: {instanceID: 1600}
+      Script: {instanceID: 1674}
     - Class: 114
-      Script: {instanceID: 1604}
+      Script: {instanceID: 1678}
     - Class: 114
-      Script: {instanceID: 2190}
+      Script: {instanceID: 2278}
     - Class: 114
-      Script: {instanceID: 2322}
+      Script: {instanceID: 2410}
     - Class: 114
-      Script: {instanceID: 2592}
+      Script: {instanceID: 2694}
     - Class: 114
-      Script: {instanceID: 2698}
+      Script: {instanceID: 2934}
     - Class: 114
-      Script: {instanceID: 2732}
+      Script: {instanceID: 3166}
     - Class: 114
-      Script: {instanceID: 2738}
+      Script: {instanceID: 3332}
     - Class: 114
-      Script: {instanceID: 2740}
+      Script: {instanceID: 3934}
     - Class: 114
-      Script: {instanceID: 2922}
+      Script: {instanceID: 3988}
     - Class: 114
-      Script: {instanceID: 3234}
+      Script: {instanceID: 4062}
     - Class: 114
-      Script: {instanceID: 3398}
+      Script: {instanceID: 4150}
     - Class: 114
-      Script: {instanceID: 3976}
+      Script: {instanceID: 4164}
     - Class: 114
-      Script: {instanceID: 4026}
+      Script: {instanceID: 4406}
     - Class: 114
-      Script: {instanceID: 4096}
+      Script: {instanceID: 4434}
     - Class: 114
-      Script: {instanceID: 4184}
+      Script: {instanceID: 4622}
     - Class: 114
-      Script: {instanceID: 4198}
+      Script: {instanceID: 4778}
     - Class: 114
-      Script: {instanceID: 4528}
+      Script: {instanceID: 4792}
     - Class: 114
-      Script: {instanceID: 4556}
+      Script: {instanceID: 5014}
     - Class: 114
-      Script: {instanceID: 4740}
+      Script: {instanceID: 5024}
     - Class: 114
-      Script: {instanceID: 4898}
+      Script: {instanceID: 5030}
     - Class: 114
-      Script: {instanceID: 4914}
+      Script: {instanceID: 5084}
     - Class: 114
-      Script: {instanceID: 5128}
+      Script: {instanceID: 5100}
     - Class: 114
-      Script: {instanceID: 5138}
+      Script: {instanceID: 5124}
     - Class: 114
-      Script: {instanceID: 5144}
+      Script: {instanceID: 5338}
     - Class: 114
-      Script: {instanceID: 5198}
+      Script: {instanceID: 5652}
     - Class: 114
-      Script: {instanceID: 5212}
+      Script: {instanceID: 6112}
     - Class: 114
-      Script: {instanceID: 5232}
+      Script: {instanceID: 6122}
     - Class: 114
-      Script: {instanceID: 5446}
+      Script: {instanceID: 6652}
     - Class: 114
-      Script: {instanceID: 5628}
+      Script: {instanceID: 6860}
     - Class: 114
-      Script: {instanceID: 5758}
+      Script: {instanceID: 6940}
     - Class: 114
-      Script: {instanceID: 6264}
+      Script: {instanceID: 7486}
     - Class: 114
-      Script: {instanceID: 6272}
+      Script: {instanceID: 31020}
     - Class: 114
-      Script: {instanceID: 6896}
+      Script: {instanceID: 31022}
     - Class: 114
-      Script: {instanceID: 7100}
+      Script: {instanceID: 31024}
     - Class: 114
-      Script: {instanceID: 7174}
+      Script: {instanceID: 31026}
     - Class: 114
-      Script: {instanceID: 7794}
+      Script: {instanceID: 31844}
+    - Class: 114
+      Script: {instanceID: 32276}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -195,6 +199,8 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 328
+      Script: {instanceID: 0}
+    - Class: 329
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -251,6 +257,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: LayoutElement
+  - hash:
+      serializedVersion: 2
+      Hash: d0987ce3e9092dbe0fa30d73f333fffa
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: Grain
   - hash:
       serializedVersion: 2
       Hash: 6bc76e17f0d5e93f3eea7f5a2fe227f3
@@ -331,10 +343,10 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: VuforiaScripts.dll
-    namespaceName: 
-    className: BoundingBoxRenderer
+      Hash: a1f19ad47d3094e235f21b74dfc423a8
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessLayer
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -385,252 +397,6 @@ ScriptsOnlyBuild:
     className: UnityMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 66679ab8b809aa3760109b213b0ab636
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AnchorInputListenerBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 127837f608f41b15774badb9a5791616
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AreaTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AreaTargetPreviewBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AreaTargetSimulatorVisualization
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ARFoundationInitHelper
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: BackgroundPlaneBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: a8e431cd22067175e40e9a215394b9b9
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: CloudRecoBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 050a9825ed50f0cc09dda1ee7d4ead8d
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ContentPositioningBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: e2a0111b30f80d2a3cbe4adc88944f33
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: CylinderTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: 
-    className: DefaultInitializationErrorHandlerInternal
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: DefaultInitializationErrorHandlerPlaceHolder
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: DefaultTrackableBehaviourPlaceholder
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GLErrorHandler
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GuideView2DBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GuideView3DBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GuideViewCameraBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 297bb3168553c3955b1c71e1f37cf791
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GuideViewRenderingBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 13253e135f97749bb4dff9f8e089422a
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ImageTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: b14bdc19729a47a24f3184da695f52b1
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: MaskOutBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 14e0b683b120c064839a9fd4e0717f88
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: MidAirPositionerBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: b26d00ca39149a355e7768127e1c4a80
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ModelTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 70adfc513dc72d29ad55ef805577daf1
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: MultiTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: d390ec1eddfcfe76c6de77e0b3b0bde9
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: NullTrackableBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: f1f268a3c75d9ed7313fd53bde94d081
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ObjectTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: e11d554bbb701d4f59a269e753cc2640
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: PlaneFinderBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: PreviewModelTurnOffBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 88e0eacd7ca80f727ae70233b11a3b68
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SessionRecorderBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SessionRecorderHolographicCanvas
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SessionRecorderInfoPopup
-  - hash:
-      serializedVersion: 2
-      Hash: c61ae52a96fa7966cc60c57666eedde6
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SessionRecorderOverlayCanvas
-  - hash:
-      serializedVersion: 2
-      Hash: 128c30ad1cf8dd3ecabc27e874f9311a
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SimulatorController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: TurnOffBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VideoBackgroundBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 6d88e9e1397f5819fff5578c88d3ed0e
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VirtualButtonBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 8971d09ce7f62d9b5b8044d33c0f78e5
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuforiaBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 0cdfb413039a03c14e437880af617f36
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuforiaConfiguration
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuforiaMonoBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuforiaRuntimeTrackingSimulator
-  - hash:
-      serializedVersion: 2
-      Hash: 149c293ac9d71b971fb3d89ec02d5911
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuMarkBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: fbbf64dcbe0662e3eda1dec45ea8f895
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: WireframeBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: WireframeTrackableEventHandler
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -641,6 +407,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: CoroutineRunner
+  - hash:
+      serializedVersion: 2
+      Hash: 61b9d9b6f4b6a222dfea8b131b3d3227
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: ChromaticAberration
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -683,258 +455,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
-  - hash:
-      serializedVersion: 2
-      Hash: ed9f9ba4f86811683bd63e5cc6dae905
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AnchorBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 66679ab8b809aa3760109b213b0ab636
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AnchorInputListenerBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 127837f608f41b15774badb9a5791616
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AreaTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AreaTargetPreviewBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AreaTargetSimulatorVisualization
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ARFoundationInitHelper
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: BackgroundPlaneBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: a8e431cd22067175e40e9a215394b9b9
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: CloudRecoBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 050a9825ed50f0cc09dda1ee7d4ead8d
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ContentPositioningBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: e2a0111b30f80d2a3cbe4adc88944f33
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: CylinderTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: 
-    className: DefaultInitializationErrorHandlerInternal
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: DefaultInitializationErrorHandlerPlaceHolder
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: DefaultTrackableBehaviourPlaceholder
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GLErrorHandler
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GuideView2DBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GuideView3DBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GuideViewCameraBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 297bb3168553c3955b1c71e1f37cf791
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GuideViewRenderingBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 13253e135f97749bb4dff9f8e089422a
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ImageTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: b14bdc19729a47a24f3184da695f52b1
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: MaskOutBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 14e0b683b120c064839a9fd4e0717f88
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: MidAirPositionerBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: b26d00ca39149a355e7768127e1c4a80
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ModelTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 70adfc513dc72d29ad55ef805577daf1
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: MultiTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: d390ec1eddfcfe76c6de77e0b3b0bde9
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: NullTrackableBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: f1f268a3c75d9ed7313fd53bde94d081
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ObjectTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: e11d554bbb701d4f59a269e753cc2640
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: PlaneFinderBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: PreviewModelTurnOffBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 88e0eacd7ca80f727ae70233b11a3b68
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SessionRecorderBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SessionRecorderHolographicCanvas
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SessionRecorderInfoPopup
-  - hash:
-      serializedVersion: 2
-      Hash: c61ae52a96fa7966cc60c57666eedde6
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SessionRecorderOverlayCanvas
-  - hash:
-      serializedVersion: 2
-      Hash: 128c30ad1cf8dd3ecabc27e874f9311a
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SimulatorController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: TurnOffBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VideoBackgroundBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 6d88e9e1397f5819fff5578c88d3ed0e
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VirtualButtonBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 8971d09ce7f62d9b5b8044d33c0f78e5
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuforiaBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 0cdfb413039a03c14e437880af617f36
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuforiaConfiguration
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuforiaMonoBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuforiaRuntimeTrackingSimulator
-  - hash:
-      serializedVersion: 2
-      Hash: 149c293ac9d71b971fb3d89ec02d5911
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuMarkBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: fbbf64dcbe0662e3eda1dec45ea8f895
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: WireframeBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: WireframeTrackableEventHandler
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -983,6 +503,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseDragMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: a53651ee3996fbba20dfe0fce02f0b23
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: AutoExposure
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1057,6 +583,12 @@ ScriptsOnlyBuild:
     className: TextMeshPro
   - hash:
       serializedVersion: 2
+      Hash: 71f7f12b8d0f4fd73590db8bcb6d453c
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: Bloom
+  - hash:
+      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1115,6 +647,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: 7e6ed836cbaa230e56d6a2bbae1b9bb5
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessEffectSettings
   - hash:
       serializedVersion: 2
       Hash: 6757c1dc8a161a85491bedfc14255b81
@@ -1183,258 +721,6 @@ ScriptsOnlyBuild:
     className: CameraController
   - hash:
       serializedVersion: 2
-      Hash: ed9f9ba4f86811683bd63e5cc6dae905
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AnchorBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 66679ab8b809aa3760109b213b0ab636
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AnchorInputListenerBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 127837f608f41b15774badb9a5791616
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AreaTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AreaTargetPreviewBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AreaTargetSimulatorVisualization
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ARFoundationInitHelper
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: BackgroundPlaneBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: a8e431cd22067175e40e9a215394b9b9
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: CloudRecoBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 050a9825ed50f0cc09dda1ee7d4ead8d
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ContentPositioningBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: e2a0111b30f80d2a3cbe4adc88944f33
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: CylinderTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: 
-    className: DefaultInitializationErrorHandlerInternal
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: DefaultInitializationErrorHandlerPlaceHolder
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: DefaultTrackableBehaviourPlaceholder
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GLErrorHandler
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GuideView2DBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GuideView3DBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GuideViewCameraBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 297bb3168553c3955b1c71e1f37cf791
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GuideViewRenderingBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 13253e135f97749bb4dff9f8e089422a
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ImageTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: b14bdc19729a47a24f3184da695f52b1
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: MaskOutBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 14e0b683b120c064839a9fd4e0717f88
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: MidAirPositionerBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: b26d00ca39149a355e7768127e1c4a80
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ModelTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 70adfc513dc72d29ad55ef805577daf1
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: MultiTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: d390ec1eddfcfe76c6de77e0b3b0bde9
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: NullTrackableBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: f1f268a3c75d9ed7313fd53bde94d081
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ObjectTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: e11d554bbb701d4f59a269e753cc2640
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: PlaneFinderBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: PreviewModelTurnOffBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 88e0eacd7ca80f727ae70233b11a3b68
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SessionRecorderBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SessionRecorderHolographicCanvas
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SessionRecorderInfoPopup
-  - hash:
-      serializedVersion: 2
-      Hash: c61ae52a96fa7966cc60c57666eedde6
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SessionRecorderOverlayCanvas
-  - hash:
-      serializedVersion: 2
-      Hash: 128c30ad1cf8dd3ecabc27e874f9311a
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SimulatorController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: TurnOffBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VideoBackgroundBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 6d88e9e1397f5819fff5578c88d3ed0e
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VirtualButtonBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 8971d09ce7f62d9b5b8044d33c0f78e5
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuforiaBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 0cdfb413039a03c14e437880af617f36
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuforiaConfiguration
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuforiaMonoBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuforiaRuntimeTrackingSimulator
-  - hash:
-      serializedVersion: 2
-      Hash: 149c293ac9d71b971fb3d89ec02d5911
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuMarkBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: fbbf64dcbe0662e3eda1dec45ea8f895
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: WireframeBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: WireframeTrackableEventHandler
-  - hash:
-      serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1445,6 +731,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: af93f9c42e90877a9ba31e37adfd900c
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: MotionBlur
   - hash:
       serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
@@ -1483,6 +775,12 @@ ScriptsOnlyBuild:
     className: TextConsoleSimulator
   - hash:
       serializedVersion: 2
+      Hash: 63d7b9b64a11859f416d72ba9a3c3fec
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: ScreenSpaceReflections
+  - hash:
+      serializedVersion: 2
       Hash: 11319334e5365797f8056694f9b5dae4
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1499,6 +797,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OpenBox
+  - hash:
+      serializedVersion: 2
+      Hash: d5630f96bd5a6a6eed7e1754c3fb8703
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessVolume
   - hash:
       serializedVersion: 2
       Hash: b6514f552bd2ee9e736a5678aa7f7de3
@@ -1537,10 +841,22 @@ ScriptsOnlyBuild:
     className: TMP_TextEventCheck
   - hash:
       serializedVersion: 2
+      Hash: d6fc8d3165070298511ec776ea575626
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessResources
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnEndDragMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: ac6acd886c54c48c599ab5fed5781ea7
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: AmbientOcclusion
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1621,10 +937,22 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: e82c0521cdfe8cb6a168ef7208a98d4a
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: Vignette
+  - hash:
+      serializedVersion: 2
       Hash: 6517564fb9c3913c410a586bd3cff2d3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ListPointer
+  - hash:
+      serializedVersion: 2
+      Hash: f542c1afca5bb4022f91fdda19b8d622
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: DepthOfField
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1651,7 +979,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 24e00f0935bfba43b070abc680626024
+      Hash: 0f4ab6d374f424d491011b7b41054519
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIOperation
@@ -1667,12 +995,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.State.dll
     namespaceName: Unity.VisualScripting
     className: StateGraphAsset
-  - hash:
-      serializedVersion: 2
-      Hash: 2fba61c4298409162f811e183315a9c9
-    assemblyName: VuforiaScripts.dll
-    namespaceName: 
-    className: DefaultTrackableEventHandler
   - hash:
       serializedVersion: 2
       Hash: 4f60ff347d4efee4ef8cc7f627735018
@@ -1825,258 +1147,6 @@ ScriptsOnlyBuild:
     className: VertexJitter
   - hash:
       serializedVersion: 2
-      Hash: ed9f9ba4f86811683bd63e5cc6dae905
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AnchorBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 66679ab8b809aa3760109b213b0ab636
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AnchorInputListenerBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 127837f608f41b15774badb9a5791616
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AreaTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AreaTargetPreviewBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: AreaTargetSimulatorVisualization
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ARFoundationInitHelper
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: BackgroundPlaneBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: a8e431cd22067175e40e9a215394b9b9
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: CloudRecoBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 050a9825ed50f0cc09dda1ee7d4ead8d
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ContentPositioningBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: e2a0111b30f80d2a3cbe4adc88944f33
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: CylinderTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: 
-    className: DefaultInitializationErrorHandlerInternal
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: DefaultInitializationErrorHandlerPlaceHolder
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: DefaultTrackableBehaviourPlaceholder
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GLErrorHandler
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GuideView2DBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GuideView3DBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GuideViewCameraBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 297bb3168553c3955b1c71e1f37cf791
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: GuideViewRenderingBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 13253e135f97749bb4dff9f8e089422a
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ImageTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: b14bdc19729a47a24f3184da695f52b1
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: MaskOutBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 14e0b683b120c064839a9fd4e0717f88
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: MidAirPositionerBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: b26d00ca39149a355e7768127e1c4a80
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ModelTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 70adfc513dc72d29ad55ef805577daf1
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: MultiTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: d390ec1eddfcfe76c6de77e0b3b0bde9
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: NullTrackableBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: f1f268a3c75d9ed7313fd53bde94d081
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ObjectTargetBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: e11d554bbb701d4f59a269e753cc2640
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: PlaneFinderBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: PreviewModelTurnOffBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 88e0eacd7ca80f727ae70233b11a3b68
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SessionRecorderBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SessionRecorderHolographicCanvas
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SessionRecorderInfoPopup
-  - hash:
-      serializedVersion: 2
-      Hash: c61ae52a96fa7966cc60c57666eedde6
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SessionRecorderOverlayCanvas
-  - hash:
-      serializedVersion: 2
-      Hash: 128c30ad1cf8dd3ecabc27e874f9311a
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: SimulatorController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: TurnOffBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VideoBackgroundBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 6d88e9e1397f5819fff5578c88d3ed0e
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VirtualButtonBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 8971d09ce7f62d9b5b8044d33c0f78e5
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuforiaBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 0cdfb413039a03c14e437880af617f36
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuforiaConfiguration
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuforiaMonoBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuforiaRuntimeTrackingSimulator
-  - hash:
-      serializedVersion: 2
-      Hash: 149c293ac9d71b971fb3d89ec02d5911
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuMarkBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: fbbf64dcbe0662e3eda1dec45ea8f895
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: WireframeBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: WireframeTrackableEventHandler
-  - hash:
-      serializedVersion: 2
       Hash: ebd822dacd1ca55dd8dc9d660309db9b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -2174,15 +1244,411 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: VuforiaScripts.dll
-    namespaceName: 
-    className: DefaultInitializationErrorHandler
+    assemblyName: Unity.VisualScripting.Core.dll
+    namespaceName: Unity.VisualScripting
+    className: UnityOnMoveMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ControlTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 38bcb4d3f9a1812fd650f92e87a4cf64
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessProfile
+  - hash:
+      serializedVersion: 2
+      Hash: 50c443b12ccc0b475183318b5088bcc5
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessDebug
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
-    className: UnityOnMoveMessageListener
+    className: UnityOnParticleCollisionMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.VisualScripting.Core.dll
+    namespaceName: Unity.VisualScripting
+    className: UnityOnMouseOverMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 726fcf7961cbb4108aa5be5e55b8c8bf
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: ColorGrading
+  - hash:
+      serializedVersion: 2
+      Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
+    assemblyName: Unity.VisualScripting.Core.dll
+    namespaceName: Unity.VisualScripting
+    className: Variables
+  - hash:
+      serializedVersion: 2
+      Hash: fe1fdeffc2067077b2f1a90b210c2532
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DropdownSample
+  - hash:
+      serializedVersion: 2
+      Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
+    assemblyName: Unity.VisualScripting.State.dll
+    namespaceName: Unity.VisualScripting
+    className: StateMachine
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TMPro
+    className: TMP_PhoneNumberValidator
+  - hash:
+      serializedVersion: 2
+      Hash: b13de7a0a457cb8e026d4237dc1b5797
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: LensDistortion
+  - hash:
+      serializedVersion: 2
+      Hash: 4bd7b208af8ea581658ce421847d1d0d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DataReader
+  - hash:
+      serializedVersion: 2
+      Hash: 5900b4371436ed2b53e2f3c8d96060dd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CoinText
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TMPro.Examples
+    className: VertexColorCycler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.VisualScripting.Core.dll
+    namespaceName: Unity.VisualScripting
+    className: UnityOnMouseUpMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: e7a73f5f78ba6445195ec23b74a1ce2d
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TMPro.Examples
+    className: TeleType
+  - hash:
+      serializedVersion: 2
+      Hash: e63944317d2f5958e31963668bb29158
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TMPro.Examples
+    className: VertexZoom
+  - hash:
+      serializedVersion: 2
+      Hash: 0d6a4355b91913abd95558bec9f969bc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DataWriter
+  - hash:
+      serializedVersion: 2
+      Hash: 8220b46879dc5e37db1b940c938f5744
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.VisualScripting.Core.dll
+    namespaceName: Unity.VisualScripting
+    className: UnityOnToggleValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.VisualScripting.Core.dll
+    namespaceName: Unity.VisualScripting
+    className: UnityOnMouseEnterMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 47930f3b40e24ef5b3b5e3d9ada7097a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TMPro.Examples
+    className: Benchmark01
+  - hash:
+      serializedVersion: 2
+      Hash: abf1930d8126d0b2e00e9449129a0190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.VisualScripting.Core.dll
+    namespaceName: Unity.VisualScripting
+    className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 8971d09ce7f62d9b5b8044d33c0f78e5
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuforiaBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 13253e135f97749bb4dff9f8e089422a
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ImageTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: TurnOffBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: c61ae52a96fa7966cc60c57666eedde6
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SessionRecorderOverlayCanvas
+  - hash:
+      serializedVersion: 2
+      Hash: 66679ab8b809aa3760109b213b0ab636
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AnchorInputListenerBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 127837f608f41b15774badb9a5791616
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AreaTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AreaTargetPreviewBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AreaTargetSimulatorVisualization
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ARFoundationInitHelper
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: BackgroundPlaneBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: a8e431cd22067175e40e9a215394b9b9
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: CloudRecoBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 050a9825ed50f0cc09dda1ee7d4ead8d
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ContentPositioningBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: e2a0111b30f80d2a3cbe4adc88944f33
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: CylinderTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: 
+    className: DefaultInitializationErrorHandlerInternal
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: DefaultInitializationErrorHandlerPlaceHolder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: DefaultTrackableBehaviourPlaceholder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GLErrorHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GuideView2DBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GuideView3DBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GuideViewCameraBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 297bb3168553c3955b1c71e1f37cf791
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GuideViewRenderingBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: b14bdc19729a47a24f3184da695f52b1
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: MaskOutBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 14e0b683b120c064839a9fd4e0717f88
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: MidAirPositionerBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: b26d00ca39149a355e7768127e1c4a80
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ModelTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 70adfc513dc72d29ad55ef805577daf1
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: MultiTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: d390ec1eddfcfe76c6de77e0b3b0bde9
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: NullTrackableBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: f1f268a3c75d9ed7313fd53bde94d081
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ObjectTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: e11d554bbb701d4f59a269e753cc2640
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: PlaneFinderBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: PreviewModelTurnOffBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 88e0eacd7ca80f727ae70233b11a3b68
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SessionRecorderBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SessionRecorderHolographicCanvas
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SessionRecorderInfoPopup
+  - hash:
+      serializedVersion: 2
+      Hash: c61ae52a96fa7966cc60c57666eedde6
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SessionRecorderOverlayCanvas
+  - hash:
+      serializedVersion: 2
+      Hash: 128c30ad1cf8dd3ecabc27e874f9311a
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SimulatorController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VideoBackgroundBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 6d88e9e1397f5819fff5578c88d3ed0e
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VirtualButtonBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 0cdfb413039a03c14e437880af617f36
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuforiaConfiguration
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuforiaMonoBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuforiaRuntimeTrackingSimulator
+  - hash:
+      serializedVersion: 2
+      Hash: 149c293ac9d71b971fb3d89ec02d5911
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuMarkBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: fbbf64dcbe0662e3eda1dec45ea8f895
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: WireframeBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: WireframeTrackableEventHandler
   - hash:
       serializedVersion: 2
       Hash: ed9f9ba4f86811683bd63e5cc6dae905
@@ -2437,131 +1903,773 @@ ScriptsOnlyBuild:
     className: WireframeTrackableEventHandler
   - hash:
       serializedVersion: 2
-      Hash: c3d3430df9e3ea95e3e3d587961390fb
-    assemblyName: Unity.Timeline.dll
-    namespaceName: UnityEngine.Timeline
-    className: ControlTrack
+      Hash: ed9f9ba4f86811683bd63e5cc6dae905
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AnchorBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 66679ab8b809aa3760109b213b0ab636
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AnchorInputListenerBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 127837f608f41b15774badb9a5791616
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AreaTargetBehaviour
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Unity.VisualScripting.Core.dll
-    namespaceName: Unity.VisualScripting
-    className: UnityOnParticleCollisionMessageListener
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AreaTargetPreviewBehaviour
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Unity.VisualScripting.Core.dll
-    namespaceName: Unity.VisualScripting
-    className: UnityOnMouseOverMessageListener
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AreaTargetSimulatorVisualization
   - hash:
       serializedVersion: 2
-      Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
-    assemblyName: Unity.VisualScripting.Core.dll
-    namespaceName: Unity.VisualScripting
-    className: Variables
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ARFoundationInitHelper
   - hash:
       serializedVersion: 2
-      Hash: fe1fdeffc2067077b2f1a90b210c2532
-    assemblyName: Assembly-CSharp.dll
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: BackgroundPlaneBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: a8e431cd22067175e40e9a215394b9b9
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: CloudRecoBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 050a9825ed50f0cc09dda1ee7d4ead8d
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ContentPositioningBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: e2a0111b30f80d2a3cbe4adc88944f33
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: CylinderTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
     namespaceName: 
-    className: DropdownSample
-  - hash:
-      serializedVersion: 2
-      Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
-    assemblyName: Unity.VisualScripting.State.dll
-    namespaceName: Unity.VisualScripting
-    className: StateMachine
+    className: DefaultInitializationErrorHandlerInternal
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: TMPro
-    className: TMP_PhoneNumberValidator
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: DefaultInitializationErrorHandlerPlaceHolder
   - hash:
       serializedVersion: 2
-      Hash: 4bd7b208af8ea581658ce421847d1d0d
-    assemblyName: Assembly-CSharp.dll
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: DefaultTrackableBehaviourPlaceholder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GLErrorHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GuideView2DBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GuideView3DBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GuideViewCameraBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 297bb3168553c3955b1c71e1f37cf791
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GuideViewRenderingBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 13253e135f97749bb4dff9f8e089422a
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ImageTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: b14bdc19729a47a24f3184da695f52b1
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: MaskOutBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 14e0b683b120c064839a9fd4e0717f88
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: MidAirPositionerBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: b26d00ca39149a355e7768127e1c4a80
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ModelTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 70adfc513dc72d29ad55ef805577daf1
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: MultiTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: d390ec1eddfcfe76c6de77e0b3b0bde9
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: NullTrackableBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: f1f268a3c75d9ed7313fd53bde94d081
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ObjectTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: e11d554bbb701d4f59a269e753cc2640
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: PlaneFinderBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: PreviewModelTurnOffBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 88e0eacd7ca80f727ae70233b11a3b68
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SessionRecorderBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SessionRecorderHolographicCanvas
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SessionRecorderInfoPopup
+  - hash:
+      serializedVersion: 2
+      Hash: c61ae52a96fa7966cc60c57666eedde6
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SessionRecorderOverlayCanvas
+  - hash:
+      serializedVersion: 2
+      Hash: 128c30ad1cf8dd3ecabc27e874f9311a
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SimulatorController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: TurnOffBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VideoBackgroundBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 6d88e9e1397f5819fff5578c88d3ed0e
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VirtualButtonBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 8971d09ce7f62d9b5b8044d33c0f78e5
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuforiaBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 0cdfb413039a03c14e437880af617f36
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuforiaConfiguration
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuforiaMonoBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuforiaRuntimeTrackingSimulator
+  - hash:
+      serializedVersion: 2
+      Hash: 149c293ac9d71b971fb3d89ec02d5911
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuMarkBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: fbbf64dcbe0662e3eda1dec45ea8f895
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: WireframeBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: WireframeTrackableEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: ed9f9ba4f86811683bd63e5cc6dae905
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AnchorBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 66679ab8b809aa3760109b213b0ab636
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AnchorInputListenerBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 127837f608f41b15774badb9a5791616
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AreaTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AreaTargetPreviewBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AreaTargetSimulatorVisualization
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ARFoundationInitHelper
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: BackgroundPlaneBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: a8e431cd22067175e40e9a215394b9b9
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: CloudRecoBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 050a9825ed50f0cc09dda1ee7d4ead8d
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ContentPositioningBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: e2a0111b30f80d2a3cbe4adc88944f33
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: CylinderTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
     namespaceName: 
-    className: DataReader
+    className: DefaultInitializationErrorHandlerInternal
   - hash:
       serializedVersion: 2
-      Hash: 5900b4371436ed2b53e2f3c8d96060dd
-    assemblyName: Assembly-CSharp.dll
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: DefaultInitializationErrorHandlerPlaceHolder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: DefaultTrackableBehaviourPlaceholder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GLErrorHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GuideView2DBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GuideView3DBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GuideViewCameraBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 297bb3168553c3955b1c71e1f37cf791
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GuideViewRenderingBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 13253e135f97749bb4dff9f8e089422a
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ImageTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: b14bdc19729a47a24f3184da695f52b1
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: MaskOutBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 14e0b683b120c064839a9fd4e0717f88
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: MidAirPositionerBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: b26d00ca39149a355e7768127e1c4a80
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ModelTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 70adfc513dc72d29ad55ef805577daf1
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: MultiTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: d390ec1eddfcfe76c6de77e0b3b0bde9
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: NullTrackableBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: f1f268a3c75d9ed7313fd53bde94d081
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ObjectTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: e11d554bbb701d4f59a269e753cc2640
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: PlaneFinderBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: PreviewModelTurnOffBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 88e0eacd7ca80f727ae70233b11a3b68
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SessionRecorderBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SessionRecorderHolographicCanvas
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SessionRecorderInfoPopup
+  - hash:
+      serializedVersion: 2
+      Hash: c61ae52a96fa7966cc60c57666eedde6
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SessionRecorderOverlayCanvas
+  - hash:
+      serializedVersion: 2
+      Hash: 128c30ad1cf8dd3ecabc27e874f9311a
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SimulatorController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: TurnOffBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VideoBackgroundBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 6d88e9e1397f5819fff5578c88d3ed0e
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VirtualButtonBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 8971d09ce7f62d9b5b8044d33c0f78e5
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuforiaBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 0cdfb413039a03c14e437880af617f36
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuforiaConfiguration
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuforiaMonoBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuforiaRuntimeTrackingSimulator
+  - hash:
+      serializedVersion: 2
+      Hash: 149c293ac9d71b971fb3d89ec02d5911
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuMarkBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: fbbf64dcbe0662e3eda1dec45ea8f895
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: WireframeBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: WireframeTrackableEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: ed9f9ba4f86811683bd63e5cc6dae905
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AnchorBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 66679ab8b809aa3760109b213b0ab636
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AnchorInputListenerBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 127837f608f41b15774badb9a5791616
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AreaTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AreaTargetPreviewBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: AreaTargetSimulatorVisualization
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ARFoundationInitHelper
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: BackgroundPlaneBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: a8e431cd22067175e40e9a215394b9b9
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: CloudRecoBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 050a9825ed50f0cc09dda1ee7d4ead8d
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ContentPositioningBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: e2a0111b30f80d2a3cbe4adc88944f33
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: CylinderTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
     namespaceName: 
-    className: CoinText
+    className: DefaultInitializationErrorHandlerInternal
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: TMPro.Examples
-    className: VertexColorCycler
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: DefaultInitializationErrorHandlerPlaceHolder
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Unity.VisualScripting.Core.dll
-    namespaceName: Unity.VisualScripting
-    className: UnityOnMouseUpMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: e7a73f5f78ba6445195ec23b74a1ce2d
-    assemblyName: Unity.TextMeshPro.dll
-    namespaceName: TMPro
-    className: TMP_ScrollbarEventHandler
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: DefaultTrackableBehaviourPlaceholder
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: TMPro.Examples
-    className: TeleType
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GLErrorHandler
   - hash:
       serializedVersion: 2
-      Hash: e63944317d2f5958e31963668bb29158
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: TMPro.Examples
-    className: VertexZoom
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GuideView2DBehaviour
   - hash:
       serializedVersion: 2
-      Hash: 0d6a4355b91913abd95558bec9f969bc
-    assemblyName: Assembly-CSharp.dll
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GuideView3DBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GuideViewCameraBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 297bb3168553c3955b1c71e1f37cf791
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: GuideViewRenderingBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 13253e135f97749bb4dff9f8e089422a
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ImageTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: b14bdc19729a47a24f3184da695f52b1
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: MaskOutBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 14e0b683b120c064839a9fd4e0717f88
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: MidAirPositionerBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: b26d00ca39149a355e7768127e1c4a80
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ModelTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 70adfc513dc72d29ad55ef805577daf1
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: MultiTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: d390ec1eddfcfe76c6de77e0b3b0bde9
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: NullTrackableBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: f1f268a3c75d9ed7313fd53bde94d081
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ObjectTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: e11d554bbb701d4f59a269e753cc2640
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: PlaneFinderBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: PreviewModelTurnOffBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 88e0eacd7ca80f727ae70233b11a3b68
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SessionRecorderBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SessionRecorderHolographicCanvas
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SessionRecorderInfoPopup
+  - hash:
+      serializedVersion: 2
+      Hash: 128c30ad1cf8dd3ecabc27e874f9311a
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: SimulatorController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: TurnOffBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VideoBackgroundBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 6d88e9e1397f5819fff5578c88d3ed0e
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VirtualButtonBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 8971d09ce7f62d9b5b8044d33c0f78e5
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuforiaBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 0cdfb413039a03c14e437880af617f36
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuforiaConfiguration
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuforiaMonoBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuforiaRuntimeTrackingSimulator
+  - hash:
+      serializedVersion: 2
+      Hash: 149c293ac9d71b971fb3d89ec02d5911
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuMarkBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: fbbf64dcbe0662e3eda1dec45ea8f895
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: WireframeBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: WireframeTrackableEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 2fba61c4298409162f811e183315a9c9
+    assemblyName: VuforiaScripts.dll
     namespaceName: 
-    className: DataWriter
-  - hash:
-      serializedVersion: 2
-      Hash: 8220b46879dc5e37db1b940c938f5744
-    assemblyName: Unity.Timeline.dll
-    namespaceName: UnityEngine.Timeline
-    className: SignalEmitter
+    className: DefaultTrackableEventHandler
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Unity.VisualScripting.Core.dll
-    namespaceName: Unity.VisualScripting
-    className: UnityOnToggleValueChangedMessageListener
+    assemblyName: VuforiaScripts.dll
+    namespaceName: 
+    className: BoundingBoxRenderer
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Unity.VisualScripting.Core.dll
-    namespaceName: Unity.VisualScripting
-    className: UnityOnMouseEnterMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 47930f3b40e24ef5b3b5e3d9ada7097a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: TMPro.Examples
-    className: Benchmark01
-  - hash:
-      serializedVersion: 2
-      Hash: abf1930d8126d0b2e00e9449129a0190
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.EventSystems
-    className: TouchInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Unity.VisualScripting.Core.dll
-    namespaceName: Unity.VisualScripting
-    className: UnityOnSliderValueChangedMessageListener
+    assemblyName: VuforiaScripts.dll
+    namespaceName: 
+    className: DefaultInitializationErrorHandler
   platform: 13
   scenePathNames:
   - Assets/Scenes/AllInOne.unity
-  playerPath: C:/Users/LAU Ka Hin/OneDrive - Vocational Training Council - Student/GameAR/AdventureReality/AdventureRealityUI/AdventureRealityDemo.apk
+  playerPath: C:/Users/LAU Ka Hin/OneDrive - Vocational Training Council - Student/GameAR/AdventureReality/AdventureRealityUI/AdventureRealityDemo4.apk

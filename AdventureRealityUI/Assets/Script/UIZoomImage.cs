@@ -6,9 +6,9 @@ public class UIZoomImage : MonoBehaviour
     private Vector3 initialScale;
 
     [SerializeField]
-    private float zoomSpeed = 0.1f;
+    private float zoomSpeed = 0.05f;
     [SerializeField]
-    private float maxZoom = 10f;
+    private float maxZoom = 5f;
 
     private Vector3 delta;
 
@@ -17,7 +17,7 @@ public class UIZoomImage : MonoBehaviour
     Vector2 firstTouchPrevPos, secondTouchPrevPos;
 
     [SerializeField]
-    float zoomModifierSpeed = 0.1f;
+    float zoomModifierSpeed = 0.05f;
 
     private void Awake()
     {

@@ -70,12 +70,12 @@ public class swipe : MonoBehaviour
                         if (targetDetect)
                         {
                             transform.GetChild(i).GetChild(k).GetComponent<UnityEngine.Video.VideoPlayer>().Play();
-                            //print("Video Playing");
+                            print("Video Playing");
                         }
                         else
                         {
                             transform.GetChild(i).GetChild(k).GetComponent<UnityEngine.Video.VideoPlayer>().Pause();
-                            //print("Video Pausing");
+                            print("Video Pausing");
                         }
                     }
                 }
@@ -99,7 +99,7 @@ public class swipe : MonoBehaviour
                     if (transform.GetChild(i).GetChild(k).GetComponent<UnityEngine.Video.VideoPlayer>() != null)
                     { //errors here
                             transform.GetChild(i).GetChild(k).GetComponent<UnityEngine.Video.VideoPlayer>().Pause();
-                            //print("Video Pausing");
+                            print("Video Pausing");
                     }
                 }
             }

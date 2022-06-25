@@ -225,13 +225,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0fba5cd1dcc5bc418a6ba8404efc182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSystem: {fileID: 0}
+  userCouponBag: {fileID: 0}
+  shopCouponBag: {fileID: 0}
+  activityList: {fileID: 0}
+  dialog: {fileID: 0}
+  CamelPaintFloorPlan: {fileID: 0}
+  ShingYipFloorPlan: {fileID: 0}
+  HewlettCentreFloorPlan: {fileID: 0}
+  map: {fileID: 0}
+  mapTitle: {fileID: 0}
   cost: 0
   quantity: 0
+  totalValue: 0
   quantityText: {fileID: 0}
   myText: {fileID: 0}
   total: {fileID: 0}
+  mySlide: {fileID: 0}
   buyBox: {fileID: 0}
   prefab: {fileID: 0}
+  camUI: {fileID: 0}
+  vb: {fileID: 0}
+  offCamButton: {fileID: 0}
+  ErrorTText: {fileID: 0}
+  client: {fileID: 0}
 --- !u!1 &4939637409884051012
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,7 +506,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4939637410268779139
 RectTransform:
   m_ObjectHideFlags: 0
@@ -560,13 +577,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0fba5cd1dcc5bc418a6ba8404efc182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSystem: {fileID: 0}
+  userCouponBag: {fileID: 0}
+  shopCouponBag: {fileID: 0}
+  activityList: {fileID: 0}
+  dialog: {fileID: 0}
+  CamelPaintFloorPlan: {fileID: 0}
+  ShingYipFloorPlan: {fileID: 0}
+  HewlettCentreFloorPlan: {fileID: 0}
+  map: {fileID: 0}
+  mapTitle: {fileID: 0}
   cost: 0
   quantity: 1
+  totalValue: 0
   quantityText: {fileID: 4939637410783179483}
   myText: {fileID: 0}
   total: {fileID: 4939637411281066433}
+  mySlide: {fileID: 0}
   buyBox: {fileID: 4939637410783179477}
   prefab: {fileID: 0}
+  camUI: {fileID: 0}
+  vb: {fileID: 0}
+  offCamButton: {fileID: 0}
+  ErrorTText: {fileID: 0}
+  client: {fileID: 0}
 --- !u!1 &4939637410469931263
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,13 +1199,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0fba5cd1dcc5bc418a6ba8404efc182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSystem: {fileID: 0}
+  userCouponBag: {fileID: 0}
+  shopCouponBag: {fileID: 0}
+  activityList: {fileID: 0}
+  dialog: {fileID: 0}
+  CamelPaintFloorPlan: {fileID: 0}
+  ShingYipFloorPlan: {fileID: 0}
+  HewlettCentreFloorPlan: {fileID: 0}
+  map: {fileID: 0}
+  mapTitle: {fileID: 0}
   cost: 0
   quantity: 0
+  totalValue: 0
   quantityText: {fileID: 0}
   myText: {fileID: 0}
   total: {fileID: 0}
+  mySlide: {fileID: 0}
   buyBox: {fileID: 0}
   prefab: {fileID: 0}
+  camUI: {fileID: 0}
+  vb: {fileID: 0}
+  offCamButton: {fileID: 0}
+  ErrorTText: {fileID: 0}
+  client: {fileID: 0}
 --- !u!1 &4939637411211770199
 GameObject:
   m_ObjectHideFlags: 0
@@ -1472,13 +1523,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0fba5cd1dcc5bc418a6ba8404efc182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSystem: {fileID: 0}
+  userCouponBag: {fileID: 0}
+  shopCouponBag: {fileID: 0}
+  activityList: {fileID: 0}
+  dialog: {fileID: 0}
+  CamelPaintFloorPlan: {fileID: 0}
+  ShingYipFloorPlan: {fileID: 0}
+  HewlettCentreFloorPlan: {fileID: 0}
+  map: {fileID: 0}
+  mapTitle: {fileID: 0}
   cost: 0
   quantity: 0
+  totalValue: 0
   quantityText: {fileID: 0}
   myText: {fileID: 0}
   total: {fileID: 0}
+  mySlide: {fileID: 0}
   buyBox: {fileID: 0}
   prefab: {fileID: 0}
+  camUI: {fileID: 0}
+  vb: {fileID: 0}
+  offCamButton: {fileID: 0}
+  ErrorTText: {fileID: 0}
+  client: {fileID: 0}
 --- !u!1 &4939637411556615486
 GameObject:
   m_ObjectHideFlags: 0

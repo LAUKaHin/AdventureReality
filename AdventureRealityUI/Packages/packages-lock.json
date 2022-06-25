@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.ptc.vuforia.engine": {
-      "version": "file:C:/Users/LAU Ka Hin/VTC/YCKB/FinalYearProject/vuforia933-plugin",
+      "version": "file:C:/Users/LAU Ka Hin/OneDrive - Vocational Training Council - Student/GameAR/vuforia933-plugin",
       "depth": 0,
       "source": "local",
       "dependencies": {
@@ -54,6 +54,15 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.postprocessing": {
+      "version": "3.1.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.physics": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {

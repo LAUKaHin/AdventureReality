@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Globalization;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -11,7 +12,7 @@ public class UIOperation : MonoBehaviour
     public DataInterface playerSystem;
     public GameObject userCouponBag, shopCouponBag, activityList;
     public GameObject dialog;
-    public GameObject CamelPaintFloorPlan, ShingYipFloorPlan, HewlettCentreFloorPlan, map;
+    public GameObject CamelPaintFloorPlan, ShingYipFloorPlan, HewlettCentreFloorPlan, map, searchMap;
     public GameObject mapTitle;
     public uint cost;
     public uint quantity = 1;
@@ -25,11 +26,13 @@ public class UIOperation : MonoBehaviour
     public Slider mySlide;
     public GameObject buyBox;
     public GameObject prefab;
+    public GameObject camUI;
+    public GameObject camvas;
     public VuforiaBehaviour vb;
-    public GameObject openCamButton;
     public GameObject offCamButton;
     public GameObject ErrorTText;
     public Client client;
+    public Text searchText;
     public void Start()
     {
         userCouponBag.SetActive(true);
@@ -47,6 +50,10 @@ public class UIOperation : MonoBehaviour
     {
         ShopDialog(null, 0, "提示", "你確定退出嗎?", Application.Quit);
     }
+    public void RidGreatGrandparent(RectTransform esc)
+    {
+        esc.parent.parent.parent.gameObject.SetActive(false);//Deactivate
+    }
     public void RidGrandparent(RectTransform esc)
     {
         esc.parent.parent.gameObject.SetActive(false);//Deactivate
@@ -60,16 +67,16 @@ public class UIOperation : MonoBehaviour
         string lText = "";
         string cText = "";
         dialog.SetActive(true);
-        var yesButton = dialog.transform.GetChild(0).GetChild(2);//Access yes button
-        var noButton = dialog.transform.GetChild(0).GetChild(3);//Access no button
-        var useButton = dialog.transform.GetChild(0).GetChild(6);//Access useButton
+        var yesButton = dialog.transform.GetChild(0).GetChild(1).GetChild(0);//Access yes button
+        var noButton = dialog.transform.GetChild(0).GetChild(1).GetChild(1);//Access no button
+        var useButton = dialog.transform.GetChild(0).GetChild(1).GetChild(2);//Access useButton
         useButton.gameObject.SetActive(false);
         yesButton.gameObject.SetActive(true);
         noButton.gameObject.SetActive(true);
         yesButton.GetComponent<Button>().onClick.RemoveAllListeners();
         yesButton.GetComponent<Button>().onClick.AddListener(youstuff);
 
-        var buyBox = dialog.transform.GetChild(0).GetChild(5);//Access buy box.
+        var buyBox = dialog.transform.GetChild(0).GetChild(3);//Access buy box.
         if (coupon != null)
         {
             title = coupon.shopName;
@@ -89,13 +96,13 @@ public class UIOperation : MonoBehaviour
         {
             buyBox.gameObject.SetActive(false);
         }
-        var titleText = dialog.transform.GetChild(0).GetChild(0);//Access title
+        var titleText = dialog.transform.GetChild(0).GetChild(0).GetChild(1);//Access title
         titleText.GetComponent<Text>().text = title; 
 
-        var contentText = dialog.transform.GetChild(0).GetChild(4).GetChild(0);//Access content
+        var contentText = dialog.transform.GetChild(0).GetChild(2).GetChild(0);//Access content
         contentText.GetComponent<Text>().text = content + "\n" + "\n" + lText + "\n" + cText;
 
-        var total = dialog.transform.GetChild(0).GetChild(5).GetChild(5);
+        var total = dialog.transform.GetChild(0).GetChild(3).GetChild(5);//Access total.text
         quantity = 1;
         totalValue = cost * quantity;
         quantityText.text = quantity.ToString();
@@ -107,15 +114,14 @@ public class UIOperation : MonoBehaviour
         string cText = "";
         print("Runing Backpack Dialog");
 
-        var yesButton = dialog.transform.GetChild(0).GetChild(2);//Access yes button
-        var noButton = dialog.transform.GetChild(0).GetChild(3);//Access no button
-
+        var yesButton = dialog.transform.GetChild(0).GetChild(1).GetChild(0);//Access yes button
+        var noButton = dialog.transform.GetChild(0).GetChild(1).GetChild(1);//Access no button
+        var useButton = dialog.transform.GetChild(0).GetChild(1).GetChild(2);//Access useButton
         dialog.SetActive(true);
-        var useButton = dialog.transform.GetChild(0).GetChild(6);//Access use button
         useButton.GetComponent<Button>().onClick.RemoveAllListeners();
         useButton.GetComponent<Button>().onClick.AddListener(function);
         useButton.gameObject.SetActive(false);
-        var buyBox = dialog.transform.GetChild(0).GetChild(5);//Access buy box.
+        var buyBox = dialog.transform.GetChild(0).GetChild(3);//Access buy box.
         buyBox.gameObject.SetActive(false);
 
         if (coupon != null)
@@ -140,13 +146,13 @@ public class UIOperation : MonoBehaviour
             noButton.gameObject.SetActive(true);
             useButton.gameObject.SetActive(false);
         }
-        var titleText = dialog.transform.GetChild(0).GetChild(0);//Access title
+        var titleText = dialog.transform.GetChild(0).GetChild(0).GetChild(1);//Access title
         titleText.GetComponent<Text>().text = title;
 
-        var contentText = dialog.transform.GetChild(0).GetChild(4).GetChild(0);//Access content
+        var contentText = dialog.transform.GetChild(0).GetChild(2).GetChild(0);//Access content
         contentText.GetComponent<Text>().text = content + "\n" + "\n" + lText + "\n" + cText;
 
-        var total = dialog.transform.GetChild(0).GetChild(5).GetChild(5);
+        var total = dialog.transform.GetChild(0).GetChild(3).GetChild(5);//Access total.text
         quantity = 1;
         quantityText.text = quantity.ToString();
         total.GetComponent<Text>().text = cost.ToString();
@@ -157,15 +163,14 @@ public class UIOperation : MonoBehaviour
         string cText = "";
         print("Runing ShopData Dialog");
 
-        var yesButton = dialog.transform.GetChild(0).GetChild(2);//Access yes button
-        var noButton = dialog.transform.GetChild(0).GetChild(3);//Access no button
-
+        var yesButton = dialog.transform.GetChild(0).GetChild(1).GetChild(0);//Access yes button
+        var noButton = dialog.transform.GetChild(0).GetChild(1).GetChild(1);//Access no button
+        var useButton = dialog.transform.GetChild(0).GetChild(1).GetChild(2);//Access useButton
         dialog.SetActive(true);
-        var useButton = dialog.transform.GetChild(0).GetChild(6);//Access use button
         useButton.GetComponent<Button>().onClick.RemoveAllListeners();
         //useButton.GetComponent<Button>().onClick.AddListener(function);
         useButton.gameObject.SetActive(false);
-        var buyBox = dialog.transform.GetChild(0).GetChild(5);//Access buy box.
+        var buyBox = dialog.transform.GetChild(0).GetChild(3);//Access buy box.
         buyBox.gameObject.SetActive(false);
 
         if (info != null)
@@ -188,13 +193,13 @@ public class UIOperation : MonoBehaviour
             noButton.gameObject.SetActive(true);
             useButton.gameObject.SetActive(false);
         }
-        var titleText = dialog.transform.GetChild(0).GetChild(0);//Access title
+        var titleText = dialog.transform.GetChild(0).GetChild(0).GetChild(1);//Access title
         titleText.GetComponent<Text>().text = title;
 
-        var contentText = dialog.transform.GetChild(0).GetChild(4).GetChild(0);//Access content
+        var contentText = dialog.transform.GetChild(0).GetChild(2).GetChild(0);//Access content
         contentText.GetComponent<Text>().text = content + "\n" + "\n" + lText + "\n" + cText;
 
-        var total = dialog.transform.GetChild(0).GetChild(5).GetChild(5);
+        var total = dialog.transform.GetChild(0).GetChild(3).GetChild(5);//Access total.text
         quantity = 1;
         quantityText.text = quantity.ToString();
         total.GetComponent<Text>().text = cost.ToString();
@@ -220,13 +225,17 @@ public class UIOperation : MonoBehaviour
     }
     public void ChangeValue()
     {
-        quantity = uint.Parse(quantityText.text);
-        totalValue = quantity * cost;
-        total.text = totalValue.ToString();
+            quantity = uint.Parse(quantityText.text);
+            totalValue = quantity * cost;
+            total.text = totalValue.ToString();
     }
     public void Buying()
     {
-        if (playerSystem.myPlayerList.player[0].score >= cost)
+        if (cost == 0 || quantity == 0)
+        {
+            StartCoroutine(Animationor("請勿將將購買數量設定為0，請重新購買。"));
+        }
+        else if (playerSystem.myPlayerList.player[0].score >= totalValue)
         {
             playerSystem.myPlayerList.player[0].score -= Convert.ToInt32(totalValue);
             userCouponBag.SetActive(true);
@@ -240,7 +249,7 @@ public class UIOperation : MonoBehaviour
         }
         else
         {
-            StartCoroutine(Animationor());
+            StartCoroutine(Animationor("Coupon幣不足，請掃描特定街景和位置獲取Coupon幣。"));
             print("user haven't enough money to buy this coupon.");
         }
     }
@@ -253,15 +262,28 @@ public class UIOperation : MonoBehaviour
     }
     public void escapeButton()
     {
-        if (CamelPaintFloorPlan.activeSelf ||
-            ShingYipFloorPlan.activeSelf ||
-            HewlettCentreFloorPlan.activeSelf)
+        if ((CamelPaintFloorPlan.activeSelf || ShingYipFloorPlan.activeSelf || HewlettCentreFloorPlan.activeSelf) &&
+            !(userCouponBag.activeSelf || shopCouponBag.activeSelf || activityList.activeSelf))
         {
-            CamelPaintFloorPlan.SetActive(false);
-            ShingYipFloorPlan.SetActive(false);
-            HewlettCentreFloorPlan.SetActive(false);
-            mapTitle.SetActive(true);
-            print("case 1");
+            if (vb.enabled == true)
+            {
+                vb.enabled = false;
+                map.SetActive(true);
+                mapTitle.SetActive(true);
+                camUI.SetActive(false);
+                camvas.SetActive(false);
+                print("case 1.5");
+            }
+            else
+            {
+                CamelPaintFloorPlan.SetActive(false);
+                ShingYipFloorPlan.SetActive(false);
+                HewlettCentreFloorPlan.SetActive(false);
+                mapTitle.SetActive(true);
+                camUI.SetActive(false);
+                camvas.SetActive(false);
+                print("case 1");
+            }
         }
         else if (!vb.enabled && (userCouponBag.activeSelf || shopCouponBag.activeSelf || activityList.activeSelf))
         {
@@ -270,8 +292,6 @@ public class UIOperation : MonoBehaviour
             activityList.SetActive(false);
             map.SetActive(true);
             mapTitle.SetActive(true);
-            openCamButton.SetActive(true);
-
             print("case 2");
         }
         else if (vb.enabled && (userCouponBag.activeSelf || shopCouponBag.activeSelf || activityList.activeSelf))
@@ -285,28 +305,116 @@ public class UIOperation : MonoBehaviour
         {
             map.SetActive(true);
             mapTitle.SetActive(true);
-            openCamButton.SetActive(true);
             vb.enabled = false;
+            camUI.SetActive(false);
+            camvas.SetActive(false);
             print("case 4");
         }
         else if (vb.enabled && map.activeSelf)
         {
             map.SetActive(true);
             mapTitle.SetActive(true);
-            openCamButton.SetActive(true);
             vb.enabled = false;
+            camUI.SetActive(false);
+            camvas.SetActive(false);
             print("case 5");
+        }
+        else if (searchMap.activeSelf == true)
+        {
+            searchMap.SetActive(false);
+            print("case 6");
         }
         else
         {
             CallDialog();
-            print("case 6");
+            print("case 7");
         }
     }
-    IEnumerator Animationor()
+    public void SearchButton()
+    {
+        if (vb.enabled == true)
+        {
+
+        }
+        else if (shopCouponBag.activeSelf == true)
+        {
+            string searchString = searchText.text;
+            CultureInfo allCase = new CultureInfo("en-US", false);
+            GridPopulator filter = shopCouponBag.GetComponent<GridPopulator>();
+            if (searchString == "")
+            {
+                for (int i = 0; i < filter.sCategoryList.Count; i++)
+                {
+                    for (int j = 0; j < filter.sCategoryList[i].CouponItems.Count; j++)
+                    {
+                            shopCouponBag.transform.GetChild(i + 4).transform.GetChild(0).transform.GetChild(0).transform.GetChild(j).gameObject.SetActive(true);
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < filter.sCategoryList.Count; i++)
+                {
+                    for (int j = 0; j < filter.sCategoryList[i].CouponItems.Count; j++)
+                    {
+                        if (allCase.CompareInfo.IndexOf(filter.sCategoryList[i].CouponItems[j].shopName + filter.sCategoryList[i].CouponItems[j].content, searchString, CompareOptions.IgnoreCase) >= 0)
+                        {
+                            shopCouponBag.transform.GetChild(i + 4).transform.GetChild(0).transform.GetChild(0).transform.GetChild(j).gameObject.SetActive(true);
+                        }
+                        else
+                        {
+                            shopCouponBag.transform.GetChild(i + 4).transform.GetChild(0).transform.GetChild(0).transform.GetChild(j).gameObject.SetActive(false);
+                        }
+                    }
+                }
+            }
+        }
+        else if (userCouponBag.activeSelf == true)
+        {
+            string searchString = searchText.text;
+            CultureInfo allCase = new CultureInfo("en-US", false);
+            GridPopulator filter = userCouponBag.GetComponent<GridPopulator>();
+            if (searchString == "")
+            {
+                for (int i = 0; i < filter.sCategoryList.Count; i++)
+                {
+                    for (int j = 0; j < filter.sCategoryList[i].CouponItems.Count; j++)
+                    {
+                        userCouponBag.transform.GetChild(i + 3).transform.GetChild(0).transform.GetChild(0).transform.GetChild(j).gameObject.SetActive(true);
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < filter.uCategoryList.Count; i++)
+                {
+                    for (int j = 0; j < filter.sCategoryList[i].CouponItems.Count; j++)
+                    {
+                        if (allCase.CompareInfo.IndexOf(filter.sCategoryList[i].CouponItems[j].shopName + filter.uCategoryList[i].CouponItems[j].content, searchString, CompareOptions.IgnoreCase) >= 0)
+                        {
+                            userCouponBag.transform.GetChild(i + 3).transform.GetChild(0).transform.GetChild(0).transform.GetChild(j).gameObject.SetActive(true);
+                        }
+                        else
+                        {
+                            userCouponBag.transform.GetChild(i + 3).transform.GetChild(0).transform.GetChild(0).transform.GetChild(j).gameObject.SetActive(false);
+                        }
+                    }
+                }
+            }
+        }
+        else if (map.activeSelf == true)
+        {
+            searchMap.SetActive(true);
+        }
+        else
+        {
+        
+        }
+    }
+    IEnumerator Animationor(string errorText)
     {
         ErrorTText.SetActive(true);
-        ErrorTText.GetComponent<Text>().text = "Coupon幣不足，請掃描特定街景和位置獲取Coupon幣。";
+        ErrorTText.GetComponent<Text>().text = errorText;
         ErrorTText.GetComponent<Animator>().SetBool("Error", true);
         yield return new WaitForSeconds(3);
         ErrorTText.GetComponent<Animator>().SetBool("Error", false);

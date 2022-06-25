@@ -233,18 +233,17 @@ QList<QList<DataInterface::CouponAmount>> DataInterface::CouponAmountReader(QStr
         sort(begin(couponList), end(couponList), CouponAmountShopType);
 
         uint loopflag = 0;
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < 5; i++)
         {
             QList<CouponAmount> typeStorge;
-            for(uint j = loopflag; couponList[uint(j)].shopType == uint(i); j++)
+            for(uint j = loopflag; couponList[j].shopType == uint(i); j++)
             {
-
-                typeStorge.append(couponList[j]);
-                loopflag = j+1;
                 if(j == couponList.length() -1)
                 {
                     break;
                 }
+                typeStorge.append(couponList[j]);
+                loopflag = j+1;
             }
             sixTypesOfCouponList.append(typeStorge);
             qDebug() << QString::number(sixTypesOfCouponList.length());
@@ -512,12 +511,14 @@ void DataInterface::DataWriter(CouponAmount coupon, QString client)
         QFile outFile(location);
         DataInitialization headLinePermission;
         QString headLine = "ShopType,CouponID,Amount\n";//headLinePermission.csvHeadline[0];
+        /*
         if (outFile.open(QIODevice::WriteOnly))
         {
             qDebug() << "create headline";
-            outFile.write(headLine.toStdString().c_str());/*寫入每一行數據到文件*/
+            outFile.write(headLine.toStdString().c_str());
             outFile.close();
         }
+        */
         qDebug() << "New file created.";
     }
     qDebug() << "Begin to insert data.";

@@ -10,7 +10,7 @@ public class OpenBox : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ScoreText.GetComponent<Text>().text = "5績分幣入手!";
+        ScoreText.GetComponent<Text>().text = "搵到個神秘寶箱喇！";
         datBox.GetComponent<ParticleSystem>().Stop();
     }
 
@@ -21,6 +21,7 @@ public class OpenBox : MonoBehaviour
         datBox.GetComponent<Animator>().SetBool("CanOpen", true);
         datBox.GetComponent<ParticleSystem>().Play();
         StartCoroutine(OneSec());
+        ScoreText.GetComponent<Text>().text = "5績分幣入手!";
     }
 
     IEnumerator OneSec()
